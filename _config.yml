@@ -22,13 +22,13 @@ repository               : "https://github.com/Matthew-Lyu/Matthew-Lyu.github.io
 author:
   # Biographic information
   avatar           : "./avatar.JPG"
-  name             : "Your Sidebar Name"
+  name             : "Weichen Lyu"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
   employer         : "Red Brick University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "lyuwch03@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
