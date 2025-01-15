@@ -21,7 +21,7 @@ repository               : "Matthew-Lyu/Matthew-Lyu.github.io/"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "avatar.JPG"
+  avatar           : "avatar.png"
   name             : "Weichen Lyu"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
