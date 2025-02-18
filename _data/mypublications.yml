@@ -1,10 +1,10 @@
 main:
 
    - title: "XXX"
-     authors: Yunong Zhang, <strong>Weichen Lyu</strong>, , Guanquan Wang, Shuai Li
+     authors: Yunong Zhang, <strong>Weichen Lyu</strong>, Guanquan Wang, Shuai Li
      # conference_short: CCC
      # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-     # pdf: https://arxiv.org/pdf/2002.10211.pdf
+     pdf: https://arxiv.org/
      # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
      # page: https://class-il.mpi-inf.mpg.de/mnemonics/
      # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
