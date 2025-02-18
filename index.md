@@ -4,19 +4,16 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.edu.cn), [SYSU](https://www.sysu.edu.cn). I currently conduct research in the interdisciplinary field of information science.
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+- **Control Theory:** Computational Mathematics, Optimization, Neural Dynamics
+- **Embodied AI:** Robotic Manipulation, Trajectory Optimization, End-to-end Learning
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[Feb. 2025]** Our paper on XXX is currently under review for XXX
 
 {% include_relative _includes/publications.md %}
 
