@@ -15,7 +15,7 @@ main:
     authors: <strong>Weichen Lyu</strong>
     # conference_short: School of ISE, SYSU
     conference: Computer Vision Projects, <strong>School of ISE, SYSU</strong>, 2023
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
+    # pdf: https://arxiv.org/pdf/2306.00988.pdf
     code: https://github.com/Matthew-Lyu/Fusion-Model-for-Plant-Pathology-SYSU-2023
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/model_fusion.png
