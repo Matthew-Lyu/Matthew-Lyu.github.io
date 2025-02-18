@@ -9,6 +9,7 @@ main:
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/ros1.png
     # notes: Early Accept
+    github: https://github.com/Matthew-Lyu/Autonomous-Driving-Simulation-ROS-Noetic
 
   - title: Fine-grained Apple Leaf Disease Classification via Multi-model Fusion and Triplet Loss Optimization
     authors: <strong>Weichen Lyu</strong>
@@ -19,6 +20,7 @@ main:
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/model_fusion.png
     # notes: Early Accept
+    github: https://github.com/Matthew-Lyu/Fusion-Model-for-Plant-Pathology-SYSU-2023
 
   - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
     authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
