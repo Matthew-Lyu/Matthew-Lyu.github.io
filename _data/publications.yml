@@ -33,7 +33,7 @@ main:
     # notes: Early Accept
     github: https://github.com/Matthew-Lyu/Nonlinear-Numerical-Optimization-Methods
 
-  - title: MIT 6.824: Raft Consensus Algorithm Implementation
+  - title: MIT 6.824 Raft Consensus Algorithm Implementation
     authors: <strong>Weichen Lyu</strong>
     # conference_short: School of ISE, SYSU
     conference: MIT, 2022
