@@ -1,5 +1,15 @@
 main:
 
+  - title: ROS Noetic-based autonomous driving simulation integrating DWA path planning and dual PID control
+    authors: <strong>Weichen Lyu</strong>
+    conference_short: Ready Tensor, Inc.
+    conference: Computer Vision Projects Expo 2024 competition
+    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    code: https://github.com/Matthew-Lyu/Autonomous-Driving-Simulation-ROS-Noetic
+    # bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/ros1.png
+    # notes: Early Accept
+
   - title: Fine-grained Apple Leaf Disease Classification via Multi-model Fusion and Triplet Loss Optimization
     authors: <strong>Weichen Lyu</strong>
     # conference_short: MICCAI
@@ -7,7 +17,7 @@ main:
     pdf: https://arxiv.org/pdf/2306.00988.pdf
     code: https://github.com/Matthew-Lyu/Fusion-Model-for-Plant-Pathology-SYSU-2023
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/model_fusion.jpg
+    image: ./assets/img/model_fusion.png
     # notes: Early Accept
 
   - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
