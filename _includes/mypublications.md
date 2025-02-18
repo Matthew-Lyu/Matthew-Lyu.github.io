@@ -1,6 +1,6 @@
 <h2 id="Pubilctions" style="margin: 2px 0px -15px;">Pubilctions</h2>
 
-<div class="mypublications">
+<div class="publications">
 <ol class="bibliography">
 
 {% for link in site.data.mypublications.main %}
