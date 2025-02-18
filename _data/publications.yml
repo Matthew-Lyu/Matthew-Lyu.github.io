@@ -22,13 +22,35 @@ main:
     # notes: Early Accept
     github: https://github.com/Matthew-Lyu/Fusion-Model-for-Plant-Pathology-SYSU-2023
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+  - title: Matlab Code Repository for Nonlinear Numerical Optimization Methods
+    authors: <strong>Weichen Lyu</strong>
+    # conference_short: School of ISE, SYSU
+    conference: Optimization Theroy and Methods, <strong>School of ISE, SYSU</strong>, 2023
+    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    code: https://github.com/Matthew-Lyu/Nonlinear-Numerical-Optimization-Methods
+    # bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/opt.jpg
+    # notes: Early Accept
+    github: https://github.com/Matthew-Lyu/Nonlinear-Numerical-Optimization-Methods
+
+  - title: MIT 6.824: Raft Consensus Algorithm Implementation
+    authors: <strong>Weichen Lyu</strong>
+    # conference_short: School of ISE, SYSU
+    conference: MIT, 2022
+    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    code: https://github.com/Matthew-Lyu/MIT-6.824-Lab-2022
+    # bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/mit6824.jpg
+    # notes: Early Accept
+    github: https://github.com/Matthew-Lyu/MIT-6.824-Lab-2022
+
+  # - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
+  #   authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
+  #   conference_short: CVPR
+  #   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
+  #   pdf: https://arxiv.org/pdf/2002.10211.pdf
+  #   code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+  #   page: https://class-il.mpi-inf.mpg.de/mnemonics/
+  #   bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+  #   notes: Oral Presentation
+  #   image: ./assets/img/teaser_example.png
