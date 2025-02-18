@@ -18,3 +18,7 @@ I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.ed
 {% include_relative _includes/mypublications.md %}
 
 {% include_relative _includes/publications.md %}
+
+## Passions
+
+In my spare time, I enjoy playing the violin🎻 and guitar🎸.
