@@ -1,9 +1,9 @@
 main:
 
-   - title: "XXXX"
+   - title: "Reciprocal Zhang Neural Dynamics (RZND) Solution Models and Algorithms for Determined and Underdetermined Time-Varying Nonlinear Equation Systems (TVNES) Solving"
      authors: Yunong Zhang, <strong>Weichen Lyu</strong>, Guanquan Wang, Shuai Li
-     # conference_short: CCC
-     conference: IEEE XXX XXX XXX <strong>XXX</strong>, 2025.
+     conference_short: CCC
+     conference: China Control Conference <strong>(CCC)</strong>, 2025.
      pdf: https://arxiv.org/
      # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
      # page: https://class-il.mpi-inf.mpg.de/mnemonics/
