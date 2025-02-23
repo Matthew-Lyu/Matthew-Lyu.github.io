@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.edu.cn), [SYSU](https://www.sysu.edu.cn). I currently conduct research in the interdisciplinary field of information science.
+I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.edu.cn), [SYSU](https://www.sysu.edu.cn). I currently conduct research in the interdisciplinary field of information science. From 2022 to 2023, I had the honor to conduct scientific research and study in [Prof. Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm)’s (Director of AI for Science (AI4S) at Peking University). laboratory, YCLab. From 2024 to 2025, I had the honor to complete my undergraduate thesis under the supervision of [Prof. Yunong Zhang](https://ise.sysu.edu.cn/teacher/teacher01/1416605.htm) (IEEE Member), and conducted research in neurodynamics and robotics in his laboratory. I will receive the Bachelor of Engineering degree from Sun Yat-sen University in June 2025. 
 
 ## Research Interests
 
