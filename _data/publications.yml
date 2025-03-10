@@ -7,7 +7,7 @@ main:
     # pdf: https://arxiv.org/pdf/2306.00988.pdf
     code: https://github.com/Matthew-Lyu/Autonomous-Driving-Simulation-ROS-Noetic
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/ros.jpg
+    image: ./assets/img/ros2.jpg
     # notes: Early Accept
     github: https://github.com/Matthew-Lyu/Autonomous-Driving-Simulation-ROS-Noetic
 
