@@ -13,7 +13,7 @@ I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.ed
 
 ## News
 
-- **[Feb. 2025]** Our paper on Reciprocal Zhang Neural Dynamics solving Determined and Underdetermined Time-Varying Nonlinear Equation Systems is currently under review for China Control Conference 2025.
+- **[Feb. 2025]** Our paper on Reciprocal Zhang Neural Dynamics solving Determined and Underdetermined Time-Varying Nonlinear Equation Systems is accepted for China Control Conference 2025.
 
 {% include_relative _includes/mypublications.md %}
 
