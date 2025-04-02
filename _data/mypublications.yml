@@ -4,9 +4,9 @@ main:
      authors: Yunong Zhang, <strong>Weichen Lyu</strong>, Guanquan Wang, Shuai Li
      conference_short: CCC
      conference: China Control Conference <strong>(CCC)</strong>, 2025.
-     pdf: https://arxiv.org/
+     pdf:
      # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
      # page: https://class-il.mpi-inf.mpg.de/mnemonics/
      # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-     notes: Under Review
+     notes:
      image: ./assets/img/paper_ccc.jpg
