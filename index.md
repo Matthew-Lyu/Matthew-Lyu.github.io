@@ -8,12 +8,12 @@ I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.ed
 
 ## Research Interests
 
-- **Control Theory:** Computational Mathematics, Optimization, Neural Dynamics
+- **AI for Science (AI4S):** Machine Learning, Generative Pretraning Models
 - **Embodied AI:** Robotic Manipulation, Trajectory Optimization, End-to-end Learning
 
 ## News
 
-- **[Feb. 2025]** Our paper on Reciprocal Zhang Neural Dynamics solving Determined and Underdetermined Time-Varying Nonlinear Equation Systems is accepted for China Control Conference 2025.
+- **[Feb. 2025]** Our paper on Reciprocal Zhang Neural Dynamics (RZND) solving Time-Varying Nonlinear Equation Systems (TVNES) is accepted for China Control Conference 2025.
 
 {% include_relative _includes/mypublications.md %}
 
