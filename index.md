@@ -8,8 +8,8 @@ I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.ed
 
 ## Research Interests
 
-- **AI for Science (AI4S):** Machine Learning, Generative Pretraning Models
-- **Embodied AI:** Robotic Manipulation, Trajectory Optimization, End-to-end Learning
+- **AI for Science (AI4S):** Machine Learning, Generative Pretraining Models, Spatial Transcriptomics
+- **Embodied AI:** Reinforcement Learning, Vision Language Action 
 
 ## News
 
