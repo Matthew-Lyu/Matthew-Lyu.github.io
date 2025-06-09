@@ -8,10 +8,14 @@ layout: homepage
 
 I'm a fourth year undergraduate student from the [School of ISE at SYSU](https://ise.sysu.edu.cn). September 2025, I will be pursuing a Master's degree in the [Department of Automation at Tsinghua University](https://www.au.tsinghua.edu.cn/index.htm) under the supervision of [Prof. Xuegong Zhang (张学工)](https://www.au.tsinghua.edu.cn/info/1110/1569.htm). I currently conduct research in the interdisciplinary field of information science.
 
-## Experience
+## Education Experience
 
 - 2025.09 - Now: M.S. in Tsinghua University
 - 2021.09 - 2025.06: B.S. in Sun Yat-sen University
+
+## Internships
+
+- 2025.06 - 2025.09: RA (Research Assistant) in SpeechLab, School of Data Science (SDS), Chinese University of Hongkong, Shenzhen (CUHK).
 
 ## Research Interests
 
