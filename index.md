@@ -17,10 +17,10 @@ I'm a fourth year undergraduate student from the [School of ISE](https://ise.sys
 
 - 2025.06 - 2025.09: RA in SpeechLab, School of Data Science (SDS), the Chinese University of Hongkong, Shenzhen (CUHK-Shenzhen).
 
-## Research Interests
+<!-- ## Research Interests
 
 - **AI for Science (AI4S)**: Machine Learning, Generative Pretraining Models, Spatial Transcriptomics
-- **Embodied AI**: Reinforcement Learning, Vision Language Action 
+- **Embodied AI**: Reinforcement Learning, Vision Language Action  -->
 
 <!-- ## News
 
