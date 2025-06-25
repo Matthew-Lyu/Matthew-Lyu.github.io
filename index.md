@@ -26,7 +26,7 @@ I'm a fourth year undergraduate student from the [School of ISE](https://ise.sys
 
 - **[Feb. 2025]** Our paper on Reciprocal Zhang Neural Dynamics (RZND) solving Time-Varying Nonlinear Equation Systems (TVNES) is accepted for China Control Conference 2025. -->
 
-{% include_relative _includes/mypublications.md %}
+<!-- {% include_relative _includes/mypublications.md %} -->
 
 <!-- {% include_relative _includes/publications.md %} -->
 
