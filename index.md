@@ -22,13 +22,7 @@ I'm a first-year Master's student in Artificial Intelligence at the [Department 
 - **3D Computer Vision**: 3D Reconstruction, Scene Understanding, Neural Rendering
 - **Embodied Intelligence**: VLA, Simulation and Synthesis, Mobile Manipulation, Decision-Making Models
 
-<!-- ## News
-
-- **[Feb. 2025]** Our paper on Reciprocal Zhang Neural Dynamics (RZND) solving Time-Varying Nonlinear Equation Systems (TVNES) is accepted for China Control Conference 2025. -->
-
-<!-- {% include_relative _includes/mypublications.md %} -->
-
-<!-- {% include_relative _includes/publications.md %} -->
+<!-- ## News -->
 
 ## Awards
 
