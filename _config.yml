@@ -1,8 +1,8 @@
 # Basic Information 
 title: Weichen Lyu
-position: Undergraduate Student
-affiliation: Intelligent Science and Technology, Sun Yat-sen University
-email: lvwch@mail2.sysu.edu.cn
+position: Master Student
+affiliation: Artificial Intelligence, Tsinghua University
+email: lvwc25@mails.tsinghua.edu.cn
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
@@ -21,8 +21,8 @@ twitter: https://x.com/mattlvwch?s=21
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
 avatar: ./assets/img/IMG_2432.JPG
-favicon: ./assets/img/school.png
-favicon_dark: ./assets/img/school.png
+favicon: ./assets/img/school2png
+favicon_dark: ./assets/img/school2.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
