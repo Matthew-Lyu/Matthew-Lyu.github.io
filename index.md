@@ -4,23 +4,23 @@ layout: homepage
 
 ## About Me
 
-<!-- I'm a fourth year undergraduate student from [School of ISE](https://ise.sysu.edu.cn), [SYSU](https://www.sysu.edu.cn). I currently conduct research in the interdisciplinary field of information science. From 2022 to 2023, I had the honor to conduct scientific research and study in [Prof. Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm) (Director of AI for Science (AI4S) at Peking University)’s laboratory, YCLab. From 2024 to 2025, I had the honor to complete my undergraduate thesis under the supervision of [Prof. Yunong Zhang(张雨浓)](https://ise.sysu.edu.cn/teacher/teacher01/1416605.htm) (IEEE Senior Member), and conducted research in neurodynamics and robotics in his laboratory. I will receive the Bachelor of Engineering degree from Sun Yat-sen University in June 2025.  -->
+I'm a first-year Master's student in Artificial Intelligence at the [Department of Automation](https://www.au.tsinghua.edu.cn/index.htm), [Tsinghua University](https://www.tsinghua.edu.cn), advised by [Yueqi Duan](https://duanyueqi.github.io). My research focuses on 3D computer vision and embodied intelligence. I expect to receive my M.Eng. degree in 2028. 
 
-I'm a fourth year undergraduate student from the [School of ISE](https://ise.sysu.edu.cn) at [Sun Yat-sen University](https://www.sysu.edu.cn). September 2025, I will be pursuing a Master's degree in the [Department of Automation](https://www.au.tsinghua.edu.cn/index.htm) at [Tsinghua University](https://www.tsinghua.edu.cn). I currently conduct research in the interdisciplinary field of information science.
 
 ## Education
 
 - 2025.09 - Now: M.S. in Tsinghua University
 - 2021.09 - 2025.06: B.S. in Sun Yat-sen University
 
+
+
 ## Internships
 
 - 2025.06 - 2025.09: RA in SpeechLab, School of Data Science (SDS), the Chinese University of Hongkong, Shenzhen (CUHK-Shenzhen).
 
-<!-- ## Research Interests
-
-- **AI for Science (AI4S)**: Machine Learning, Generative Pretraining Models, Spatial Transcriptomics
-- **Embodied AI**: Reinforcement Learning, Vision Language Action  -->
+## Research Interests
+- **3D Computer Vision**: 3D Reconstruction, Scene Understanding, Neural Rendering
+- **Embodied Intelligence**: VLA, Simulation and Synthesis, Mobile Manipulation, Decision-Making Models
 
 <!-- ## News
 
@@ -37,4 +37,4 @@ I'm a fourth year undergraduate student from the [School of ISE](https://ise.sys
 
 ## Passions
 
-In my spare time, I enjoy playing the violin🎻 and guitar🎸.
+In my spare time, I enjoy playing the violin🎻 and guitar🎸, as well as I like photography📷.
