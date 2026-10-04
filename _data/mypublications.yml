@@ -1,4 +1,14 @@
 main:
+  - title: "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition"
+    authors: <strong>Weichen Lyu</strong><sup>*</sup>, Chong Xia<sup>*</sup>, Mingyu Dong, Long Xu, Shengjun Zhang, Yueqi Duan<sup>†</sup>
+    conference_short: Preprint
+    conference: Preprint.
+    # Replace this placeholder after the arXiv page is available.
+    pdf: "#"
+    page: https://PhySGA.github.io/
+    image: ./assets/img/PhySGA_teaser.png
+    notes: Co-First Author
+
   - title: "ReplicateAnyScene: Zero-Shot Video-to-3D Composition via Textual-Visual-Spatial Alignment"
     authors: Mingyu Dong<sup>*</sup>, Chong Xia<sup>*</sup>, Mingyuan Jia, <strong>Weichen Lyu</strong>, Long Xu, Zheng Zhu, Yueqi Duan<sup>†</sup>
     conference_short: arXiv 2026
@@ -9,13 +19,3 @@ main:
     image: ./assets/img/replicateanyscene_teaser.png
     github: https://github.com/xiac20/ReplicateAnyScene
     notes: Co-Author
-
-  - title: "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition"
-    authors: <strong>Weichen Lyu</strong><sup>*</sup>, Chong Xia<sup>*</sup>, Mingyu Dong, Long Xu, Shengjun Zhang, Yueqi Duan<sup>†</sup>
-    conference_short: Preprint
-    conference: Preprint.
-    # Replace this placeholder after the arXiv page is available.
-    pdf: "#"
-    page: https://PhySGA.github.io/
-    image: ./assets/img/physga_teaser.png
-    notes: Co-First Author
