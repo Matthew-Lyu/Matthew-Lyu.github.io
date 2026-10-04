@@ -242,7 +242,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:960px;
+  width:1200px;
   margin:0 auto;
 }
 
@@ -292,10 +292,10 @@ img {
 }
 
 header {
-  width:150px;
+  width:180px;
   float:left;
   position:fixed;
-  left:100px;
+  left:calc(50% - 600px);
   -webkit-font-smoothing:subpixel-antialiased;
   padding-top:5.5em;
   text-align:center
@@ -363,11 +363,11 @@ header ul a strong {
 }
 
 section {
-  width:880px;
+  width:960px;
   float:right;
   padding-top:1.2em;
   padding-bottom:50px;
-  margin-right:-50px;
+  margin-right:0;
 }
 
 small {
@@ -382,16 +382,16 @@ hr {
 }
 
 footer {
-  width:150px;
+  width:180px;
   float:left;
   position:fixed;
-  left:100px;
+  left:calc(50% - 600px);
   bottom:30px;
   -webkit-font-smoothing:subpixel-antialiased;
   text-align:center;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1200px) {
 
   .pub-row {
   display: flex; 
@@ -446,7 +446,7 @@ footer {
   
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1200px) {
   body {
     word-wrap:break-word;
     padding:15px;

@@ -26,6 +26,8 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications { margin-top: 2rem; }
 
+.author-note { color: #777777; font-size: 13px; line-height: 1.4; }
+
 .publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
 
 .publications h2 { margin-bottom: 1rem; }
