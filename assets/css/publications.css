@@ -127,28 +127,24 @@ blockquote {
   font-weight: bolder;
 }
 
-
-/* Author links:
-   keep the original author text color,
-   only use an underline to indicate clickable authors.
-*/
+/* Author links */
 .publications ol.bibliography li .author a,
+.publications ol.bibliography li .author a:link,
 .publications ol.bibliography li .author a:visited,
 .publications ol.bibliography li .author a:hover,
 .publications ol.bibliography li .author a:active {
-  color: inherit !important;
+  color: #595959 !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 1px;
+  text-decoration-color: #595959 !important;
+  text-decoration-thickness: 1px !important;
   text-underline-offset: 2px;
+  border-bottom: none !important;
 }
 
-
-/* Highlight the current author without italic style */
 .publications ol.bibliography li .author > em {
   border-bottom: 1px solid;
   font-style: normal;
 }
-
 
 .publications ol.bibliography li .links a.btn {
   color: #000000;

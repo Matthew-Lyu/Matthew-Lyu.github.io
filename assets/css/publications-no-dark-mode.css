@@ -135,15 +135,18 @@ blockquote {
   font-weight: bolder;
 }
 
-/* Author links: keep original text color and use underline only */
+/* Author links */
 .publications ol.bibliography li .author a,
+.publications ol.bibliography li .author a:link,
 .publications ol.bibliography li .author a:visited,
 .publications ol.bibliography li .author a:hover,
 .publications ol.bibliography li .author a:active {
-  color: inherit !important;
+  color: #595959 !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 1px;
+  text-decoration-color: #595959 !important;
+  text-decoration-thickness: 1px !important;
   text-underline-offset: 2px;
+  border-bottom: none !important;
 }
 
 .publications ol.bibliography li .author > em {
