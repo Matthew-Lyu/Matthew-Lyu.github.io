@@ -1,16 +1,16 @@
 main:
   - title: "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition"
-    authors: <strong>Weichen Lyu</strong><sup>*</sup>, Chong Xia<sup>*</sup>, Mingyu Dong, Long Xu, Shengjun Zhang, Yueqi Duan<sup>†</sup>
+    authors: <strong>Weichen Lyu</strong><sup>*</sup>, [Chong Xia](https://xiac20.github.io/)<sup>*</sup>, [Mingyu Dong](https://dongmingyu111.github.io/), [Long Xu](https://gaolon.github.io/xulong/), [Shengjun Zhang](https://shengjun-zhang.github.io/), [Yueqi Duan](https://duanyueqi.github.io/)<sup>†</sup>
     conference_short: Preprint
     conference: Preprint.
     # Replace this placeholder after the arXiv page is available.
     pdf: "#"
-    page: https://PhySGA.github.io/
+    page: https://matthew-lyu.github.io/PhySGA-homepage/
     image: ./assets/img/PhySGA_teaser.png
     notes: Co-First Author
 
   - title: "ReplicateAnyScene: Zero-Shot Video-to-3D Composition via Textual-Visual-Spatial Alignment"
-    authors: Mingyu Dong<sup>*</sup>, Chong Xia<sup>*</sup>, Mingyuan Jia, <strong>Weichen Lyu</strong>, Long Xu, Zheng Zhu, Yueqi Duan<sup>†</sup>
+    authors: [Mingyu Dong](https://dongmingyu111.github.io/)<sup>*</sup>, [Chong Xia](https://xiac20.github.io/)<sup>*</sup>, [Mingyuan Jia](https://mingyuan-jia.github.io/), <strong>Weichen Lyu</strong>, [Long Xu](https://gaolon.github.io/xulong/), [Zheng Zhu](https://zhengzhu.github.io/), [Yueqi Duan](https://duanyueqi.github.io/)<sup>†</sup>
     conference_short: arXiv 2026
     conference: arXiv preprint, 2026.
     pdf: https://arxiv.org/abs/2604.10789
