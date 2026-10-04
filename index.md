@@ -15,8 +15,6 @@ I'm a first-year Master's student in Artificial Intelligence at the [Department 
 - 2025.09 - Now: M.S. in Tsinghua University
 - 2021.09 - 2025.06: B.S. in Sun Yat-sen University
 
-
-
 ## Internships
 
 - 2025.06 - 2025.09: RA in SpeechLab, School of Data Science (SDS), the Chinese University of Hongkong, Shenzhen (CUHK-Shenzhen).
