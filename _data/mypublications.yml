@@ -10,7 +10,7 @@ main:
     notes: Co-First Author
 
   - title: "ReplicateAnyScene: Zero-Shot Video-to-3D Composition via Textual-Visual-Spatial Alignment"
-    authors: [Mingyu Dong](https://dongmingyu111.github.io/)<sup>*</sup>, [Chong Xia](https://xiac20.github.io/)<sup>*</sup>, [Mingyuan Jia](https://mingyuan-jia.github.io/), <strong>Weichen Lyu</strong>, [Long Xu](https://gaolon.github.io/xulong/), [Zheng Zhu](https://zhengzhu.github.io/), [Yueqi Duan](https://duanyueqi.github.io/)<sup>†</sup>
+    authors: [Mingyu Dong](https://dongmingyu111.github.io/)<sup>*</sup>, [Chong Xia](https://xiac20.github.io/)<sup>*</sup>, Mingyuan Jia, <strong>Weichen Lyu</strong>, [Long Xu](https://gaolon.github.io/xulong/), [Zheng Zhu](https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en), [Yueqi Duan](https://duanyueqi.github.io/)<sup>†</sup>
     conference_short: arXiv 2026
     conference: arXiv preprint, 2026.
     pdf: https://arxiv.org/abs/2604.10789
