@@ -242,7 +242,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:1200px;
+  width:1100px;
   margin:0 auto;
 }
 
@@ -295,7 +295,7 @@ header {
   width:180px;
   float:left;
   position:fixed;
-  left:calc(50% - 600px);
+  left:calc(50% - 550px);
   -webkit-font-smoothing:subpixel-antialiased;
   padding-top:5.5em;
   text-align:center
@@ -363,7 +363,7 @@ header ul a strong {
 }
 
 section {
-  width:960px;
+  width:880px;
   float:right;
   padding-top:1.2em;
   padding-bottom:50px;
@@ -385,13 +385,13 @@ footer {
   width:180px;
   float:left;
   position:fixed;
-  left:calc(50% - 600px);
+  left:calc(50% - 550px);
   bottom:30px;
   -webkit-font-smoothing:subpixel-antialiased;
   text-align:center;
 }
 
-@media print, screen and (max-width: 1200px) {
+@media print, screen and (max-width: 1100px) {
 
   .pub-row {
   display: flex; 
@@ -446,7 +446,7 @@ footer {
   
 }
 
-@media print, screen and (max-width: 1200px) {
+@media print, screen and (max-width: 1100px) {
   body {
     word-wrap:break-word;
     padding:15px;
