@@ -10,14 +10,15 @@ I'm a second-year Master's student in Artificial Intelligence at the [Department
 
 <!-- ## Selected Publications -->
 
-## Education
+## Experiences
 
-- 2025.09 - Now: M.S. in Tsinghua University
-- 2021.09 - 2025.06: B.S. in Sun Yat-sen University
+- 2025.09 - Present: M.S. Student in Artificial Intelligence, Department of Automation, Tsinghua University.<br>
+  Advisor: Prof. [Yueqi Duan](https://duanyueqi.github.io).
 
-## Internships
+- 2025.06 - 2025.09: Research Assistant, SpeechLab, School of Data Science (SDS), The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen).<br>
+  Advisor: Prof. [Zhizheng Wu](https://drwuz.com/).
 
-- 2025.06 - 2025.09: RA in SpeechLab, School of Data Science (SDS), the Chinese University of Hongkong, Shenzhen (CUHK-Shenzhen).
+- 2021.09 - 2025.06: B.S. Student in Intelligent Science and Technology, School of ISE, Sun Yat-sen University.
 
 <!-- ## Research Interests
 - **3D Computer Vision**: 3D Reconstruction, Scene Understanding
