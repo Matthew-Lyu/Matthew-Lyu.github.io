@@ -1,6 +1,6 @@
-<div id="preprints" style="position: relative; top: -60px;"></div>
-<h2 style="margin: 60px 0px -15px;">Preprints</h2>
-<p class="author-note"><sup>*</sup> Equal contribution. <sup>†</sup> Corresponding author.</p>
+<div id="preprints"></div>
+<h2 class="preprints-heading">Preprints</h2>
+<!-- <p class="author-note"><sup>*</sup> Equal contribution. <sup>†</sup> Corresponding author.</p> -->
 
 <div class="publications">
 <ol class="bibliography">
@@ -43,7 +43,6 @@
   </div>
 </div>
 </li>
-<br>
 
 {% endfor %}
 
