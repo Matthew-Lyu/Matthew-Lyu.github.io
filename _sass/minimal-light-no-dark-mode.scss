@@ -18,10 +18,21 @@ body {
 
 .experience-item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 88px;
-  column-gap: 20px;
+  grid-template-columns: minmax(0, 1fr) 104px;
+  column-gap: 22px;
   align-items: start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
+  padding: 1.25rem 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+.experience-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.experience-item:last-child {
+  padding-bottom: 0;
 }
 
 .experience-content {
@@ -30,7 +41,7 @@ body {
 
 .experience-title {
   color: #222;
-  font-size: 1.02rem;
+  font-size: 1.12rem;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -55,10 +66,12 @@ body {
 }
 
 .experience-logo {
-  width: 80px;
-  max-height: 80px;
+  display: block;
+  width: 96px;
+  max-height: 96px;
   object-fit: contain;
   justify-self: end;
+  align-self: start;
 }
 
 .social-icons a{
@@ -141,7 +154,7 @@ body {
   background-color:#000}
 
 email {
-    font-size: 14px;
+    font-size: 15px;
     font-family: "Ubuntu Mono";
 }
 
@@ -257,6 +270,11 @@ h2 {
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
+}
+
+section > h2 {
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #222;
 }
 
 p, ul, ol, table, pre, dl {
@@ -528,15 +546,16 @@ footer {
   }
 
   .experience-item {
-    grid-template-columns: minmax(0, 1fr) 62px;
+    grid-template-columns: minmax(0, 1fr) 74px;
     column-gap: 12px;
     align-items: start;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0;
+    padding: 1.1rem 0;
   }
 
   .experience-logo {
-    width: 58px;
-    max-height: 58px;
+    width: 68px;
+    max-height: 68px;
   }
 
   body {
