@@ -1,0 +1,30 @@
+# Each entry is rendered as one Education & Experience block.
+# Required fields: title, unit, period, institution, logo.
+# Optional fields: institution_url and advisor.
+main:
+  - title: "M.S. in Artificial Intelligence"
+    unit: "Department of Automation"
+    period: "2025.09 - Present"
+    institution: "Tsinghua University"
+    institution_url: "https://www.tsinghua.edu.cn/"
+    logo: "./assets/img/tsinghua-university-logo-1024px.png"
+    advisor:
+      name: "Yueqi Duan"
+      url: "https://duanyueqi.github.io/"
+
+  - title: "Research Assistant"
+    unit: "SpeechLab, School of Data Science (SDS)"
+    period: "2025.06 - 2025.09"
+    institution: "The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)"
+    institution_url: "https://www.cuhk.edu.cn/en"
+    logo: "./assets/img/the-chinese-university-of-hong-kong-shenzhen-logo-1024px.png"
+    advisor:
+      name: "Zhizheng Wu"
+      url: "https://drwuz.com/"
+
+  - title: "B.S. in Intelligent Science and Technology"
+    unit: "School of ISE"
+    period: "2021.09 - 2025.06"
+    institution: "Sun Yat-sen University"
+    institution_url: "https://www.sysu.edu.cn/sysuen/"
+    logo: "./assets/img/sun-yat-sen-university-logo-1024px.png"

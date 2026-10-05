@@ -104,7 +104,7 @@ blockquote {
 }
 
 .publications ol.bibliography li .abbr {
-  height: 8rem;
+  height: auto;
   margin-bottom: 0.5rem;
 }
 
@@ -209,12 +209,26 @@ blockquote {
 }
 
 .publications ol.bibliography li .teaser {
+  display: block;
   border-radius: 8px;
   box-shadow: 3px 3px 6px #888;
-  height: 123px;
+  height: auto;
   width: 270px;
   margin-top: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+@media print, screen and (max-width: 480px) {
+  .publications ol.bibliography li .abbr {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .publications ol.bibliography li .teaser {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0;
+  }
 }
