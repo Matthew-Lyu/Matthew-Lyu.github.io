@@ -6,7 +6,7 @@ main:
     # Replace this placeholder after the arXiv page is available.
     pdf: "#"
     page: "https://matthew-lyu.github.io/PhySGA-homepage/"
-    image: ./assets/img/PhySGA_teaser.png
+    image: ./assets/img/PhySGA_teaser_vpub.png
     notes: Co-First Author
 
   - title: "ReplicateAnyScene: Zero-Shot Video-to-3D Composition via Textual-Visual-Spatial Alignment"
