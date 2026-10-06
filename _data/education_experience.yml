@@ -2,7 +2,7 @@
 # Required fields: title, unit, period, institution, logo.
 # Optional fields: institution_url and advisor.
 main:
-  - title: "M.S. in Artificial Intelligence"
+  - title: "M.Eng. in Artificial Intelligence"
     unit: "Artificial Intelligence, Department of Automation"
     period: "2025.09 - Present"
     institution: "Tsinghua University"
@@ -22,7 +22,7 @@ main:
       name: "Zhizheng Wu"
       url: "https://drwuz.com/"
 
-  - title: "B.S. in Intelligent Science and Technology"
+  - title: "B.Eng. in Intelligent Science and Technology"
     unit: "Intelligent Science and Technology, School of ISE"
     period: "2021.09 - 2025.06"
     institution: "Sun Yat-sen University"
