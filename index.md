@@ -4,7 +4,9 @@ layout: homepage
 
 ## About Me
 
-I'm a second-year Master's student in Artificial Intelligence at the [Department of Automation](https://www.au.tsinghua.edu.cn/index.htm), [Tsinghua University](https://www.tsinghua.edu.cn), advised by Prof. [Yueqi Duan](https://duanyueqi.github.io). My research focuses on 3D Computer Vision and Embodied AI. I expect to receive my M.Eng. degree in 2028. 
+I'm a second-year Master's student in Artificial Intelligence at the [Department of Automation](https://www.au.tsinghua.edu.cn/index.htm), [Tsinghua University](https://www.tsinghua.edu.cn), advised by Prof. [Yueqi Duan](https://duanyueqi.github.io). Previously, I received my B.Eng. degree in Intelligent Science and Technology from Sun Yat-sen University.
+
+My research interests lie in 3D Computer Vision and Embodied AI, with a particular focus on Agent Embodied Intelligence and Self-Evolving Agents. I expect to receive my M.Eng. degree in 2028 and am open to PhD opportunities in computer vision and robotics. I also welcome discussions and collaborations on related topics.
 
 {% include mypublications.md %}
 

@@ -3,7 +3,7 @@
 # Optional fields: institution_url and advisor.
 main:
   - title: "M.S. in Artificial Intelligence"
-    unit: "Department of Automation"
+    unit: "Artificial Intelligence, Department of Automation"
     period: "2025.09 - Present"
     institution: "Tsinghua University"
     institution_url: "https://www.tsinghua.edu.cn/"
@@ -23,7 +23,7 @@ main:
       url: "https://drwuz.com/"
 
   - title: "B.S. in Intelligent Science and Technology"
-    unit: "School of ISE"
+    unit: "Intelligent Science and Technology, School of ISE"
     period: "2021.09 - 2025.06"
     institution: "Sun Yat-sen University"
     institution_url: "https://www.sysu.edu.cn/sysuen/"
