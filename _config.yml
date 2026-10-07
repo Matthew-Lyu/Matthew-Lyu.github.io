@@ -25,8 +25,8 @@ linkedin: https://www.linkedin.com/in/韦辰-吕-7838aa2ba
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
 avatar: ./assets/img/avatar10.JPG
-favicon: ./assets/img/tsinghua-university-logo-1024px.png
-favicon_dark: ./assets/img/tsinghua-university-logo-1024px.png
+favicon: ./assets/img/tsinghua-favicon-transparent.png?v=20261007
+favicon_dark: ./assets/img/tsinghua-favicon-transparent.png?v=20261007
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
