@@ -1,7 +1,15 @@
 # Basic Information 
 title: Weichen Lyu
-position: Master Student
-affiliation: Artificial Intelligence, Tsinghua University
+name_zh: 吕韦辰
+position: M.Eng. Student in Artificial Intelligence
+department: Department of Automation
+department_link: https://www.au.tsinghua.edu.cn/index.htm
+affiliation: Tsinghua University
+affiliation_link: https://www.tsinghua.edu.cn/
+location: Beijing, China
+research_focus:
+  - 3D Computer Vision
+  - Embodied AI · Agentic Systems
 email: lvwc25 [at] mails.tsinghua.edu.cn
 
 # Search Engine Optimization (SEO)
@@ -15,8 +23,7 @@ canonical: https://minimal-light-theme.yliu.me/
 google_scholar: https://scholar.google.com/
 cv_link: assets/files/curriculum_vitae.pdf
 github_link: https://github.com/Matthew-Lyu
-# linkedin: https://www.linkedin.com/
-twitter: https://x.com/mattlvwch?s=21
+linkedin: https://www.linkedin.com/in/韦辰-吕-7838aa2ba
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
