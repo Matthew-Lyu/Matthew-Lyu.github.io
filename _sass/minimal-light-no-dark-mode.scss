@@ -76,30 +76,33 @@ body {
 
 .social-icons {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 0.7rem;
-  margin-top: 1.15rem;
+  width: max-content;
+  max-width: 100%;
+  margin: 1.25rem auto 0;
 }
 
 .social-icons a {
   display: inline-flex;
+  flex: 0 0 2.5rem;
   align-items: center;
   justify-content: center;
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 2.5rem;
+  height: 2.5rem;
   box-sizing: border-box;
-  border: 1px solid rgba(109, 32, 119, 0.26);
-  border-radius: 50%;
-  background: rgba(109, 32, 119, 0.06);
+  border: 0;
+  background: transparent;
   color: #6D2077 !important;
-  font-size: 1.38rem;
+  font-size: 1.55rem;
   line-height: 1;
-  transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  transition: color 0.18s ease, transform 0.18s ease;
 }
 
 .social-icons a:hover {
-  background: #6D2077;
-  color: #fff !important;
+  background: transparent;
+  color: #4F1758 !important;
   transform: translateY(-2px);
 }
 
@@ -119,23 +122,31 @@ body {
 }
 
 .profile-name-zh {
-  font-size: 0.9em;
+  font-size: 1em;
+}
+
+.profile-role,
+.profile-affiliation,
+.profile-location,
+.profile-email {
+  font-family: inherit;
+  font-size: 1.08rem;
+  line-height: 1.45;
 }
 
 .profile-role {
   color: #333;
-  font-size: 1.02rem;
   font-weight: 600;
-  line-height: 1.3;
+  margin-bottom: 0.5rem;
 }
 
 .profile-affiliation {
-  margin-top: 0.4rem;
-  line-height: 1.35;
+  color: #595959;
+  white-space: nowrap;
 }
 
 .profile-affiliation a {
-  display: block;
+  display: inline;
   color: #595959;
 }
 
@@ -146,8 +157,6 @@ body {
 .profile-location,
 .profile-email {
   color: #666;
-  font-size: 0.88rem;
-  line-height: 1.35;
 }
 
 .profile-location {
@@ -156,7 +165,6 @@ body {
 
 .profile-email {
   margin-top: 0.75rem;
-  font-family: "Ubuntu Mono", monospace;
 }
 
 .profile-location i,
@@ -165,22 +173,6 @@ body {
   color: #6D2077;
 }
 
-.profile-divider {
-  width: 72%;
-  height: 1px;
-  margin: 1rem auto 0.9rem;
-  background: #e1d8e3;
-}
-
-.profile-focus {
-  color: #444;
-  font-size: 0.94rem;
-  line-height: 1.4;
-}
-
-.profile-focus span {
-  display: block;
-}
     /*
     .social-icons a:after {
         content: '';
@@ -325,6 +317,7 @@ papertitle {
 
     .image.avatar {
       border-radius: 100%;
+      margin-bottom: 1.2rem;
     }
 
       .image.avatar:before {
@@ -334,7 +327,8 @@ papertitle {
       .image.avatar img {
         border-radius: 100%;
         width: 170px;
-        padding: 10px;
+        padding: 0;
+        display: block;
         // border: 1px solid #ddd;
         // padding: 3px;
         // box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
@@ -452,7 +446,7 @@ img {
 }
 
 header {
-  width:260px;
+  width:360px;
   float:left;
   position:fixed;
   left:calc(50% - 600px);
@@ -523,7 +517,7 @@ header ul a strong {
 }
 
 section {
-  width:880px;
+  width:790px;
   float:right;
   padding-top:1.2em;
   padding-bottom:50px;
@@ -542,7 +536,7 @@ hr {
 }
 
 footer {
-  width:260px;
+  width:360px;
   float:left;
   position:fixed;
   left:calc(50% - 600px);
@@ -595,7 +589,7 @@ footer {
    .image.avatar img {
         border-radius: 100%;
         width: 140px;
-        padding:12px;
+        padding:0;
       }
   #head1o2 {
     visibility: hidden;
@@ -639,10 +633,14 @@ footer {
     flex-wrap: wrap;
   }
 
+  .profile-affiliation {
+    white-space: normal;
+  }
+
   .social-icons a {
-    width: 2.75rem;
-    height: 2.75rem;
-    font-size: 1.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.45rem;
   }
 
   .pub-row {
@@ -677,7 +675,7 @@ footer {
   .image.avatar img {
       border-radius: 100%;
       width: 124px;
-      padding:10px;
+      padding:0;
   }
   #head1o2 {
     visibility: hidden;

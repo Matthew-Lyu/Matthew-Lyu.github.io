@@ -57,25 +57,13 @@
         {% endif %}
 
         <div class="profile-affiliation">
-          {% if site.department %}
-          <a href="{{ site.department_link }}" target="_blank" rel="noopener">{{ site.department }}</a>
-          {% endif %}
-          {% if site.affiliation %}
-          <a href="{{ site.affiliation_link }}" target="_blank" rel="noopener">{{ site.affiliation }}</a>
+          {% if site.department and site.affiliation %}
+          <a href="{{ site.department_link }}" target="_blank" rel="noopener">{{ site.department }}, {{ site.affiliation }}</a>
           {% endif %}
         </div>
 
         {% if site.location %}
         <div class="profile-location"><i class="fas fa-location-dot" aria-hidden="true"></i> {{ site.location }}</div>
-        {% endif %}
-
-        {% if site.research_focus %}
-        <div class="profile-divider" aria-hidden="true"></div>
-        <div class="profile-focus">
-          {% for focus in site.research_focus %}
-          <span>{{ focus }}</span>
-          {% endfor %}
-        </div>
         {% endif %}
 
         {% if site.email %}
