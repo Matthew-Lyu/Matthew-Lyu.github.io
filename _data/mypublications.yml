@@ -3,8 +3,7 @@ main:
     authors: '<strong>Weichen Lyu</strong><sup>*</sup>, <a href="https://xiac20.github.io/">Chong Xia</a><sup>*</sup>, <a href="https://dongmingyu111.github.io/">Mingyu Dong</a>, <a href="https://gaolon.github.io/xulong/">Long Xu</a>, <a href="https://shengjun-zhang.github.io/">Shengjun Zhang</a>, <a href="https://duanyueqi.github.io/">Yueqi Duan</a><sup>†</sup>'
     conference_short: arXiv
     conference: arXiv preprint, 2026
-    # Replace this placeholder after the arXiv page is available.
-    pdf: "#"
+    pdf: "https://arxiv.org/abs/2610.20560"
     code: "https://github.com/AgenticEI/PhySGA"
     page: "https://agenticei.github.io/PhySGA-page/"
     image: ./assets/img/PhySGA_teaser.png
