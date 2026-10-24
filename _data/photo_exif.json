@@ -1,0 +1,800 @@
+{
+  "/assets/photos/hongkong/03.JPG": {
+    "aperture": "f/13",
+    "camera": "NIKON Z6_3",
+    "focal_length": "48 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "2 s"
+  },
+  "/assets/photos/hongkong/05.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "29 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/500 s"
+  },
+  "/assets/photos/hongkong/06.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/320 s"
+  },
+  "/assets/photos/hongkong/07.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/125 s"
+  },
+  "/assets/photos/hongkong/08.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "43 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/125 s"
+  },
+  "/assets/photos/hongkong/09.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/200 s"
+  },
+  "/assets/photos/hongkong/10.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "27 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/40 s"
+  },
+  "/assets/photos/japen/01.jpg": {
+    "aperture": "f/22",
+    "focal_length": "35 mm",
+    "iso": "ISO 100",
+    "shutter": "10 s"
+  },
+  "/assets/photos/japen/02.jpg": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "47 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/400 s"
+  },
+  "/assets/photos/japen/03.jpg": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "100 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/125 s"
+  },
+  "/assets/photos/japen/04.jpg": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "42 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/320 s"
+  },
+  "/assets/photos/japen/05.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "32 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/320 s"
+  },
+  "/assets/photos/japen/06.jpg": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "135 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/160 s"
+  },
+  "/assets/photos/japen/07.JPG": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "47 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/160 s"
+  },
+  "/assets/photos/japen/08.JPG": {
+    "aperture": "f/11",
+    "camera": "Canon EOS 60D",
+    "focal_length": "36 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/japen/09.JPG": {
+    "aperture": "f/11",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/30 s"
+  },
+  "/assets/photos/japen/10.JPG": {
+    "aperture": "f/22",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "10 s"
+  },
+  "/assets/photos/japen/11.jpg": {
+    "aperture": "f/5",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/8 s"
+  },
+  "/assets/photos/japen/12.JPG": {
+    "aperture": "f/5",
+    "camera": "Canon EOS 60D",
+    "focal_length": "35 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/8 s"
+  },
+  "/assets/photos/japen/13.JPG": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "60 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/japen/14.JPG": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "45 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/160 s"
+  },
+  "/assets/photos/japen/15.jpg": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "64 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/160 s"
+  },
+  "/assets/photos/japen/16.jpg": {
+    "aperture": "f/10",
+    "camera": "Canon EOS 60D",
+    "focal_length": "92 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/200 s"
+  },
+  "/assets/photos/japen/17.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/400 s"
+  },
+  "/assets/photos/japen/18.JPG": {
+    "aperture": "f/5.6",
+    "camera": "Canon EOS 60D",
+    "focal_length": "67 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/500 s"
+  },
+  "/assets/photos/japen/19.JPG": {
+    "aperture": "f/5",
+    "camera": "Canon EOS 60D",
+    "focal_length": "45 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/160 s"
+  },
+  "/assets/photos/japen/20.jpg": {
+    "aperture": "f/5.6",
+    "camera": "Canon EOS 60D",
+    "focal_length": "85 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/400 s"
+  },
+  "/assets/photos/japen/21.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "36 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/japen/22.JPG": {
+    "aperture": "f/5",
+    "camera": "Canon EOS 60D",
+    "focal_length": "41 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/15 s"
+  },
+  "/assets/photos/japen/23.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "31 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/320 s"
+  },
+  "/assets/photos/japen/24.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "55 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/500 s"
+  },
+  "/assets/photos/japen/25.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "72 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/400 s"
+  },
+  "/assets/photos/japen/26.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "69 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/jiuzhaigou/01.JPG": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/jiuzhaigou/02.JPG": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "37 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/60 s"
+  },
+  "/assets/photos/jiuzhaigou/03.JPG": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "48 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/160 s"
+  },
+  "/assets/photos/jiuzhaigou/04.JPG": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/200 s"
+  },
+  "/assets/photos/jiuzhaigou/05.JPG": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "29 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/50 s"
+  },
+  "/assets/photos/jiuzhaigou/06.JPG": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/50 s"
+  },
+  "/assets/photos/jiuzhaigou/07.JPG": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/jiuzhaigou/08.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "30 mm",
+    "iso": "ISO 1250",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/800 s"
+  },
+  "/assets/photos/jiuzhaigou/09.jpg": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 80",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/jiuzhaigou/20.JPG": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "102 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/jiuzhaigou/21.JPG": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "29 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/60 s"
+  },
+  "/assets/photos/jiuzhaigou/22.jpg": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "33 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/125 s"
+  },
+  "/assets/photos/selected/01.jpg": {
+    "aperture": "f/22",
+    "camera": "NIKON Z6_3",
+    "focal_length": "54 mm",
+    "iso": "ISO 50",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "25 s"
+  },
+  "/assets/photos/selected/02.jpg": {
+    "aperture": "f/13",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "2 s"
+  },
+  "/assets/photos/selected/03.jpg": {
+    "aperture": "f/10",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/125 s"
+  },
+  "/assets/photos/selected/04.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "0.6 s"
+  },
+  "/assets/photos/selected/05.jpg": {
+    "aperture": "f/13",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 3200",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "0.8 s"
+  },
+  "/assets/photos/selected/06.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "54 mm",
+    "iso": "ISO 800",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/25 s"
+  },
+  "/assets/photos/selected/07.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1.6 s"
+  },
+  "/assets/photos/selected/08.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 125",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/640 s"
+  },
+  "/assets/photos/selected/09.jpg": {
+    "aperture": "f/7.1",
+    "camera": "NIKON Z6_3",
+    "focal_length": "51 mm",
+    "iso": "ISO 640",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/50 s"
+  },
+  "/assets/photos/selected/11.jpg": {
+    "aperture": "f/22",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 3200",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/3200 s"
+  },
+  "/assets/photos/selected/12.jpg": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "135 mm",
+    "iso": "ISO 125",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/200 s"
+  },
+  "/assets/photos/selected/13.jpg": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "39 mm",
+    "iso": "ISO 250",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/1600 s"
+  },
+  "/assets/photos/selected/14.jpg": {
+    "aperture": "f/9",
+    "camera": "Canon EOS 60D",
+    "focal_length": "50 mm",
+    "iso": "ISO 1000",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/6400 s"
+  },
+  "/assets/photos/selected/15.jpg": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "31 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/1000 s"
+  },
+  "/assets/photos/selected/16.jpg": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "85 mm",
+    "iso": "ISO 1600",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/800 s"
+  },
+  "/assets/photos/selected/17.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "26.5 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/200 s"
+  },
+  "/assets/photos/selected/18.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/320 s"
+  },
+  "/assets/photos/selected/19.jpg": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "38 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/50 s"
+  },
+  "/assets/photos/selected/20.jpg": {
+    "aperture": "f/9",
+    "camera": "Canon EOS 60D",
+    "focal_length": "72 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/selected/21.jpg": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "75 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/selected/22.jpg": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/selected/23.jpg": {
+    "aperture": "f/11",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/selected/24.jpg": {
+    "aperture": "f/10",
+    "camera": "NIKON Z6_3",
+    "focal_length": "36 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/250 s"
+  },
+  "/assets/photos/selected/25.jpg": {
+    "aperture": "f/10",
+    "camera": "NIKON Z6_3",
+    "focal_length": "110 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/200 s"
+  },
+  "/assets/photos/selected/26.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/500 s"
+  },
+  "/assets/photos/selected/27.jpg": {
+    "aperture": "f/10",
+    "camera": "NIKON Z6_3",
+    "focal_length": "59 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/320 s"
+  },
+  "/assets/photos/selected/28.jpg": {
+    "aperture": "f/5.6",
+    "camera": "Canon EOS 60D",
+    "focal_length": "75 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/2500 s"
+  },
+  "/assets/photos/selected/29.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/400 s"
+  },
+  "/assets/photos/selected/30.jpg": {
+    "aperture": "f/9",
+    "camera": "NIKON Z6_3",
+    "focal_length": "41 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/50 s"
+  },
+  "/assets/photos/selected/31.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "47 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/400 s"
+  },
+  "/assets/photos/selected/32.jpg": {
+    "aperture": "f/22",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "5 s"
+  },
+  "/assets/photos/selected/33.jpg": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "47 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/400 s"
+  },
+  "/assets/photos/selected/34.jpg": {
+    "aperture": "f/22",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "10 s"
+  },
+  "/assets/photos/selected/35.jpg": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "64 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/160 s"
+  },
+  "/assets/photos/selected/36.jpg": {
+    "aperture": "f/10",
+    "camera": "Canon EOS 60D",
+    "focal_length": "92 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/200 s"
+  },
+  "/assets/photos/selected/37.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 125",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/1250 s"
+  },
+  "/assets/photos/selected/38.jpg": {
+    "aperture": "f/22",
+    "camera": "Canon EOS 60D",
+    "focal_length": "48 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "30 s"
+  },
+  "/assets/photos/selected/39.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "59 mm",
+    "iso": "ISO 125",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/800 s"
+  },
+  "/assets/photos/shenzhen/01.jpg": {
+    "aperture": "f/10",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/125 s"
+  },
+  "/assets/photos/shenzhen/02.jpg": {
+    "aperture": "f/22",
+    "camera": "NIKON Z6_3",
+    "focal_length": "54 mm",
+    "iso": "ISO 50",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "25 s"
+  },
+  "/assets/photos/shenzhen/03.jpg": {
+    "aperture": "f/22",
+    "camera": "NIKON Z6_3",
+    "focal_length": "24 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "25 s"
+  },
+  "/assets/photos/shenzhen/04.JPG": {
+    "aperture": "f/10",
+    "camera": "NIKON Z6_3",
+    "focal_length": "47 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "8 s"
+  },
+  "/assets/photos/shenzhen/05.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 125",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/1250 s"
+  },
+  "/assets/photos/shenzhen/06.jpg": {
+    "aperture": "f/4",
+    "camera": "NIKON Z6_3",
+    "focal_length": "120 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/640 s"
+  },
+  "/assets/photos/shenzhen/07.JPG": {
+    "aperture": "f/8",
+    "camera": "NIKON Z6_3",
+    "focal_length": "88 mm",
+    "iso": "ISO 100",
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/shenzhen/08.JPG": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "75 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/shenzhen/09.JPG": {
+    "aperture": "f/9",
+    "camera": "Canon EOS 60D",
+    "focal_length": "72 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/shenzhen/10.jpg": {
+    "aperture": "f/16",
+    "camera": "Canon EOS 60D",
+    "focal_length": "67 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/80 s"
+  },
+  "/assets/photos/shenzhen/11.JPG": {
+    "aperture": "f/13",
+    "camera": "Canon EOS 60D",
+    "focal_length": "55 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/shenzhen/12.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "38 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/50 s"
+  },
+  "/assets/photos/shenzhen/13.jpg": {
+    "aperture": "f/22",
+    "camera": "Canon EOS 60D",
+    "focal_length": "18 mm",
+    "iso": "ISO 100",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "5 s"
+  },
+  "/assets/photos/shenzhen/14.JPG": {
+    "aperture": "f/5.6",
+    "camera": "Canon EOS 60D",
+    "focal_length": "135 mm",
+    "iso": "ISO 400",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/shenzhen/15.JPG": {
+    "aperture": "f/5.6",
+    "camera": "Canon EOS 60D",
+    "focal_length": "135 mm",
+    "iso": "ISO 125",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/100 s"
+  },
+  "/assets/photos/shenzhen/16.JPG": {
+    "aperture": "f/8",
+    "camera": "Canon EOS 60D",
+    "focal_length": "85 mm",
+    "iso": "ISO 125",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/125 s"
+  },
+  "/assets/photos/shenzhen/17.JPG": {
+    "aperture": "f/5.6",
+    "camera": "Canon EOS 60D",
+    "focal_length": "62 mm",
+    "iso": "ISO 200",
+    "lens": "EF-S18-135mm f/3.5-5.6 IS",
+    "shutter": "1/250 s"
+  }
+}

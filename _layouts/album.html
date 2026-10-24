@@ -1,0 +1,64 @@
+---
+layout: base
+---
+<main class="page-shell album-page" id="main-content" tabindex="-1">
+  <a class="back-link" href="{{ '/photography/' | relative_url }}">← Photography</a>
+  <div class="page-heading album-heading">
+    <h1>{{ page.title | escape }}</h1>
+    {% include album-meta.html album=page class="page-meta" %}
+    {% if page.description %}<p class="album-description">{{ page.description | escape }}</p>{% endif %}
+  </div>
+  {% assign body = content | strip %}{% if body != '' %}<div class="album-story prose">{{ content }}</div>{% endif %}
+  {% include album-photos.html album=page %}
+  {% if album_photos.size > 0 %}
+  <div class="photo-grid">
+    {% for photo in album_photos %}
+    {% assign photo_src = photo.src %}
+    {% assign photo_thumb = photo.thumb %}
+    {% unless photo_src %}
+      {% assign photo_src = photo.path | uri_escape %}
+      {% assign thumb_path = photo.path | split: '/' | pop | join: '/' | append: '/thumbs/' | append: photo.name %}
+      {% assign thumbnail = site.static_files | where: 'path', thumb_path | first %}
+      {% if thumbnail %}{% assign photo_thumb = thumbnail.path | uri_escape %}{% endif %}
+    {% endunless %}
+    {% assign photo_exif = photo.exif | default: site.data.photo_exif[photo_src] %}
+    {% capture default_alt %}{{ page.title }} · {{ forloop.index }}{% endcapture %}
+    <figure class="photo-item">
+      <a class="photo-link" href="{{ photo_src | relative_url }}" data-photo data-exif="{{ photo_exif | jsonify | escape }}" data-exif-manual="{% if photo.exif %}true{% else %}false{% endif %}" aria-label="View photo {{ forloop.index }}{% if photo.alt %}: {{ photo.alt | escape }}{% endif %}">
+        <img src="{{ photo_thumb | default: photo_src | relative_url }}" alt="{{ photo.alt | default: photo.caption | default: default_alt | escape }}" loading="lazy" decoding="async"{% if photo.width and photo.height %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %}>
+      </a>
+      {% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <div class="lightbox-toolbar"><span class="lightbox-counter" aria-live="polite"></span><button type="button" class="lightbox-close" aria-label="Close photo viewer">×</button></div>
+    <button type="button" class="lightbox-previous" aria-label="Previous photo">‹</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-image" alt="">
+      <figcaption class="lightbox-exif" aria-live="polite" hidden>
+        <h2>Exif</h2>
+        <div class="exif-card">
+          <div class="exif-row" data-exif-field="camera" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h4l2-2h4l2 2h4v14H4Z"/><circle cx="12" cy="13" r="4"/></svg>
+            <span data-exif-value="camera"></span>
+          </div>
+          <div class="exif-row" data-exif-field="lens" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 4 6 10m6-6H9m9 11L12 8M3 9l6 11m-4-2h12M6 5l6 11"/></svg>
+            <span data-exif-value="lens"></span>
+          </div>
+          <dl class="exif-settings">
+            <div data-exif-field="focal_length" hidden><dt>焦距</dt><dd data-exif-value="focal_length"></dd></div>
+            <div data-exif-field="aperture" hidden><dt>光圈</dt><dd data-exif-value="aperture"></dd></div>
+            <div data-exif-field="shutter" hidden><dt>快门</dt><dd data-exif-value="shutter"></dd></div>
+            <div data-exif-field="iso" hidden><dt>感光度</dt><dd data-exif-value="iso"></dd></div>
+          </dl>
+        </div>
+      </figcaption>
+    </figure>
+    <button type="button" class="lightbox-next" aria-label="Next photo">›</button>
+  </dialog>
+  {% else %}
+  <p class="empty-state">Photographs coming soon.</p>
+  {% endif %}
+</main>

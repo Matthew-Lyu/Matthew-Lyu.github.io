@@ -1,0 +1,7 @@
+{%- assign date_text = include.value | append: '' -%}
+{%- assign date_length = date_text | size -%}
+{%- if date_length == 7 -%}
+  <time datetime="{{ date_text | escape }}">{{ date_text | escape }}</time>
+{%- else -%}
+  <time datetime="{{ include.value | date_to_xmlschema }}">{{ include.value | date: '%Y-%m-%d' }}</time>
+{%- endif -%}

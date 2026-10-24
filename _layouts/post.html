@@ -1,0 +1,18 @@
+---
+layout: base
+---
+<main class="page-shell reading-shell" id="main-content" tabindex="-1">
+  <a class="back-link" href="{{ '/blog/' | relative_url }}">← Blog</a>
+  <article class="post-article">
+    <div class="page-heading">
+      <h1>{{ page.title | escape }}</h1>
+      <p class="page-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% if page.last_modified_at %} · Updated {{ page.last_modified_at | date: '%B %-d, %Y' }}{% endif %}</p>
+      {% if page.tags.size > 0 %}<ul class="post-tags" aria-label="Tags">{% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+    </div>
+    <div class="prose">{{ content }}</div>
+  </article>
+  <div class="post-pagination">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | escape }}</a>{% endif %}
+    {% if page.next %}<a class="post-newer" href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} →</a>{% endif %}
+  </div>
+</main>

@@ -1,0 +1,25 @@
+{% assign album = include.album %}
+{% include album-photos.html album=album %}
+{% assign first_photo = album_photos | first %}
+{% assign cover = album.cover | default: first_photo.thumb | default: first_photo.src | default: first_photo.path %}
+<a class="album-card{% if album.pinned %} album-card-pinned{% endif %}{% unless cover %} album-card-empty{% endunless %}"
+   href="{{ album.url | relative_url }}">
+  {% if cover %}
+    <img class="album-cover" src="{{ cover | relative_url }}" alt="{{ album.cover_alt | default: album.title | escape }}" loading="lazy" decoding="async"
+         {% if album.cover_position %}style="object-position: {{ album.cover_position | escape }}"{% endif %}>
+  {% else %}
+    <span class="album-cover-placeholder" aria-hidden="true">
+      <svg viewBox="0 0 120 120" fill="none"><rect x="19" y="24" width="82" height="72" rx="3"/><circle cx="76" cy="46" r="7"/><path d="m20 83 27-28 22 23 12-13 20 20"/></svg>
+    </span>
+  {% endif %}
+  {% if album.pinned %}<span class="album-pin"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 2 5 0-1 4 3 3H8l-4 5 2-6-3-2 3-1Z"/></svg>Pinned</span>{% endif %}
+  <div class="album-card-caption">
+    <h2>{{ album.title | escape }}</h2>
+    <div class="album-card-details">
+      <div class="album-card-details-inner">
+        {% include album-meta.html album=album class="album-card-meta" %}
+        {% if album.description %}<p class="album-card-description">{{ album.description | escape }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</a>

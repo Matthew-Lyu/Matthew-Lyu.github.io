@@ -355,7 +355,7 @@ img {
   max-width:100%;
 }
 
-header {
+.profile-header {
   width:232px;
   float:left;
   position:fixed;
@@ -366,7 +366,7 @@ header {
 
 
 
-header ul {
+.profile-header ul {
   list-style:none;
   height:40px;
   padding:0;
@@ -376,22 +376,22 @@ header ul {
   width:270px;
 }
 
-header li {
+.profile-header li {
   width:89px;
   float:left;
   border-right:1px solid #e0e0e0;
   height:40px;
 }
 
-header li:first-child a {
+.profile-header li:first-child a {
   border-radius:5px 0 0 5px;
 }
 
-header li:last-child a {
+.profile-header li:last-child a {
   border-radius:0 5px 5px 0;
 }
 
-header ul a {
+.profile-header ul a {
   line-height:1;
   font-size:11px;
   color:#999;
@@ -401,11 +401,11 @@ header ul a {
   height:34px;
 }
 
-header ul a:hover {
+.profile-header ul a:hover {
   color:#999;
 }
 
-header ul a:active {
+.profile-header ul a:active {
   background-color:#f0f0f0;
 }
 
@@ -420,18 +420,18 @@ strong {
   }
 }
 
-header ul li + li + li {
+.profile-header ul li + li + li {
   border-right:none;
   width:89px;
 }
 
-header ul a strong {
+.profile-header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
 }
 
-section {
+.home-content {
   width:650px;
   float:right;
   padding-top:4.0em;
@@ -449,7 +449,7 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
+.profile-footer {
   width:232px;
   float:left;
   position:fixed;
@@ -464,34 +464,34 @@ footer {
   display: flex; 
   align-items: center;}
 
-  div.wrapper {
+  .wrapper {
     width:auto;
     margin:0;
   }
 
 
-  header, section, footer {
+  .profile-header, .home-content, .profile-footer {
     float:none;
     position:static;
     width:auto;
   }
 
-  header {
+  .profile-header {
     padding-right:320px;
   }
 
-  section {
+  .home-content {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
   }
 
-  header a small {
+  .profile-header a small {
     display:inline;
   }
 
-  header ul {
+  .profile-header ul {
     position:absolute;
     right:50px;
     top:52px;
@@ -523,11 +523,11 @@ footer {
   display: flex; 
   align-items: center;}
 
-  header {
+  .profile-header {
     padding:0;
   }
 
-  header ul, header p.view {
+  .profile-header ul, .profile-header p.view {
     
   }
 
@@ -546,11 +546,11 @@ footer {
     padding:15px;
   }
 
-  header ul {
+  .profile-header ul {
     width:99%;
   }
 
-  header li, header ul li + li + li {
+  .profile-header li, .profile-header ul li + li + li {
     width:33%;
   }
 

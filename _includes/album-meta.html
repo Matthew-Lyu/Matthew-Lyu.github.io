@@ -1,0 +1,9 @@
+{% assign album = include.album %}
+{% include album-photos.html album=album %}
+{% assign count = album_photos | size %}
+<p class="{{ include.class | escape }}">{{ count }} {% if count == 1 %}photo{% else %}photos{% endif %}{% unless album.pinned %}{% if album.location %} · {{ album.location | escape }}{% endif %}{% endunless %}</p>
+{% if album.pinned %}
+  {% if album.last_modified_at %}<p class="{{ include.class | escape }}">最后更新：{% include album-date.html value=album.last_modified_at %}</p>{% endif %}
+{% elsif album.date %}
+  <p class="{{ include.class | escape }}">创建于：{% include album-date.html value=album.date %}</p>
+{% endif %}

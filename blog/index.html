@@ -1,0 +1,35 @@
+---
+layout: base
+title: Blog
+nav_key: blog
+description: Notes and writing by Weichen Lyu.
+---
+<main class="page-shell blog-page" id="main-content" tabindex="-1" aria-label="Blog">
+  {% assign posts = site.posts | sort: 'date' | reverse %}
+  {% for post in posts %}
+  {% assign post_url = post.url | relative_url %}
+  <article class="post-summary">
+    <h2><a href="{{ post_url | escape }}">{{ post.title | escape }}</a></h2>
+    <div class="post-preview{% if post.cover %} has-cover{% endif %}">
+      {% if post.cover %}
+      <a class="post-cover-link" href="{{ post_url | escape }}" aria-label="{{ post.title | escape }}">
+        <img class="post-cover" src="{{ post.cover | relative_url }}" alt="{{ post.cover_alt | default: '' | escape }}" width="760" height="420" loading="lazy">
+      </a>
+      {% endif %}
+      <div class="post-preview-text">
+        <div class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | escape }}</div>
+        <a class="post-read-more" href="{{ post_url | escape }}">阅读全文<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="post-summary-footer">
+      <div>
+        <p class="post-date"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="14" height="13" rx="1"/><path d="M3 8h14M7 2v4m6-4v4M6 11h2m3 0h2m-7 3h2m3 0h2"/></svg><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time></p>
+        {% if post.categories.size > 0 %}<p class="post-category">Category: {{ post.categories | join: ', ' | escape }}</p>{% endif %}
+      </div>
+      {% if post.tags.size > 0 %}<ul class="post-tags" aria-label="Tags">{% for tag in post.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+    </div>
+  </article>
+  {% else %}
+  <p class="empty-state">No posts yet. Stay tuned.</p>
+  {% endfor %}
+</main>

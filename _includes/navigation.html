@@ -1,0 +1,13 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    {% for item in site.data.navigation %}
+      {% assign destination = item.url %}
+      {% if item.key == 'cv' %}{% assign destination = site.cv_link %}{% endif %}
+      <a class="site-nav-link{% if page.nav_key == item.key %} is-active{% endif %}"
+         href="{{ destination | relative_url }}"
+         {% if page.nav_key == item.key %}aria-current="page"{% endif %}
+         {% if item.key == 'cv' %}target="_blank" rel="noopener" aria-label="CV (PDF, opens in a new tab)"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  </div>
+</nav>

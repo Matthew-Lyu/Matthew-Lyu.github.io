@@ -1,5 +1,6 @@
 ---
 layout: homepage
+nav_key: homepage
 ---
 
 ## About Me

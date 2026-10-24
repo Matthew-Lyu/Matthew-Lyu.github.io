@@ -1,0 +1,19 @@
+{%- assign album_photos = include.album.photos -%}
+{%- assign photos_path = album_photos | append: '' -%}
+{%- if album_photos == photos_path -%}
+  {%- assign album_photos = '' | split: ',' -%}
+  {%- assign photos_path = photos_path | strip -%}
+  {%- assign first_character = photos_path | slice: 0, 1 -%}
+  {%- unless first_character == '/' -%}{%- assign photos_path = '/' | append: photos_path -%}{%- endunless -%}
+  {%- assign last_character = photos_path | slice: -1, 1 -%}
+  {%- unless last_character == '/' -%}{%- assign photos_path = photos_path | append: '/' -%}{%- endunless -%}
+  {%- assign image_extensions = '.jpg,.jpeg,.png,.webp,.avif,.gif' | split: ',' -%}
+  {%- assign folder_files = site.static_files | sort_natural: 'name' -%}
+  {%- for image_file in folder_files -%}
+    {%- assign image_folder = image_file.path | split: '/' | pop | join: '/' | append: '/' -%}
+    {%- assign image_extension = image_file.extname | downcase -%}
+    {%- if image_folder == photos_path and image_extensions contains image_extension -%}
+      {%- assign album_photos = album_photos | push: image_file -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

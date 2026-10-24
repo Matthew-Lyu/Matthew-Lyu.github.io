@@ -13,7 +13,7 @@
       <div class="experience-advisor">Advisor: Prof. <a href="{{ item.advisor.url }}">{{ item.advisor.name }}</a>.</div>
       {% endif %}
     </div>
-    <img class="experience-logo" src="{{ item.logo }}" alt="{{ item.institution }} logo">
+    <img class="experience-logo" src="{{ item.logo | replace_first: './', '/' | relative_url }}" alt="{{ item.institution }} logo">
   </div>
 {% endfor %}
 </div>

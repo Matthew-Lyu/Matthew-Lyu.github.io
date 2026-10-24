@@ -11,9 +11,11 @@ email: lvwc25 [at] mails.tsinghua.edu.cn
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+keywords: Weichen Lyu, 3D Computer Vision, Embodied AI, Photography
+description: Weichen Lyu's research, photography, and writing.
+url: https://matthew-lyu.github.io
+baseurl: ""
+timezone: Asia/Shanghai
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -48,6 +50,27 @@ google_analytics: UA-111540567-4
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 remote_theme: yaoyao-liu/minimal-light
 
+# Read albums as ordinary pages so their date can be YYYY-MM or YYYY-MM-DD.
+# Jekyll collections reject month-only dates before Liquid templates run.
+include:
+  - _albums
+
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: "_albums"
+    values:
+      layout: album
+      nav_key: photography
+      permalink: /photography/:basename/
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      nav_key: blog
+
 # The following files will be removed from the generated website.
 exclude:
   - Gemfile
@@ -58,4 +81,8 @@ exclude:
   - README_de.md
   - LICENSE
   - minimal-light.gemspec
-  - html_source_file/
+  - vendor/
+  - scripts/
+  - tests/
+  - preview.command
+  - local-originals/

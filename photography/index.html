@@ -1,0 +1,28 @@
+---
+layout: base
+title: Photography
+nav_key: photography
+description: Selected photographs and albums by Weichen Lyu.
+---
+<main class="page-shell" id="main-content" tabindex="-1" aria-label="Photography">
+  {% assign albums = site.pages | where: 'layout', 'album' | where_exp: 'album', 'album.published != false' %}
+  {% assign pinned = albums | where: 'pinned', true | sort: 'pin_order' %}
+  {% assign regular = albums | where_exp: 'album', 'album.pinned != true' %}
+  {%- capture regular_order -%}
+    {%- for album in regular -%}
+      {%- assign sort_date = album.date | date: '%Y-%m-%d' | default: '0000-01-01' -%}
+      {%- assign date_length = sort_date | size -%}
+      {%- if date_length == 7 -%}{%- assign sort_date = sort_date | append: '-01' -%}{%- endif -%}
+      {{- sort_date -}}|{{- forloop.index0 -}};
+    {%- endfor -%}
+  {%- endcapture -%}
+  {% assign regular_order = regular_order | split: ';' | sort | reverse %}
+  <div class="album-grid">
+    {% for album in pinned %}{% include album-card.html album=album %}{% endfor %}
+    {% for row in regular_order %}
+      {% assign album_index = row | split: '|' | last | plus: 0 %}
+      {% assign album = regular[album_index] %}
+      {% include album-card.html album=album %}
+    {% endfor %}
+  </div>
+</main>

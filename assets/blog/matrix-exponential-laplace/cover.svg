@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+  <rect width="760" height="420" rx="12" fill="#fafafa"/>
+  <g fill="#333" font-family="Georgia, 'Times New Roman', serif" font-size="52">
+    <text x="100" y="230" font-style="italic">e</text>
+    <text x="126" y="205" font-size="32" font-style="italic">At</text>
+    <text x="176" y="230">=</text>
+    <text x="230" y="230" font-size="60">ℒ</text>
+    <text x="270" y="198" font-size="30">−1</text>
+    <text x="322" y="230">[</text>
+    <text x="345" y="230">(</text>
+    <text x="365" y="230" font-style="italic">sI</text>
+    <text x="413" y="230">−</text>
+    <text x="463" y="230" font-style="italic">A</text>
+    <text x="502" y="230">)</text>
+    <text x="525" y="198" font-size="30">−1</text>
+    <text x="577" y="230">]</text>
+  </g>
+</svg>
