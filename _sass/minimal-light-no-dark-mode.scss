@@ -360,7 +360,7 @@ h2 {
 
 .home-content > h2 {
   padding-bottom: 0.35rem;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid var(--site-line, #e6e6e6);
 }
 
 p, ul, ol, table, pre, dl {

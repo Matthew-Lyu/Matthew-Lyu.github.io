@@ -28,4 +28,4 @@ My research interests lie in 3D Computer Vision and Embodied AI, with a particul
 
 ## Passions
 
-In my spare time, I enjoy playing the violin🎻 and guitar🎸, as well as I like photography📷.
+In my spare time, I enjoy playing the violin🎻 and guitar🎸, as well as I like photography📷. You can find my selected works in my [Photography Portfolio]({{ '/photography/' | relative_url }}).

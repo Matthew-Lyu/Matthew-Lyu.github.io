@@ -1,10 +1,10 @@
-- title: Homepage
+- title: About Me
   key: homepage
   url: /
-- title: CV
+- title: Curriculum Vitae
   key: cv
   # The PDF URL comes from cv_link in _config.yml.
-- title: Photography
+- title: Photography Portfolio
   key: photography
   url: /photography/
 - title: Blog
