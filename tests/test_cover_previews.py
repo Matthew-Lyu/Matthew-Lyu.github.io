@@ -1,6 +1,7 @@
 import hashlib
 from html.parser import HTMLParser
 import importlib.util
+import json
 import os
 from pathlib import Path
 import shutil
@@ -153,6 +154,31 @@ class CoverPreviews(unittest.TestCase):
         Image.new('RGB', (1800, 1200), '#abcdef').save(self.original)
         self.assertEqual(covers.optimize_site(self.source, self.destination)['created'], 4)
         self.assertNotEqual(Images(album.read_text()).images[0]['src'], Images(initial).images[0]['src'])
+
+    def test_album_exif_is_embedded_while_original_and_manual_values_are_preserved(self):
+        metadata = Image.Exif()
+        metadata[272] = 'NIKON Z6_3'
+        metadata[34665] = {42036: 'Lens "example"', 37386: 120.0,
+                           33437: 9.0, 33434: .0025, 34855: 100}
+        Image.new('RGB', (1800, 1200)).save(self.original, exif=metadata)
+        before = self.original.read_bytes()
+        album, _ = self.write_album()
+        covers.optimize_site(self.source, self.destination)
+        preview = Images(album.read_text()).images[0]
+        self.assertEqual(json.loads(preview['data-photo-exif']), {
+            'camera': 'NIKON Z6_3', 'lens': 'Lens "example"',
+            'focal_length': '120 mm', 'aperture': 'f/9',
+            'shutter': '1/400 s', 'iso': 'ISO 100',
+        })
+        self.assertIn('data-exif=\'{"camera":"Test camera"}\'', album.read_text())
+        self.assertEqual(self.original.read_bytes(), before)
+        self.assertEqual(covers.optimize_site(self.source, self.destination)['created'], 0)
+        self.assertEqual(Images(album.read_text()).images[0]['data-photo-exif'], preview['data-photo-exif'])
+
+    def test_album_without_exif_is_marked_to_avoid_runtime_download(self):
+        album, _ = self.write_album()
+        covers.optimize_site(self.source, self.destination)
+        self.assertEqual(Images(album.read_text()).images[0]['data-photo-exif'], '{}')
 
     def test_jekyll_hook_generates_previews_during_normal_build(self):
         for name in ('_includes', '_layouts', '_plugins'):

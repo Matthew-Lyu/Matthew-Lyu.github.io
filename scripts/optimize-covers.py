@@ -3,6 +3,8 @@
 
 import argparse
 import hashlib
+import json
+import math
 from html import escape
 from html.parser import HTMLParser
 import os
@@ -26,6 +28,42 @@ SIZES = ('(max-width: 480px) calc(100vw - 40px), '
          '(max-width: 850px) calc((100vw - 66px) / 2), '
          '(max-width: 1344px) calc((100vw - 188px) / 3), '
          '(max-width: 1400px) 386px, 284px')
+
+
+def photo_exif(image):
+    """Read the small EXIF header at build time, before the viewer needs it."""
+    try:
+        tags = dict(image.getexif())
+        tags.update(image.getexif().get_ifd(34665))
+    except (OSError, ValueError, TypeError, SyntaxError):
+        return {}
+    result = {}
+    for tag, field in ((272, 'camera'), (42036, 'lens')):
+        value = tags.get(tag)
+        if isinstance(value, bytes):
+            value = value.decode('utf-8', errors='replace')
+        if isinstance(value, str) and value.replace('\0', '').strip():
+            result[field] = value.replace('\0', '').strip()
+    for tag, field, prefix, suffix in (
+        (37386, 'focal_length', '', ' mm'), (33437, 'aperture', 'f/', ''),
+        (34855, 'iso', 'ISO ', ''), (33434, 'shutter', '', ' s'),
+    ):
+        try:
+            value = tags.get(tag)
+            if isinstance(value, (tuple, list)):
+                value = value[0]
+            value = float(value)
+            if not math.isfinite(value) or value <= 0:
+                continue
+            formatted = format(value, '.5g')
+            if field == 'shutter' and value < 1:
+                denominator = round(1 / value)
+                if denominator > 1 and abs(1 / denominator - value) / value < .001:
+                    formatted = f'1/{denominator}'
+            result[field] = f'{prefix}{formatted}{suffix}'
+        except (TypeError, ValueError, ZeroDivisionError, OverflowError, IndexError):
+            continue
+    return result
 
 
 def save_preview(image, target, width, profile, quality):
@@ -92,6 +130,7 @@ class Previews(HTMLParser):
             if getattr(image, 'is_animated', False):
                 return None
             source_width, source_height = image.size
+            metadata = photo_exif(image) if self.kind == 'photo' else {}
             if image.getexif().get(274, 1) in (5, 6, 7, 8):
                 source_width, source_height = source_height, source_width
             widths = sorted({min(width, source_width) for width in self.widths})
@@ -121,7 +160,8 @@ class Previews(HTMLParser):
                     temporary.unlink(missing_ok=True)
             url = f'{self.baseurl}/assets/generated/{self.output.name}/{cached.name}'
             result.append((url, width, max(1, round(source_height * width / source_width))))
-        data = {'variants': result, 'width': source_width, 'height': source_height}
+        data = {'variants': result, 'width': source_width, 'height': source_height,
+                'exif': metadata}
         self.previews[cache_key] = data
         return data
 
@@ -156,6 +196,7 @@ class Previews(HTMLParser):
             # Stable source proportions prevent row reshuffling as srcset loads.
             attrs['data-photo-width'] = str(data['width'])
             attrs['data-photo-height'] = str(data['height'])
+            attrs['data-photo-exif'] = json.dumps(data['exif'], ensure_ascii=False, separators=(',', ':'))
         if self.count == 0:
             attrs['fetchpriority'] = 'high'
         new_tag = '<img ' + ' '.join(

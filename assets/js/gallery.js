@@ -32,18 +32,21 @@
     const currentRequest = ++requestId;
     index = (requested + links.length) % links.length;
     const link = links[index];
-    image.alt = link.querySelector('img').alt;
+    const preview = link.querySelector('img');
+    const manualExif = link.dataset.exifManual === 'true';
+    const builtExif = preview.dataset.photoExif;
+    image.alt = preview.alt;
     let metadata;
     try {
-      metadata = JSON.parse(link.dataset.exif || '{}');
+      metadata = JSON.parse(!manualExif && builtExif !== undefined ? builtExif : link.dataset.exif || '{}');
     } catch {
       metadata = null;
     }
     renderExif(metadata);
-    // EXIF parsers make partial HTTP requests. Wait for the full image first so
-    // those requests cannot interfere with the image response in browser caches.
+    // Normal builds embed EXIF in the page, so it is visible before the original
+    // image downloads. Only older/unprocessed pages need the runtime fallback.
     image.onload = () => {
-      if (currentRequest !== requestId || !dialog.open || link.dataset.exifManual === 'true' || !window.PhotoExif) return;
+      if (currentRequest !== requestId || !dialog.open || manualExif || builtExif !== undefined || !window.PhotoExif) return;
       window.PhotoExif.read(link.href).then(result => {
         // Ignore a late response after changing photos or closing the viewer.
         if (currentRequest === requestId && dialog.open && Object.keys(result).length) renderExif(result);
