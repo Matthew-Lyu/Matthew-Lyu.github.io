@@ -13,7 +13,7 @@
   });
 
   // GitHub Pages emits delimiters instead of the legacy math/tex script nodes.
-  document.querySelectorAll('.prose').forEach(function (prose) {
+  document.querySelectorAll('.prose, [data-math-title]').forEach(function (prose) {
     renderMathInElement(prose, {
       delimiters: [
         { left: '$$', right: '$$', display: true },

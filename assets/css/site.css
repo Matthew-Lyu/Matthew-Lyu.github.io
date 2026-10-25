@@ -126,6 +126,7 @@ body.lightbox-open { overflow: hidden; }
 .math-block { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; margin: 1.2em 0; padding: 8px 0; }
 .math-block .katex-display { min-width: min-content; margin: 0; padding: 0 2.5em; }
 .prose .katex { font-size: 1.05em; }
+.page-heading h1 .katex, .post-summary h2 .katex { font-size: 1em; }
 .prose .katex-html { overflow-wrap: normal; }
 .prose { color: var(--site-ink); font-size: 18px; line-height: 1.85; overflow-wrap: anywhere; }
 .prose h2, .prose h3, .prose h4 { margin: 1.8em 0 .65em; color: var(--site-ink); line-height: 1.45; }

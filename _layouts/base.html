@@ -36,7 +36,7 @@
     {% if page.math %}
       <script src="{{ '/assets/vendor/katex/katex.min.js' | relative_url }}" defer></script>
       <script src="{{ '/assets/vendor/katex/auto-render.min.js' | relative_url }}" defer></script>
-      <script src="{{ '/assets/js/render-math.js' | relative_url }}" defer></script>
+      <script src="{{ '/assets/js/render-math.js' | relative_url }}?v=2" defer></script>
     {% endif %}
     {% if page.layout == 'homepage' %}<script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>{% endif %}
     {% if page.layout == 'album' %}

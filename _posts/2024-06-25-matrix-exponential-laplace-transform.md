@@ -1,5 +1,6 @@
 ---
 title: 如何证明矩阵指数e^At的Laplace变换是(sI-A)的逆？
+math_title: '如何证明矩阵指数 \(e^{At}\) 的 Laplace 变换是 \((sI-A)\) 的逆？'
 date: 2024-06-25 12:00:00 +0800
 lang: zh-CN
 math: true

@@ -122,6 +122,16 @@ _posts/2026-10-24-my-first-post.md
 
 使用 `last_modified_at` 标记更新时间不会改变列表排序。保留 `published: false` 可以保存未发布文章；未来日期的文章默认不会提前显示。
 
+标题包含公式时，保留纯文字 `title` 用于浏览器标签页，另加 `math_title` 用于文章页和 Blog 列表中的数学排版，例如：
+
+```yaml
+math: true
+title: 矩阵指数 e^At
+math_title: '矩阵指数 \(e^{At}\)'
+```
+
+`math_title` 中使用 `\(...\)` 表示行内公式，并用 YAML 单引号保留反斜杠；不填写时继续显示普通标题。
+
 标题和正文都可以用中文，建议 URL 文件名使用简短英文或拼音。正文中的本地图片建议用 `relative_url`：
 
 ```liquid

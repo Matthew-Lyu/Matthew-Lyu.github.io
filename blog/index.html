@@ -3,13 +3,14 @@ layout: base
 title: Blog
 nav_key: blog
 description: Notes and writing by Weichen Lyu.
+math: true
 ---
 <main class="page-shell blog-page" id="main-content" tabindex="-1" aria-label="Blog">
   {% assign posts = site.posts | sort: 'date' | reverse %}
   {% for post in posts %}
   {% assign post_url = post.url | relative_url %}
   <article class="post-summary">
-    <h2><a href="{{ post_url | escape }}">{{ post.title | escape }}</a></h2>
+    <h2><a href="{{ post_url | escape }}"{% if post.math_title %} data-math-title{% endif %}>{{ post.math_title | default: post.title | escape }}</a></h2>
     <div class="post-preview{% if post.cover %} has-cover{% endif %}">
       {% if post.cover %}
       <a class="post-cover-link" href="{{ post_url | escape }}" aria-label="{{ post.title | escape }}">

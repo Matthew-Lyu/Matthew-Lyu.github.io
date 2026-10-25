@@ -5,7 +5,7 @@ layout: base
   <a class="back-link" href="{{ '/blog/' | relative_url }}">← Blog</a>
   <article class="post-article">
     <div class="page-heading">
-      <h1>{{ page.title | escape }}</h1>
+      <h1{% if page.math_title %} data-math-title{% endif %}>{{ page.math_title | default: page.title | escape }}</h1>
       <p class="page-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% if page.last_modified_at %} · Updated {{ page.last_modified_at | date: '%B %-d, %Y' }}{% endif %}</p>
       {% if page.tags.size > 0 %}<ul class="post-tags" aria-label="Tags">{% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
     </div>
