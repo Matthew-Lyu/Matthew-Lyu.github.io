@@ -70,6 +70,13 @@ defaults:
                 'folder': 'photos: /assets/photos/test album/',
                 'no-slashes': 'photos: assets/photos/test album',
                 'empty': 'photos: /assets/photos/missing/',
+                'separate-descriptions': '''cover_description: Short cover sentence.
+description: |
+  Detailed album introduction.
+
+  第二段详细介绍。''',
+                'cover-only': 'cover_description: Cover text without a detailed introduction.',
+                'detail-only': 'description: Detailed introduction without cover text.',
                 'legacy': '''photos:
   - src: /assets/photos/test%20album/02.PNG
   - src: /assets/photos/test%20album/01.jpg
@@ -122,6 +129,18 @@ defaults:
             self.assertEqual(pages['legacy'].images[1]['alt'], 'Custom description')
             self.assertEqual(json.loads(pages['legacy'].photos[1]['data-exif'])['camera'], 'Override camera')
             index = Page(source / '_site/photography/index.html')
+            index_text = ' '.join(index.text)
+            self.assertIn('Short cover sentence.', index_text)
+            self.assertIn('Cover text without a detailed introduction.', index_text)
+            self.assertNotIn('Detailed album introduction.', index_text)
+            self.assertNotIn('Detailed introduction without cover text.', index_text)
+            detail = Page(source / '_site/photography/separate-descriptions/index.html')
+            self.assertIn('Detailed album introduction.', ' '.join(detail.text))
+            self.assertIn('第二段详细介绍。', ' '.join(detail.text))
+            self.assertNotIn('Short cover sentence.', ' '.join(detail.text))
+            self.assertNotIn('class="album-description"', (source / '_site/photography/cover-only/index.html').read_text())
+            detail_only = Page(source / '_site/photography/detail-only/index.html')
+            self.assertIn('Detailed introduction without cover text.', ' '.join(detail_only.text))
             covers = [image['src'] for image in index.images]
             self.assertEqual(covers.count('/assets/photos/test%20album/01.jpg'), 2, covers)
             card_urls = [card['href'] for card in index.cards]

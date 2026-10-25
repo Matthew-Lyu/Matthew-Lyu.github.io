@@ -40,12 +40,11 @@ layout: base
     {% endfor %}
   </div>
   <dialog class="lightbox" aria-label="Photo viewer">
-    <div class="lightbox-toolbar"><span class="lightbox-counter" aria-live="polite"></span><button type="button" class="lightbox-close" aria-label="Close photo viewer">×</button></div>
-    <button type="button" class="lightbox-previous" aria-label="Previous photo">‹</button>
+    <div class="lightbox-toolbar"><span class="lightbox-counter" aria-live="polite"></span><button type="button" class="lightbox-close" aria-label="Close photo viewer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <button type="button" class="lightbox-previous" aria-label="Previous photo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg></button>
     <figure class="lightbox-figure">
       <img class="lightbox-image" alt="">
-      <figcaption class="lightbox-exif" aria-live="polite" hidden>
-        <h2>Exif</h2>
+      <figcaption class="lightbox-exif" aria-label="Camera settings" aria-live="polite" hidden>
         <div class="exif-card">
           <div class="exif-row" data-exif-field="camera" hidden>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h4l2-2h4l2 2h4v14H4Z"/><circle cx="12" cy="13" r="4"/></svg>
@@ -64,7 +63,7 @@ layout: base
         </div>
       </figcaption>
     </figure>
-    <button type="button" class="lightbox-next" aria-label="Next photo">›</button>
+    <button type="button" class="lightbox-next" aria-label="Next photo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></button>
   </dialog>
   {% else %}
   <p class="empty-state">Photographs coming soon.</p>

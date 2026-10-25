@@ -1,6 +1,7 @@
 ---
 title: Selected Works
-description: A collection of my favorite moments.
+cover_description: A collection of my favorite moments. 摄影记忆中最珍贵的瞬间
+description: A collection of my favorite moments. 摄影记忆中最珍贵的瞬间
 pinned: true
 pin_order: 1
 last_modified_at: 2026-10-24

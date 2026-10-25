@@ -1,5 +1,229 @@
 {
   "images": {
+    "assets/photos/garze/01.jpg": {
+      "bounds": [
+        57,
+        5021,
+        436,
+        5129
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        3456,
+        5184
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "0f2baa334618331de518f74787c56eefbdb728374c804853afd2a7e15011d217",
+      "style_version": 3
+    },
+    "assets/photos/garze/02.jpg": {
+      "bounds": [
+        19,
+        1142,
+        153,
+        1182
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        2400,
+        1200
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "dee787c5005d07ac81a86fd79d8264ce3e9b9a046e3f5c4a85891e00d2aa2f3e",
+      "style_version": 3
+    },
+    "assets/photos/garze/03.jpg": {
+      "bounds": [
+        43,
+        2468,
+        325,
+        2548
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        4605,
+        2590
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "6d46aa7a97a4b7edd6ad22e053dfbc3b858ce066f6162b6b1e04a4993083bec4",
+      "style_version": 3
+    },
+    "assets/photos/garze/04.jpg": {
+      "bounds": [
+        43,
+        2458,
+        325,
+        2538
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5160,
+        2580
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "c368f25daa048b4eea2157e3372e312448df205c0e53c19ecca45534f6a996d1",
+      "style_version": 3
+    },
+    "assets/photos/garze/05.jpg": {
+      "bounds": [
+        57,
+        3293,
+        436,
+        3401
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5184,
+        3456
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "b47201c514b79132f274d65e5fef0e3f2b05785047df80b97bac6f0243dc54f5",
+      "style_version": 3
+    },
+    "assets/photos/garze/06.jpg": {
+      "bounds": [
+        57,
+        3293,
+        436,
+        3401
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5184,
+        3456
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "0fc7d5815239005c97fca2892b6bb018928d3a6e65e6a551d9120417ad6440be",
+      "style_version": 3
+    },
+    "assets/photos/garze/07.jpg": {
+      "bounds": [
+        57,
+        3293,
+        436,
+        3401
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5184,
+        3456
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a054cf2ab6df89a698a063770f924f693883ae7eb84ed760166bf1a99f2b07fe",
+      "style_version": 3
+    },
+    "assets/photos/garze/08.jpg": {
+      "bounds": [
+        57,
+        3293,
+        436,
+        3401
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5184,
+        3456
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "824ba4e796c18c8c267c5a5043b19b970f5363073bc14fdf5bcb67d90c7ba725",
+      "style_version": 3
+    },
+    "assets/photos/garze/09.jpg": {
+      "bounds": [
+        57,
+        3293,
+        436,
+        3401
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5184,
+        3456
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "47aef3ddde25c2d734540c766c11719af7a6d87f433a3e1e7dfb6b15d01aafa9",
+      "style_version": 3
+    },
+    "assets/photos/garze/10.jpg": {
+      "bounds": [
+        57,
+        3293,
+        436,
+        3401
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5184,
+        3456
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7bf383e87ee4d8b174ac216fd5f4a4b39d68c2616feeabe76a7ceec4588b5ffd",
+      "style_version": 3
+    },
+    "assets/photos/garze/11.jpg": {
+      "bounds": [
+        43,
+        3844,
+        337,
+        3927
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        2646,
+        3969
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "10f13fb5e1f161e8c514f75b6b5f400811ea7abbb46c45823bc43762461eb5a7",
+      "style_version": 3
+    },
+    "assets/photos/garze/13.jpg": {
+      "bounds": [
+        47,
+        2762,
+        367,
+        2854
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5155,
+        2900
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "9bf6c545c751ad74ddab1ae548dc057cf75c2efb4bcdd443872a1b28467873de",
+      "style_version": 3
+    },
+    "assets/photos/garze/14.jpg": {
+      "bounds": [
+        57,
+        3293,
+        436,
+        3401
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5184,
+        3456
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a7415164cd935966139fb9717d29917582305542a2cfdf9c895bc6a12fad9bfd",
+      "style_version": 3
+    },
+    "assets/photos/garze/15.jpg": {
+      "bounds": [
+        27,
+        1524,
+        201,
+        1574
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        2400,
+        1600
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "1ba1436eab9ba6c28ec765ba812441a7cda7c4b67a78045af26f5ea775508c65",
+      "style_version": 3
+    },
     "assets/photos/hongkong/01.jpg": {
       "bounds": [
         67,
@@ -1518,6 +1742,278 @@
       ],
       "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
       "sha256": "1d52447014091d3adda8965a57595c9b902ef5251f80693b7b4f71f050ea729d",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/01.jpg": {
+      "bounds": [
+        67,
+        3841,
+        511,
+        3967
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        6048,
+        4032
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "59ab1ffdcde1cd42bb6ea16b3fdb7904520ed37253067eaccefce272bcb3adf2",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/02.jpg": {
+      "bounds": [
+        66,
+        3780,
+        498,
+        3903
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5950,
+        3967
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "0439e8b785ef032b83e6ac2e75fa5c1f1cf97edb0b454a28933c951308dab243",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/03.jpg": {
+      "bounds": [
+        66,
+        3762,
+        498,
+        3885
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5923,
+        3949
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "8b5cf89e1e20f41d6d36210906bf9519456839bdd2c159170c1e7bb9cdc8b863",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/04.jpg": {
+      "bounds": [
+        59,
+        3410,
+        454,
+        3523
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5763,
+        3580
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "0af066a004458a34f682ab16145caad9828e159dbff426b4098f50482add41b7",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/05.jpg": {
+      "bounds": [
+        67,
+        5857,
+        511,
+        5983
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        4032,
+        6048
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "fb349a710ca42813ab9f6f03d01f92b6c0bb106c8b2708114be2fbda51e9a5e5",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/06.jpg": {
+      "bounds": [
+        67,
+        3841,
+        511,
+        3967
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        6048,
+        4032
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "c07ecac9b376b4fa7bc5ff76539f887c914dae3f6f41b17c7aab11e15337045a",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/07.jpg": {
+      "bounds": [
+        67,
+        3841,
+        511,
+        3967
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        6048,
+        4032
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "95014880c69e1b6a077f16f32e731c90dd3e37f22cf20508f4ba934eef7a93ab",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/08.jpg": {
+      "bounds": [
+        61,
+        3519,
+        470,
+        3635
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5541,
+        3694
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "d0252c1e1ce0105fd1105eb2a74179e5be6caf0e7281b9fb84a46ddd49a6b0f0",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/09.jpg": {
+      "bounds": [
+        66,
+        3781,
+        498,
+        3904
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5952,
+        3968
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "328a4fae2738a008c5ac4f1950c43bde6afe17355388cd271ef1a0cd29b5dec0",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/10.jpg": {
+      "bounds": [
+        63,
+        5494,
+        479,
+        5613
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        3783,
+        5674
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "4dbe9d087291a34758bc4bfc96d53eaf3459fd5fb1e973895935a1bb52e1c6a6",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/11.jpg": {
+      "bounds": [
+        59,
+        3380,
+        448,
+        3490
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5460,
+        3547
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "5fedca092945da03c836669a72701bd6a963731c827cbc5b1d16a344727e2bb0",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/12.jpg": {
+      "bounds": [
+        66,
+        5762,
+        498,
+        5885
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        3966,
+        5949
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a5ba5f24e2b133fc8cdcaa383671dc3c0c75b9f9d449bcd243147576bf04be90",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/13.jpg": {
+      "bounds": [
+        39,
+        3507,
+        304,
+        3583
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        2414,
+        3621
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "bee0d67a852b254b8e28d0d0d513bea5c46023c1eedf93e12caf13e08240a5ce",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/14.jpg": {
+      "bounds": [
+        67,
+        3841,
+        511,
+        3967
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        6048,
+        4032
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "f472153dae9e71a79d0af5c80d183edfd75d44bd5648351cd994574202fc75dc",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/15.jpg": {
+      "bounds": [
+        67,
+        3841,
+        511,
+        3967
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        6048,
+        4032
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "d44e7fd8dd2b1fcd5b196ab8f8100c67074aa5a1acdb001cb919f0b68b90be84",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/16.jpg": {
+      "bounds": [
+        65,
+        3736,
+        492,
+        3858
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        5881,
+        3921
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "31af8e207f7cd3ffc1d0153c122d267a5607a30e966a406aa71c706fc91672a1",
+      "style_version": 3
+    },
+    "assets/photos/tsinghua/17.jpg": {
+      "bounds": [
+        67,
+        3841,
+        511,
+        3967
+      ],
+      "color": "#f5f5f5",
+      "dimensions": [
+        6048,
+        4032
+      ],
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "69ecb01cc111637e1038fbdb1de6af88edefb6d1e8fdff5124a6b63a1c337f16",
       "style_version": 3
     }
   },

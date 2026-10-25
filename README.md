@@ -35,6 +35,11 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ```yaml
 ---
 title: 北京 · 秋日
+cover_description: 秋日街头的片刻。
+description: |
+  这里写点开相册后展示的详细介绍。
+
+  可以分段记录拍摄背景、地点和故事。
 date: 2026-10-24
 location: 北京
 cover: /assets/photos/beijing-autumn/01.jpg
@@ -50,7 +55,9 @@ photos: /assets/photos/beijing-autumn/
 
 日期支持只写年月，例如 `date: 2026-08`；页面显示“2026-08”，排序时按该月 1 日计算。完整日期 `date: 2026-08-15` 也可使用，页面按原精度显示。同样支持 `last_modified_at: 2026-10`。没有日期的普通相册排在最后。相册仍编辑 `_albums/*.md`，访问地址保持不变；通过普通 Jekyll 页面读取，无需额外插件，兼容 GitHub Pages。
 
-`cover` 可指定任意一张封面；不填时自动使用文件名排序后的第一张。`cover_position: "50% 30%"` 可以调整方形封面的裁切位置，默认居中。`description` 和最后一个 `---` 后的正文都是可选介绍。
+`cover` 可指定任意一张封面；不填时自动使用文件名排序后的第一张。`cover_position: "50% 30%"` 可以调整方形封面的裁切位置，默认居中。
+
+`cover_description` 只用于封面悬停时展示的短句，最多显示两行；`description` 只用于点开相册后的详细介绍，不截断，使用 `|` 可保留换行和分段。两个字段各自独立，都可以省略，不会互相替代。最后一个 `---` 后还可写支持 Markdown 的正文，用于更长的拍摄记录。
 
 ### 缩略图和 EXIF
 

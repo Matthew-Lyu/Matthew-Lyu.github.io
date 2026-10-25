@@ -22,7 +22,7 @@
     <div class="album-card-details">
       <div class="album-card-details-inner">
         {% include album-meta.html album=album class="album-card-meta" %}
-        {% if album.description %}<p class="album-card-description">{{ album.description | escape }}</p>{% endif %}
+        {% if album.cover_description %}<p class="album-card-description">{{ album.cover_description | escape }}</p>{% endif %}
       </div>
     </div>
   </div>

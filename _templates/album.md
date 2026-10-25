@@ -2,7 +2,13 @@
 # Copy this file to _albums/<album-slug>.md and remove published: false.
 published: false
 title: 北京 · 秋日街头
-description: 一段拍摄记录。
+# Short sentence displayed on the cover card.
+cover_description: 一段拍摄记录。
+# Detailed introduction displayed inside the album. Use | for multiple paragraphs.
+description: |
+  在这里写详细的相册介绍。
+
+  可以继续写拍摄过程、地点和想记录的故事。
 # Album creation date, used for sorting.
 # Either YYYY-MM or YYYY-MM-DD is supported.
 date: 2026-10-24
