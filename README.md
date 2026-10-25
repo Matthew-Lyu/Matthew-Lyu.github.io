@@ -10,7 +10,7 @@ Jekyll website with an academic homepage, photography albums, and a blog.
 ./preview.command
 ```
 
-第一次运行会把 Jekyll 依赖安装到本项目的 `vendor/`（已从 Git 和网站输出中排除），不会修改网站线上内容。需要网络、Ruby 和 macOS Command Line Tools。后续运行会复用依赖。
+第一次运行会把 Jekyll 依赖安装到本项目的 `vendor/`（已从 Git 和网站输出中排除），并检查 Python/Pillow 图片处理依赖，缺少时自动在 `vendor/tools/image-python` 准备。需要网络、Ruby、Python 3 和 macOS Command Line Tools。后续运行会复用依赖。
 
 默认打开 <http://127.0.0.1:4000/>；如果 4000 已被占用，脚本会自动尝试 4001、4002 等端口，并打印实际预览地址。以终端显示的地址为准，其后加 `/photography/` 或 `/blog/` 可打开摄影集和博客。修改内容后保存，刷新浏览器即可；修改 `_config.yml` 后需要重启。停止服务按 `Ctrl+C`。也可用 `PORT=5000 ./preview.command` 指定优先使用的端口。
 
@@ -22,6 +22,12 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ```
 
 不能直接双击源文件 `index.md` 或用普通静态文件服务器预览源代码，必须先经过 Jekyll 构建。
+
+## 发布到 GitHub Pages
+
+仓库已经包含 `.github/workflows/pages.yml`，推送到 `main` 后会构建网站、自动生成轻量封面，再发布构建产物。首次启用时，在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。以后照常提交、推送即可，不需要提交 `_site/`、生成的封面或本地缓存。Actions 页面中的同名工作流也支持手动运行。
+
+工作流沿用 GitHub 官方 Jekyll 构建，再执行图片优化。仓库按分支直接发布的内置构建不会执行自定义图片处理，因此需要上述一次性设置。当前代码修改不会自动提交或推送。
 
 ## 导航
 
@@ -61,7 +67,9 @@ photos: /assets/photos/beijing-autumn/
 
 ### 图片展示和 EXIF
 
-封面、相册列表和点开的大图统一使用相册目录中的同一张图片，按需加载。不再匹配 `thumbs/` 或读取 `thumb` 字段，也不需要生成缩略图。旧的子文件夹不会被计入相册。
+`cover` 始终填写相册原图路径。每次预览或发布，系统自动为封面生成 480 / 960 像素宽的 WebP，浏览器按屏幕大小选取；图片尺寸较小时不放大。原图替换后自动更新生成地址，未改变时复用缓存。封面的 `cover_position` 设置继续有效。
+
+预览封面只写入 `_site/assets/generated/covers/`，本地复用缓存位于 `.cover-cache/`，两者均不提交到 Git。相册内的照片及点开的大图继续使用原图，不匹配旧 `thumbs/` 或读取 `thumb` 字段。你不需要额外运行图片生成命令，旧的子文件夹不会被计入相册。
 
 相册介绍右下角有两个布局按钮：左侧为“宽幅大图 + 等高分行”，右侧为原来的三列瀑布流。默认保持瀑布流，浏览器会记住后续选择，并应用到其他相册。新模式中，宽高比达到 1.9 的照片独占一行，16:9 左右的照片最多两张并排，其他照片自动分为等高的行。为保持前部紧凑，普通横图、竖图会从后面借用合适的照片拼满当前行，普通横图优先与 4:3 / 3:2 横图配对；只有最后剩余的单张允许不铺满。照片不裁切，点开大图后按屏幕展示顺序翻页。切回瀑布流或在手机单列中展示时恢复文件名顺序，无需修改相册配置。
 

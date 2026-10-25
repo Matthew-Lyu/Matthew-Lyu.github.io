@@ -86,3 +86,4 @@ exclude:
   - tests/
   - preview.command
   - local-originals/
+  - .cover-cache/

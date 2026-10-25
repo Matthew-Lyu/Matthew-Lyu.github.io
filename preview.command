@@ -22,6 +22,17 @@ if ! run_bundle check >/dev/null 2>&1; then
   run_bundle install
 fi
 
+# Image dependencies are prepared once; cover previews regenerate with Jekyll.
+image_python="${PHOTO_PYTHON:-python3}"
+if ! "$image_python" -c 'from PIL import Image, features; assert features.check("webp")' >/dev/null 2>&1; then
+  image_python="$tools_dir/image-python/bin/python"
+  if [ ! -x "$image_python" ]; then
+    python3 -m venv "$tools_dir/image-python"
+  fi
+  "$image_python" -m pip install -r "$project_dir/scripts/requirements-images.txt"
+fi
+export PHOTO_PYTHON="$image_python"
+
 requested_port="${PORT:-4000}"
 preview_port="$(ruby -rsocket - "$requested_port" <<'RUBY'
 requested = ARGV.fetch(0)
