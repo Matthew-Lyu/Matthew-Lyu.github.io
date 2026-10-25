@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
+    {% assign asset_version = site.time | date: '%Y%m%d%H%M%S' %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="only light">
@@ -14,21 +15,21 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     {% endif %}
     {% if site.font == 'Sans Serif' %}
-      <link rel="stylesheet" href="{{ '/assets/css/font_sans_serif.css' | relative_url }}">
+      <link rel="stylesheet" href="{{ '/assets/css/font_sans_serif.css' | relative_url }}?v={{ asset_version }}">
     {% else %}
-      <link rel="stylesheet" href="{{ '/assets/css/font.css' | relative_url }}?v=2">
+      <link rel="stylesheet" href="{{ '/assets/css/font.css' | relative_url }}?v={{ asset_version }}">
     {% endif %}
     {% if page.layout == 'homepage' %}
       {% if site.auto_dark_mode %}
-        <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-        <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ asset_version }}">
+        <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v={{ asset_version }}">
       {% else %}
-        <link rel="stylesheet" href="{{ '/assets/css/style-no-dark-mode.css' | relative_url }}">
-        <link rel="stylesheet" href="{{ '/assets/css/publications-no-dark-mode.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/style-no-dark-mode.css' | relative_url }}?v={{ asset_version }}">
+        <link rel="stylesheet" href="{{ '/assets/css/publications-no-dark-mode.css' | relative_url }}?v={{ asset_version }}">
       {% endif %}
     {% endif %}
     {% if page.math %}<link rel="stylesheet" href="{{ '/assets/vendor/katex/katex.min.css' | relative_url }}">{% endif %}
-    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ asset_version }}">
   </head>
   <body class="{% if page.layout == 'homepage' %}home-page{% else %}content-page{% endif %}{% if page.nav_key == 'blog' %} blog-page-font{% endif %}">
     {% include navigation.html %}
@@ -36,14 +37,14 @@
     {% if page.math %}
       <script src="{{ '/assets/vendor/katex/katex.min.js' | relative_url }}" defer></script>
       <script src="{{ '/assets/vendor/katex/auto-render.min.js' | relative_url }}" defer></script>
-      <script src="{{ '/assets/js/render-math.js' | relative_url }}?v=3" defer></script>
+      <script src="{{ '/assets/js/render-math.js' | relative_url }}?v={{ asset_version }}" defer></script>
     {% endif %}
-    {% if page.layout == 'homepage' %}<script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>{% endif %}
+    {% if page.layout == 'homepage' %}<script src="{{ '/assets/js/scale.fix.js' | relative_url }}?v={{ asset_version }}"></script>{% endif %}
     {% if page.layout == 'album' %}
       <script src="{{ '/assets/vendor/exifr/exifr.umd.js' | relative_url }}" defer></script>
-      <script src="{{ '/assets/js/photo-exif.js' | relative_url }}" defer></script>
-      <script src="{{ '/assets/js/masonry.js' | relative_url }}" defer></script>
-      <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+      <script src="{{ '/assets/js/photo-exif.js' | relative_url }}?v={{ asset_version }}" defer></script>
+      <script src="{{ '/assets/js/masonry.js' | relative_url }}?v={{ asset_version }}" defer></script>
+      <script src="{{ '/assets/js/gallery.js' | relative_url }}?v={{ asset_version }}" defer></script>
     {% endif %}
     {% if site.google_analytics %}
     <script>

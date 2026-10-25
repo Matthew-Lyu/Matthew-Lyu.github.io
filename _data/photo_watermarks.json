@@ -1,1248 +1,1631 @@
 {
   "images": {
     "assets/photos/hongkong/01.jpg": {
+      "background_luminance": 55,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "b3639a103c5f29c8ad72fa946173947b7bbbb88d93813b9a2be2d23ba7535247"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "b3639a103c5f29c8ad72fa946173947b7bbbb88d93813b9a2be2d23ba7535247",
+      "style_version": 2
     },
     "assets/photos/hongkong/02.jpg": {
+      "background_luminance": 16,
       "bounds": [
         61,
         2900,
         373,
         2971
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         3032
       ],
-      "sha256": "6ef23edcc8f20af80a574926677e130b0d4261bc8ae76c1448bd1a309839634e"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "6ef23edcc8f20af80a574926677e130b0d4261bc8ae76c1448bd1a309839634e",
+      "style_version": 2
     },
     "assets/photos/hongkong/03.JPG": {
+      "background_luminance": 37,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "d71796536f9feda6315b424314d30ed7c287ac5b5d90b075157a2a319464510d"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "d71796536f9feda6315b424314d30ed7c287ac5b5d90b075157a2a319464510d",
+      "style_version": 2
     },
     "assets/photos/hongkong/05.jpg": {
+      "background_luminance": 59,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "d0b46a7d9fb73bd4d47b90665f9abfda2c5725b35703e4d6b25b7559921cbda4"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "d0b46a7d9fb73bd4d47b90665f9abfda2c5725b35703e4d6b25b7559921cbda4",
+      "style_version": 2
     },
     "assets/photos/hongkong/06.jpg": {
+      "background_luminance": 23,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "8bee9775d7904c1c9d371838515dea0f8e2549f37d738823a56423636a877c3d"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "8bee9775d7904c1c9d371838515dea0f8e2549f37d738823a56423636a877c3d",
+      "style_version": 2
     },
     "assets/photos/hongkong/07.jpg": {
+      "background_luminance": 49,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "5f063353833857729a975c2799f4841f0d512c0510790e31111aace6e97117a3"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "5f063353833857729a975c2799f4841f0d512c0510790e31111aace6e97117a3",
+      "style_version": 2
     },
     "assets/photos/hongkong/08.jpg": {
+      "background_luminance": 61,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "56b19d23a67c5fb6833df747cac2a785fb0ac4ce8e65ded5a3817e0b6242b1f6"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "56b19d23a67c5fb6833df747cac2a785fb0ac4ce8e65ded5a3817e0b6242b1f6",
+      "style_version": 2
     },
     "assets/photos/hongkong/09.jpg": {
+      "background_luminance": 13,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "c8fcf37a809e89eff55605fcc79c1c330623d7725a771c5d67be3978c867d702"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "c8fcf37a809e89eff55605fcc79c1c330623d7725a771c5d67be3978c867d702",
+      "style_version": 2
     },
     "assets/photos/hongkong/10.jpg": {
+      "background_luminance": 25,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "35fb1616ca30d486e168ea67eafc905eb0d379bdbc705ee4819b6d0562aa6257"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "35fb1616ca30d486e168ea67eafc905eb0d379bdbc705ee4819b6d0562aa6257",
+      "style_version": 2
     },
     "assets/photos/japen/01.jpg": {
+      "background_luminance": 25,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "5c58405b0ab9109b1c168678f76f972db90bcff8541e371bab09452f58b110d8"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "5c58405b0ab9109b1c168678f76f972db90bcff8541e371bab09452f58b110d8",
+      "style_version": 2
     },
     "assets/photos/japen/02.jpg": {
+      "background_luminance": 10,
       "bounds": [
         63,
         4559,
         386,
         4634
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3131,
         4697
       ],
-      "sha256": "87045dd86f53edbfbd5c189cd878b87fede1738b93dfa253ed327462a4ef9581"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "87045dd86f53edbfbd5c189cd878b87fede1738b93dfa253ed327462a4ef9581",
+      "style_version": 2
     },
     "assets/photos/japen/03.jpg": {
+      "background_luminance": 10,
       "bounds": [
         69,
         5033,
         424,
         5115
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3456,
         5184
       ],
-      "sha256": "67894c7fec7187adf0832ec34923e6048c7c0119c952d4620ec4c496854e97de"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "67894c7fec7187adf0832ec34923e6048c7c0119c952d4620ec4c496854e97de",
+      "style_version": 2
     },
     "assets/photos/japen/04.jpg": {
+      "background_luminance": 136,
       "bounds": [
         64,
         4649,
         394,
         4726
       ],
+      "color": "#202020",
       "dimensions": [
         3193,
         4790
       ],
-      "sha256": "3ef91747c0cf1a2d167dba967c4d0cf3efc0b116c7e50a5315ea0a5b656b8296"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "4df26f972fee9d1a427423f094d13bdcb0a51db0c3970e2b5f1952e33ef5aa01",
+      "style_version": 2
     },
     "assets/photos/japen/05.JPG": {
+      "background_luminance": 61,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "7b33872dc49beda43ee5eac94be566521c67abf726305d3224960c617a22de25"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7b33872dc49beda43ee5eac94be566521c67abf726305d3224960c617a22de25",
+      "style_version": 2
     },
     "assets/photos/japen/06.jpg": {
+      "background_luminance": 68,
       "bounds": [
         67,
         4871,
         411,
         4951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3345,
         5018
       ],
-      "sha256": "37052fff9a62975035b4b18632d4e7b3de55b08959d70d481020212e6c68d34f"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "37052fff9a62975035b4b18632d4e7b3de55b08959d70d481020212e6c68d34f",
+      "style_version": 2
     },
     "assets/photos/japen/07.JPG": {
+      "background_luminance": 5,
       "bounds": [
         69,
         5033,
         424,
         5115
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3456,
         5184
       ],
-      "sha256": "7b73a5848b6c3b8c3da4ee31bee16ec9c891664146c8f3f1da3b864bd42aa430"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7b73a5848b6c3b8c3da4ee31bee16ec9c891664146c8f3f1da3b864bd42aa430",
+      "style_version": 2
     },
     "assets/photos/japen/08.JPG": {
+      "background_luminance": 87,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "88b60071cf1c17c66ee229998d1174b890d5e9230870310c57a640395768c3ad"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "88b60071cf1c17c66ee229998d1174b890d5e9230870310c57a640395768c3ad",
+      "style_version": 2
     },
     "assets/photos/japen/09.JPG": {
+      "background_luminance": 119,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "17366f668594840be4c45c0b1cef71c2370efc9053aad6296ad8bf14ad2c83d8"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "17366f668594840be4c45c0b1cef71c2370efc9053aad6296ad8bf14ad2c83d8",
+      "style_version": 2
     },
     "assets/photos/japen/10.JPG": {
+      "background_luminance": 71,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "92efb0bcb24deb6c5555952c4ac4799980b876b9c5a81a2c4e779d40a72264a3"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "92efb0bcb24deb6c5555952c4ac4799980b876b9c5a81a2c4e779d40a72264a3",
+      "style_version": 2
     },
     "assets/photos/japen/11.jpg": {
+      "background_luminance": 7,
       "bounds": [
         50,
         2384,
         306,
         2443
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         4432,
         2493
       ],
-      "sha256": "76b8f4344c1969197775b3a28092530d58924af1a35816cfa7ce6a480a3a83da"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "76b8f4344c1969197775b3a28092530d58924af1a35816cfa7ce6a480a3a83da",
+      "style_version": 2
     },
     "assets/photos/japen/12.JPG": {
+      "background_luminance": 6,
       "bounds": [
         65,
         3129,
         405,
         3207
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         4908,
         3272
       ],
-      "sha256": "857f6af292a32972d0b12f51cccd2edac03b49c08c0a5c9d974480e0aa35dea1"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "857f6af292a32972d0b12f51cccd2edac03b49c08c0a5c9d974480e0aa35dea1",
+      "style_version": 2
     },
     "assets/photos/japen/13.JPG": {
+      "background_luminance": 122,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "8c9d46c695fbddf37c825e9cf2bd48eb83ee53d96f8df3320d1e082a497d733f"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "8c9d46c695fbddf37c825e9cf2bd48eb83ee53d96f8df3320d1e082a497d733f",
+      "style_version": 2
     },
     "assets/photos/japen/14.JPG": {
+      "background_luminance": 119,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "e67e066a26f8ca2c13e9a374e7e5b3d9e1b145471855d820e24f3448470ec787"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "e67e066a26f8ca2c13e9a374e7e5b3d9e1b145471855d820e24f3448470ec787",
+      "style_version": 2
     },
     "assets/photos/japen/15.jpg": {
+      "background_luminance": 38,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "702652e961427569df761eb81c39ce2373bdf2437aa8bacff79f8dbcdafc0fdb"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "702652e961427569df761eb81c39ce2373bdf2437aa8bacff79f8dbcdafc0fdb",
+      "style_version": 2
     },
     "assets/photos/japen/16.jpg": {
+      "background_luminance": 98,
       "bounds": [
         68,
         3253,
         420,
         3334
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5103,
         3402
       ],
-      "sha256": "f2b45d192cafcd7b002088fbfb5ad209e07e778a5ed8021daefd3023b1f7659a"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "f2b45d192cafcd7b002088fbfb5ad209e07e778a5ed8021daefd3023b1f7659a",
+      "style_version": 2
     },
     "assets/photos/japen/17.JPG": {
+      "background_luminance": 3,
       "bounds": [
         52,
         2479,
         316,
         2540
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2592
       ],
-      "sha256": "a7f1473f34eb7ab6a70105e875b0368f09766ea9337b37f13eacbd512d554c95"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a7f1473f34eb7ab6a70105e875b0368f09766ea9337b37f13eacbd512d554c95",
+      "style_version": 2
     },
     "assets/photos/japen/18.JPG": {
+      "background_luminance": 103,
       "bounds": [
         60,
         2884,
         367,
         2954
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         4521,
         3014
       ],
-      "sha256": "bc8fddea886896fe005676ab769277062a85be60a6b23a69f7817ca0b5c09214"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "bc8fddea886896fe005676ab769277062a85be60a6b23a69f7817ca0b5c09214",
+      "style_version": 2
     },
     "assets/photos/japen/19.JPG": {
+      "background_luminance": 9,
       "bounds": [
         62,
         2978,
         385,
         3053
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         4672,
         3115
       ],
-      "sha256": "13362ff43b4b10921626dfac8ba751a78c6ab2cf54ed217da21ef861e24c13ba"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "13362ff43b4b10921626dfac8ba751a78c6ab2cf54ed217da21ef861e24c13ba",
+      "style_version": 2
     },
     "assets/photos/japen/20.jpg": {
+      "background_luminance": 9,
       "bounds": [
         69,
         5033,
         424,
         5115
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3456,
         5184
       ],
-      "sha256": "e21afb5a2549d5362c3235fd1bdab6364c6e0968fda4ff66f6ab4bc19fcfae33"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "e21afb5a2549d5362c3235fd1bdab6364c6e0968fda4ff66f6ab4bc19fcfae33",
+      "style_version": 2
     },
     "assets/photos/japen/21.JPG": {
+      "background_luminance": 49,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "893288b42e0c32b427d85fad10f88b0cca7589bbec34984989886287daca2507"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "893288b42e0c32b427d85fad10f88b0cca7589bbec34984989886287daca2507",
+      "style_version": 2
     },
     "assets/photos/japen/22.JPG": {
+      "background_luminance": 13,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "84c09dba0dc88016d84d4757bbacf04b5da8ccc5acc66cc24468d3dc68fd5dad"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "84c09dba0dc88016d84d4757bbacf04b5da8ccc5acc66cc24468d3dc68fd5dad",
+      "style_version": 2
     },
     "assets/photos/japen/23.JPG": {
+      "background_luminance": 17,
       "bounds": [
         66,
         4839,
         410,
         4919
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3323,
         4985
       ],
-      "sha256": "8dc574ae3e93aa140fb77b7ef1e3ded09acbe44c8da6d116aaf86aac5238de1a"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "8dc574ae3e93aa140fb77b7ef1e3ded09acbe44c8da6d116aaf86aac5238de1a",
+      "style_version": 2
     },
     "assets/photos/japen/24.JPG": {
+      "background_luminance": 9,
       "bounds": [
         61,
         3928,
         373,
         3999
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3045,
         4060
       ],
-      "sha256": "54205edf831ca880c8248a105240d65bfb0e5226da3b79041b7268fa97deee44"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "54205edf831ca880c8248a105240d65bfb0e5226da3b79041b7268fa97deee44",
+      "style_version": 2
     },
     "assets/photos/japen/25.JPG": {
+      "background_luminance": 30,
       "bounds": [
         68,
         4931,
         416,
         5011
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3386,
         5079
       ],
-      "sha256": "c0975e528976a5edeea18b5db1d3757162067119f16cc9c4938edbbb8310bcac"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "c0975e528976a5edeea18b5db1d3757162067119f16cc9c4938edbbb8310bcac",
+      "style_version": 2
     },
     "assets/photos/japen/26.JPG": {
+      "background_luminance": 31,
       "bounds": [
         69,
         5033,
         424,
         5115
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3456,
         5184
       ],
-      "sha256": "395a4363182c1d07c67063b47063621cb101fc21c6e6dded5b95b54c85e92b2c"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "395a4363182c1d07c67063b47063621cb101fc21c6e6dded5b95b54c85e92b2c",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/01.JPG": {
+      "background_luminance": 16,
       "bounds": [
         79,
         3782,
         485,
         3877
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5934,
         3956
       ],
-      "sha256": "285e7118b404262c2b7e2329e7ca0382d2b58f21d44f94934b861c9bff864192"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "285e7118b404262c2b7e2329e7ca0382d2b58f21d44f94934b861c9bff864192",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/02.JPG": {
+      "background_luminance": 83,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "a70dc864528d2ca397e500c37aae5e9e52274404e28bc02d34b71b670a389c7f"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a70dc864528d2ca397e500c37aae5e9e52274404e28bc02d34b71b670a389c7f",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/03.JPG": {
+      "background_luminance": 43,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "0a09c7bd8e6b90a621ae3fe75e674b4903d2588c93f6af945761baf6d2756541"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "0a09c7bd8e6b90a621ae3fe75e674b4903d2588c93f6af945761baf6d2756541",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/04.JPG": {
+      "background_luminance": 11,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "7fec4f34d1f246216a19bc4acc0422a43899afcb83f58b21997945050ea3fa5f"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7fec4f34d1f246216a19bc4acc0422a43899afcb83f58b21997945050ea3fa5f",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/05.JPG": {
+      "background_luminance": 2,
       "bounds": [
         68,
         3253,
         420,
         3334
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         3402
       ],
-      "sha256": "d3803739710314fee4ad8e21e3dac550308ffbbeae350c22f5ff33eea675b2b7"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "d3803739710314fee4ad8e21e3dac550308ffbbeae350c22f5ff33eea675b2b7",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/06.JPG": {
+      "background_luminance": 34,
       "bounds": [
         80,
         3812,
         490,
         3907
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5981,
         3987
       ],
-      "sha256": "3200f5bb1dc11864028e7f53d18b5914bdce4cc7dcc5b250d0dc8b62ce6e62cc"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "3200f5bb1dc11864028e7f53d18b5914bdce4cc7dcc5b250d0dc8b62ce6e62cc",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/07.JPG": {
+      "background_luminance": 10,
       "bounds": [
         33,
         1583,
         204,
         1623
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2484,
         1656
       ],
-      "sha256": "7a842caad02accdd984c17d4d7be87c60b9138022dc6601989bc5b67a84ed94f"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7a842caad02accdd984c17d4d7be87c60b9138022dc6601989bc5b67a84ed94f",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/08.jpg": {
+      "background_luminance": 9,
       "bounds": [
         67,
         3197,
         411,
         3277
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5945,
         3344
       ],
-      "sha256": "21ab7ebf0417fe4ee590aeb2f933fc3e38b5d4c71828dad7df95f58959b9126d"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "21ab7ebf0417fe4ee590aeb2f933fc3e38b5d4c71828dad7df95f58959b9126d",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/09.jpg": {
+      "background_luminance": 39,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "7597fcc69224824742304ae309c533cfa6e00ee3d4be638d744302bed6b415f4"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7597fcc69224824742304ae309c533cfa6e00ee3d4be638d744302bed6b415f4",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/20.JPG": {
+      "background_luminance": 59,
       "bounds": [
         68,
         3253,
         420,
         3334
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         3402
       ],
-      "sha256": "9e845af4a07761a00eeeb0cac72439a7eec48db288f38eb3d2d975dc79f7663b"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "9e845af4a07761a00eeeb0cac72439a7eec48db288f38eb3d2d975dc79f7663b",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/21.JPG": {
+      "background_luminance": 7,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "36b19263bec619630fd34e2160457c3daa3f164558cb1c384cb7c84c38710f27"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "36b19263bec619630fd34e2160457c3daa3f164558cb1c384cb7c84c38710f27",
+      "style_version": 2
     },
     "assets/photos/jiuzhaigou/22.jpg": {
+      "background_luminance": 35,
       "bounds": [
         81,
         3855,
         497,
         3951
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6048,
         4032
       ],
-      "sha256": "76786a7e2219fef2de224aae100d39b1b08a9b24458ebe9824d7439bf9f2b67f"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "76786a7e2219fef2de224aae100d39b1b08a9b24458ebe9824d7439bf9f2b67f",
+      "style_version": 2
     },
     "assets/photos/selected/01.jpg": {
+      "background_luminance": 58,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "372d34acdb369ddc64878849a6615d0afbd1ae87878d756bf7266a7622f1d9da"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "372d34acdb369ddc64878849a6615d0afbd1ae87878d756bf7266a7622f1d9da",
+      "style_version": 2
     },
     "assets/photos/selected/02.jpg": {
+      "background_luminance": 15,
       "bounds": [
         24,
         1150,
         148,
         1179
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1203
       ],
-      "sha256": "6c54d2120c1d875b531ff6864f42b98f0a675ac8dec1b524676a7f410fa96305"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "6c54d2120c1d875b531ff6864f42b98f0a675ac8dec1b524676a7f410fa96305",
+      "style_version": 2
     },
     "assets/photos/selected/03.jpg": {
+      "background_luminance": 29,
       "bounds": [
         24,
         1147,
         148,
         1176
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1200
       ],
-      "sha256": "33e36bed1043202c796238344881b8c03b6a83acd1e10a151800674df69efcd2"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "33e36bed1043202c796238344881b8c03b6a83acd1e10a151800674df69efcd2",
+      "style_version": 2
     },
     "assets/photos/selected/04.jpg": {
+      "background_luminance": 16,
       "bounds": [
         27,
         1295,
         165,
         1327
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1354
       ],
-      "sha256": "13f5b06a7f7d199f5b8414c84d69d188e6c40c08547d07bcfe3438b7964b37dc"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "13f5b06a7f7d199f5b8414c84d69d188e6c40c08547d07bcfe3438b7964b37dc",
+      "style_version": 2
     },
     "assets/photos/selected/05.jpg": {
+      "background_luminance": 18,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "0e075ebcec05ed7bf4badee2c9ea8f5e724362537db1064e1833f201df0ff5eb"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "0e075ebcec05ed7bf4badee2c9ea8f5e724362537db1064e1833f201df0ff5eb",
+      "style_version": 2
     },
     "assets/photos/selected/06.jpg": {
+      "background_luminance": 60,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "b46391b73aa1ed8407fa2049440060dd37181cdf2a442cdcda392ce8dd661afe"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "b46391b73aa1ed8407fa2049440060dd37181cdf2a442cdcda392ce8dd661afe",
+      "style_version": 2
     },
     "assets/photos/selected/07.jpg": {
+      "background_luminance": 23,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "7dcb1428a20db24ad12ab04d3dce6d10b26e7c15f4f93d468b0254c2a00f8705"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7dcb1428a20db24ad12ab04d3dce6d10b26e7c15f4f93d468b0254c2a00f8705",
+      "style_version": 2
     },
     "assets/photos/selected/08.jpg": {
+      "background_luminance": 12,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "14dcf867b55c4996d4fecac7f63782b478b4947ca1ba1b95c9b6cec0997bfcae"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "14dcf867b55c4996d4fecac7f63782b478b4947ca1ba1b95c9b6cec0997bfcae",
+      "style_version": 2
     },
     "assets/photos/selected/09.jpg": {
+      "background_luminance": 87,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "f8958fafcadcf7f6f1fb660ae84c478c713f731cce2a126634d761dacf1a7bdf"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "f8958fafcadcf7f6f1fb660ae84c478c713f731cce2a126634d761dacf1a7bdf",
+      "style_version": 2
     },
     "assets/photos/selected/11.jpg": {
+      "background_luminance": 52,
       "bounds": [
         24,
         1147,
         148,
         1176
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1200
       ],
-      "sha256": "e529c7736fe4582daa92e138a0b65281ff702481e89d4447b69f45162aa92b9d"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "e529c7736fe4582daa92e138a0b65281ff702481e89d4447b69f45162aa92b9d",
+      "style_version": 2
     },
     "assets/photos/selected/12.jpg": {
+      "background_luminance": 6,
       "bounds": [
         52,
         2477,
         316,
         2538
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         4605,
         2590
       ],
-      "sha256": "c62262c98b914c22271131f395cf45d64e49d78030c944bbe0352c489cb220a7"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "c62262c98b914c22271131f395cf45d64e49d78030c944bbe0352c489cb220a7",
+      "style_version": 2
     },
     "assets/photos/selected/13.jpg": {
+      "background_luminance": 30,
       "bounds": [
         58,
         2773,
         356,
         2842
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5155,
         2900
       ],
-      "sha256": "ca87ae998fab0402744d8aaf7531e990976d76d1e3a7b71b4b22487c91ccd629"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "ca87ae998fab0402744d8aaf7531e990976d76d1e3a7b71b4b22487c91ccd629",
+      "style_version": 2
     },
     "assets/photos/selected/14.jpg": {
+      "background_luminance": 35,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "e80d7d8290658c730e9303f401e994ac2d880a6178e86b7704ab2ac4c15d0d0d"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "e80d7d8290658c730e9303f401e994ac2d880a6178e86b7704ab2ac4c15d0d0d",
+      "style_version": 2
     },
     "assets/photos/selected/15.jpg": {
+      "background_luminance": 22,
       "bounds": [
         64,
         3084,
         394,
         3161
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         4837,
         3225
       ],
-      "sha256": "e207195fbe35fdd1708d6a870e6a335f96da297b71754104150eb819e9453cb7"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "e207195fbe35fdd1708d6a870e6a335f96da297b71754104150eb819e9453cb7",
+      "style_version": 2
     },
     "assets/photos/selected/16.jpg": {
+      "background_luminance": 163,
       "bounds": [
         53,
         3854,
         327,
         3916
       ],
+      "color": "#202020",
       "dimensions": [
         2646,
         3969
       ],
-      "sha256": "60b5f6ddd7fda04ee09c6f015d116ef3c54672f3ace777c347a4650d29426c82"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a903a896fa2eefb025e4688b334ebdeeddc87a48c5d656fffb7d2ed0efd74e63",
+      "style_version": 2
     },
     "assets/photos/selected/18.jpg": {
+      "background_luminance": 61,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "b79e27c3d3e4064717789f579459b186ea2692c119048fd970079dffd823178a"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "b79e27c3d3e4064717789f579459b186ea2692c119048fd970079dffd823178a",
+      "style_version": 2
     },
     "assets/photos/selected/22.jpg": {
+      "background_luminance": 10,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "0088c5cd7b3abd38b3969837de3116a73743d81bce67d9d50aa098df318625fa"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "0088c5cd7b3abd38b3969837de3116a73743d81bce67d9d50aa098df318625fa",
+      "style_version": 2
     },
     "assets/photos/selected/23.jpg": {
+      "background_luminance": 18,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "3ed9862014437a7694cdbad7675a5cc3dd8fb393355ffc355da160f7cfce9e82"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "3ed9862014437a7694cdbad7675a5cc3dd8fb393355ffc355da160f7cfce9e82",
+      "style_version": 2
     },
     "assets/photos/selected/24.jpg": {
+      "background_luminance": 88,
       "bounds": [
         24,
         1147,
         148,
         1176
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1200
       ],
-      "sha256": "69e1b76cae93e1ece0a63402c4decdfa4bef3f9a640a481022ad926b5b6363a2"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "69e1b76cae93e1ece0a63402c4decdfa4bef3f9a640a481022ad926b5b6363a2",
+      "style_version": 2
     },
     "assets/photos/selected/25.jpg": {
+      "background_luminance": 51,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "b860e67b7f47ece0512fc10c505fed6489506a0dbda53b76fbd71fe756d8fd5f"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "b860e67b7f47ece0512fc10c505fed6489506a0dbda53b76fbd71fe756d8fd5f",
+      "style_version": 2
     },
     "assets/photos/selected/26.jpg": {
+      "background_luminance": 171,
       "bounds": [
         24,
         1147,
         148,
         1176
       ],
+      "color": "#202020",
       "dimensions": [
         2400,
         1200
       ],
-      "sha256": "cf0e4d533fd663ed0f5dce030674b566692be7964413f1494e1fb8e17305e9af"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "7b79e6afc88d47bd1c970443494c45c7b8331da6772de8a456707707dc043d1d",
+      "style_version": 2
     },
     "assets/photos/selected/27.jpg": {
+      "background_luminance": 117,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "4bb6f4a49d11b1e42a99c846e0ec78cd26282cb492680af1e092b64ef65d0600"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "4bb6f4a49d11b1e42a99c846e0ec78cd26282cb492680af1e092b64ef65d0600",
+      "style_version": 2
     },
     "assets/photos/selected/28.jpg": {
+      "background_luminance": 57,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "aad8c233195f0ac944e7055aeb2292b84af7eef43eb7e350c98504158c37e0c7"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "aad8c233195f0ac944e7055aeb2292b84af7eef43eb7e350c98504158c37e0c7",
+      "style_version": 2
     },
     "assets/photos/selected/29.jpg": {
+      "background_luminance": 4,
       "bounds": [
         27,
         1291,
         165,
         1323
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1350
       ],
-      "sha256": "8603c748f41e0ddd66a2fa457016bf01d2a38ddabeb51b220e305eb4ed76d921"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "8603c748f41e0ddd66a2fa457016bf01d2a38ddabeb51b220e305eb4ed76d921",
+      "style_version": 2
     },
     "assets/photos/selected/30.jpg": {
+      "background_luminance": 13,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "a59e25829d65726c64660847c7938e523f2e78706f7c5fdb681cff3c0a4ce34a"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a59e25829d65726c64660847c7938e523f2e78706f7c5fdb681cff3c0a4ce34a",
+      "style_version": 2
     },
     "assets/photos/selected/31.jpg": {
+      "background_luminance": 4,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "9c89b6c2f668445ac30bf44b71396a6b117dd0749a65da7511f323efb843b5c8"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "9c89b6c2f668445ac30bf44b71396a6b117dd0749a65da7511f323efb843b5c8",
+      "style_version": 2
     },
     "assets/photos/selected/33.jpg": {
+      "background_luminance": 10,
       "bounds": [
         63,
         4559,
         386,
         4634
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3131,
         4697
       ],
-      "sha256": "87045dd86f53edbfbd5c189cd878b87fede1738b93dfa253ed327462a4ef9581"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "87045dd86f53edbfbd5c189cd878b87fede1738b93dfa253ed327462a4ef9581",
+      "style_version": 2
     },
     "assets/photos/selected/34.jpg": {
+      "background_luminance": 73,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "b607ae06eb15bb9d495f66964a8183c3d094a49c9219a4be9beca88c7b6cb323"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "b607ae06eb15bb9d495f66964a8183c3d094a49c9219a4be9beca88c7b6cb323",
+      "style_version": 2
     },
     "assets/photos/selected/37.jpg": {
+      "background_luminance": 51,
       "bounds": [
         49,
         3597,
         301,
         3655
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2469,
         3704
       ],
-      "sha256": "42cb27f47069b9b7582b6e22123488ee9c52b22bd589eb31feb23c18781c1c33"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "42cb27f47069b9b7582b6e22123488ee9c52b22bd589eb31feb23c18781c1c33",
+      "style_version": 2
     },
     "assets/photos/selected/38.jpg": {
+      "background_luminance": 7,
       "bounds": [
         69,
         3305,
         424,
         3387
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         3456
       ],
-      "sha256": "cf4c666a94c8c7567f5ab4a4f7c8e960de24d7cea296087c79e1982cc67c1391"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "cf4c666a94c8c7567f5ab4a4f7c8e960de24d7cea296087c79e1982cc67c1391",
+      "style_version": 2
     },
     "assets/photos/selected/39.jpg": {
+      "background_luminance": 23,
       "bounds": [
         32,
         2329,
         196,
         2368
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         1600,
         2400
       ],
-      "sha256": "fc6c42388863663efd750266f7b1df39aa87d182855b96f758a9eb69e984c464"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "fc6c42388863663efd750266f7b1df39aa87d182855b96f758a9eb69e984c464",
+      "style_version": 2
     },
     "assets/photos/shenzhen/01.jpg": {
+      "background_luminance": 29,
       "bounds": [
         24,
         1147,
         148,
         1176
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1200
       ],
-      "sha256": "33e36bed1043202c796238344881b8c03b6a83acd1e10a151800674df69efcd2"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "33e36bed1043202c796238344881b8c03b6a83acd1e10a151800674df69efcd2",
+      "style_version": 2
     },
     "assets/photos/shenzhen/02.jpg": {
+      "background_luminance": 58,
       "bounds": [
         32,
         1529,
         196,
         1568
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2400,
         1600
       ],
-      "sha256": "372d34acdb369ddc64878849a6615d0afbd1ae87878d756bf7266a7622f1d9da"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "372d34acdb369ddc64878849a6615d0afbd1ae87878d756bf7266a7622f1d9da",
+      "style_version": 2
     },
     "assets/photos/shenzhen/03.jpg": {
+      "background_luminance": 8,
       "bounds": [
         67,
         3198,
         411,
         3278
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5948,
         3345
       ],
-      "sha256": "ff9a666465f6e3d2fa4ddef53a04f52061c745d15848c1278725c53f91ae10a8"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "ff9a666465f6e3d2fa4ddef53a04f52061c745d15848c1278725c53f91ae10a8",
+      "style_version": 2
     },
     "assets/photos/shenzhen/04.JPG": {
+      "background_luminance": 14,
       "bounds": [
         80,
         3807,
         490,
         3902
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5973,
         3982
       ],
-      "sha256": "75ce26e0c32e982861337d97cadbea32a7a81fed98c278ed0ae93f7cddc02452"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "75ce26e0c32e982861337d97cadbea32a7a81fed98c278ed0ae93f7cddc02452",
+      "style_version": 2
     },
     "assets/photos/shenzhen/05.jpg": {
+      "background_luminance": 35,
       "bounds": [
         41,
         3006,
         256,
         3055
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         2064,
         3096
       ],
-      "sha256": "2b6be57101c3f96f025f63cd930c046c8a13dd9fff497d4c41941ab39c480f83"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "2b6be57101c3f96f025f63cd930c046c8a13dd9fff497d4c41941ab39c480f83",
+      "style_version": 2
     },
     "assets/photos/shenzhen/06.jpg": {
+      "background_luminance": 53,
       "bounds": [
         36,
         1742,
         224,
         1786
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3240,
         1822
       ],
-      "sha256": "073dad82caec73f1194cdf73de579cd32b4212dbb0012536ac0236e3f49ef644"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "073dad82caec73f1194cdf73de579cd32b4212dbb0012536ac0236e3f49ef644",
+      "style_version": 2
     },
     "assets/photos/shenzhen/07.JPG": {
+      "background_luminance": 70,
       "bounds": [
         68,
         3235,
         416,
         3315
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         6014,
         3383
       ],
-      "sha256": "c53d5a66e0687e2d2855d3d13f312d5d97ff033f893dddee4579962dd6b7ed98"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "c53d5a66e0687e2d2855d3d13f312d5d97ff033f893dddee4579962dd6b7ed98",
+      "style_version": 2
     },
     "assets/photos/shenzhen/08.JPG": {
+      "background_luminance": 74,
       "bounds": [
         57,
         2741,
         350,
         2808
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5094,
         2865
       ],
-      "sha256": "1aef8a32d4e70d5cf3b869a54d7242f24a22092fd298d61c232d99f10c167a06"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "1aef8a32d4e70d5cf3b869a54d7242f24a22092fd298d61c232d99f10c167a06",
+      "style_version": 2
     },
     "assets/photos/shenzhen/09.JPG": {
+      "background_luminance": 26,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "8d7ccd0435ef28ef9522121172350fab3926a5be153b17676476b4ee43419f25"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "8d7ccd0435ef28ef9522121172350fab3926a5be153b17676476b4ee43419f25",
+      "style_version": 2
     },
     "assets/photos/shenzhen/10.jpg": {
+      "background_luminance": 6,
       "bounds": [
         65,
         4738,
         399,
         4815
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         3253,
         4880
       ],
-      "sha256": "2fd60485dc31374afc0bacb4e1fec943f0e40f6b5fde20eafcfd3f82dc12ae65"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "2fd60485dc31374afc0bacb4e1fec943f0e40f6b5fde20eafcfd3f82dc12ae65",
+      "style_version": 2
     },
     "assets/photos/shenzhen/11.JPG": {
+      "background_luminance": 24,
       "bounds": [
         68,
         3233,
         416,
         3313
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5071,
         3381
       ],
-      "sha256": "a8cbbbbd5a3771ee41f580b6f099b5b9f1ce11c539d22e9d80bdd329c4ad90f0"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a8cbbbbd5a3771ee41f580b6f099b5b9f1ce11c539d22e9d80bdd329c4ad90f0",
+      "style_version": 2
     },
     "assets/photos/shenzhen/12.JPG": {
+      "background_luminance": 16,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "6c392f715d9444e5b3dc6a621bb4d008581e3e5f523cda0bdc87c3ed54c547b3"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "6c392f715d9444e5b3dc6a621bb4d008581e3e5f523cda0bdc87c3ed54c547b3",
+      "style_version": 2
     },
     "assets/photos/shenzhen/13.jpg": {
+      "background_luminance": 28,
       "bounds": [
         69,
         3298,
         424,
         3380
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5173,
         3449
       ],
-      "sha256": "3a65c9664739f16a901fe362785abcd31bcd1d9e946e945581e914f59b54786b"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "3a65c9664739f16a901fe362785abcd31bcd1d9e946e945581e914f59b54786b",
+      "style_version": 2
     },
     "assets/photos/shenzhen/14.JPG": {
+      "background_luminance": 21,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "3bc968236153c6b6c2b2de545827f25f79fa2b9d8a5249b02f22460c79777f84"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "3bc968236153c6b6c2b2de545827f25f79fa2b9d8a5249b02f22460c79777f84",
+      "style_version": 2
     },
     "assets/photos/shenzhen/15.JPG": {
+      "background_luminance": 4,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "137bb971591f76832db1c0c5d66ed6c6f235233c5cdca958e82f1caf6c147eb9"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "137bb971591f76832db1c0c5d66ed6c6f235233c5cdca958e82f1caf6c147eb9",
+      "style_version": 2
     },
     "assets/photos/shenzhen/16.JPG": {
+      "background_luminance": 25,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "a05ce93203b8a6993ca48bcfef4af03b126a7689e9bc81f9c9153064e20279c7"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "a05ce93203b8a6993ca48bcfef4af03b126a7689e9bc81f9c9153064e20279c7",
+      "style_version": 2
     },
     "assets/photos/shenzhen/17.JPG": {
+      "background_luminance": 17,
       "bounds": [
         58,
         2789,
         356,
         2858
       ],
+      "color": "#b8b8b8",
       "dimensions": [
         5184,
         2916
       ],
-      "sha256": "2d215a343b7ec961fb5358444e45d6679b24d907155c2f076e1e4faef84a5cbf"
+      "font_sha256": "25eceb458d4baf628ee0b6a135a9f8ac5ec7b2826646720834bd2bf00dfc825a",
+      "sha256": "2d215a343b7ec961fb5358444e45d6679b24d907155c2f076e1e4faef84a5cbf",
+      "style_version": 2
     }
   },
   "style": {
     "color": "#b8b8b8",
+    "color_mode": "adaptive",
+    "dark_color": "#202020",
     "font_ratio": 0.024,
+    "luminance_threshold": 128,
     "margin_ratio": 0.02,
     "opacity": 210,
     "quality": 95,
     "text": "@mattlyu",
-    "version": 1
+    "version": 2
   }
 }

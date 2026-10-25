@@ -3,7 +3,7 @@
 {% assign count = album_photos | size %}
 <p class="{{ include.class | escape }} album-meta-summary"><span>{{ count }} {% if count == 1 %}photo{% else %}photos{% endif %}</span>{% unless album.pinned %}{% if album.location %}<span class="album-meta-separator" aria-hidden="true">·</span><span class="album-meta-location">{{ album.location | escape }}</span>{% endif %}{% endunless %}</p>
 {% if album.pinned %}
-  {% if album.last_modified_at %}<p class="{{ include.class | escape }} album-meta-date"><span class="album-meta-label">最后更新</span>{% include album-date.html value=album.last_modified_at %}</p>{% endif %}
+  {% if album.last_modified_at %}<p class="{{ include.class | escape }} album-meta-date"><span class="album-meta-label">最后更新</span> {% include album-date.html value=album.last_modified_at %}</p>{% endif %}
 {% elsif album.date %}
-  <p class="{{ include.class | escape }} album-meta-date"><span class="album-meta-label">创建于</span>{% include album-date.html value=album.date %}</p>
+  <p class="{{ include.class | escape }} album-meta-date"><span class="album-meta-label">创建于</span> {% include album-date.html value=album.date %}</p>
 {% endif %}

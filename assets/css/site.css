@@ -38,12 +38,18 @@ main:focus { outline: none; }
 .page-meta { margin: 10px 0 0; color: var(--site-muted); font-size: 15px; }
 .empty-state { margin: 32px 0; padding: 22px 0; color: var(--site-muted); }
 .collection-note { margin: 24px 0 0; color: var(--site-muted); font-size: 16px; }
-.back-link { display: inline-flex; align-items: center; gap: 9px; min-height: 36px; margin-bottom: 22px; color: var(--site-muted) !important; font-size: 16px; font-weight: 500; line-height: 1.25; text-decoration: none; border-radius: 18px; transition: color .18s ease; }
+.album-page, .reading-shell { padding-top: 24px; }
+.back-link { display: flex; width: fit-content; align-items: center; gap: 8px; min-height: 32px; margin-bottom: 12px; color: var(--site-muted) !important; font-size: 18px; font-weight: 500; line-height: 1.25; text-decoration: none; border-radius: 18px; transition: color .18s ease; }
 .back-link-icon { display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px; border: 1px solid var(--site-line); border-radius: 50%; background: #fafafa; transition: border-color .18s ease, background .18s ease; }
 .back-link-icon svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .18s ease; }
 .back-link:hover, .back-link:focus-visible { color: var(--site-accent) !important; }
 .back-link:hover .back-link-icon, .back-link:focus-visible .back-link-icon { border-color: #dfcfe2; background: #f8f3f9; }
 .back-link:hover svg { transform: translateX(-2px); }
+.album-heading, .post-article .page-heading { margin-bottom: 18px; padding-bottom: 14px; }
+.album-heading h1, .post-article .page-heading h1 { font-size: 30px; line-height: 1.35; }
+.album-heading .page-meta, .post-article .page-meta { margin-top: 8px; font-size: 17px; line-height: 1.45; }
+.album-heading .page-meta + .page-meta { margin-top: 4px; }
+.album-heading .album-description { margin-top: 8px; font-size: 18px; line-height: 1.5; }
 
 .album-meta-summary, .album-meta-date { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; font-weight: 400; }
 .album-meta-label { font-size: .86em; font-weight: 400; }
@@ -178,6 +184,8 @@ body.lightbox-open { overflow: hidden; }
   .site-nav-link { font-size: 18px; }
   .page-shell { padding: 28px 20px 56px; }
   .page-heading h1 { font-size: 24px; }
+  .album-page, .reading-shell { padding-top: 22px; }
+  .album-heading h1, .post-article .page-heading h1 { font-size: 26px; }
   .album-card-caption { padding: 23px; }
   .photo-grid { --photo-columns: 1; }
   .lightbox { padding: 60px 12px 64px; }
