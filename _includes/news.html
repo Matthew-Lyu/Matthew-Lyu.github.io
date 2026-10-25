@@ -1,0 +1,8 @@
+<h2 id="news">News</h2>
+<div class="news-scroll" role="region" aria-labelledby="news" tabindex="0">
+  <ul class="news-list">
+    {% for item in site.data.news %}
+    <li class="news-item"><time datetime="{{ item.date }}">[{{ item.date | replace: '-', '/' }}]</time><span>{{ item.text }}</span></li>
+    {% endfor %}
+  </ul>
+</div>
