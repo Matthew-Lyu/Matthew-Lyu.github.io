@@ -82,16 +82,16 @@ python3 scripts/extract-photo-exif.py /path/to/originals --prefix /assets/photos
 
 ### 摄影水印与版权
 
-添加照片后，在项目目录运行以下命令，将自适应 `@mattlyu` 小水印写入照片左下角，再重新生成缩略图。脚本只检测水印附近的背景，浅色背景用深色，深色背景用浅灰色：
+添加照片后，在项目目录运行以下命令，将 `@mattlyu` 小水印写入照片左下角，再重新生成缩略图。水印使用白色实心字、深色细描边和轻微阴影，在明暗交错、纹理复杂的背景上也能保持可读：
 
 ```sh
 python3 scripts/watermark-photos.py
 python3 scripts/make-thumbnails.py assets/photos/selected --overwrite
 ```
 
-第二条命令中的 `selected` 替换为需要更新的相册目录。水印脚本处理全部相册的大图，保留分辨率、EXIF、XMP 和颜色配置，不创建原图副本。`_data/photo_watermarks.json` 记录校验值、颜色和背景亮度，重复运行会跳过已处理的照片，避免水印叠加。支持用 `--font /path/to/font.ttf` 指定字体，用 `--dry-run` 只检查、不写图片。
+第二条命令中的 `selected` 替换为需要更新的相册目录。水印脚本处理全部相册的大图，保留分辨率、EXIF、XMP 和颜色配置，不创建原图副本。`_data/photo_watermarks.json` 记录文件校验值、字体校验值和水印版本，重复运行会跳过已处理的照片，避免水印叠加。支持用 `--font /path/to/font.ttf` 指定字体，用 `--dry-run` 只检查、不写图片。
 
-旧版灰色水印首次升级时运行 `python3 scripts/watermark-photos.py --upgrade-existing`。脚本会核对文件校验值和原字形范围，按相同的透明度直接替换墨色，避免叠加；暗背景上原有的灰色水印会保留，照片不重新编码。亮背景照片会以 JPEG 95 质量保存，已有 JPEG 的压缩误差无法完全逆转。升级后重新生成各相册的缩略图。若更改水印文字、大小或透明度，应重新导入无水印原片；已处理文件若被其他软件改动，脚本会停止，防止误盖第二层水印。
+从旧版灰色或自适应黑灰水印升级时运行 `python3 scripts/watermark-photos.py --upgrade-existing`。脚本先核对全部文件和旧字体，再按原有字形、颜色与透明度替换合成结果；新水印必须至少与旧水印同样不透明，避免放大旧 JPEG 的压缩误差。不会直接在旧字上重复叠盖，也不生成无水印副本。照片以 JPEG 95 质量保存，已有压缩误差无法完全逆转。升级后重新生成各相册的缩略图。修改文字、位置或使用其他不兼容样式时应从自己的无水印原片重新处理；已处理文件若被其他软件改动，脚本会停止，防止误盖第二层水印。
 
 摄影首页及各相册底部显示摄影作品版权声明。`assets/photos/` 中的照片、封面和缩略图不适用模板代码的 CC0 许可，其使用说明见 [摄影作品版权声明](assets/photos/LICENSE.txt)。第三方程序库保留各自的许可。
 
