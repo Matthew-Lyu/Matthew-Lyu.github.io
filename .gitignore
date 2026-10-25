@@ -5,6 +5,7 @@ Gemfile.lock
 .DS_Store
 .jekyll-cache
 git-update.sh
-vendor/
+# Ignore Ruby dependencies, while tracking browser libraries in assets/vendor/.
+/vendor/
 .bundle/
 local-originals/

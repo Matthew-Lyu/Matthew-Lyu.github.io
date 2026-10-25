@@ -11,4 +11,20 @@
     });
     source.replaceWith(element);
   });
+
+  // GitHub Pages emits delimiters instead of the legacy math/tex script nodes.
+  document.querySelectorAll('.prose').forEach(function (prose) {
+    renderMathInElement(prose, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      ignoredClasses: ['katex', 'math-block', 'math-inline'],
+      throwOnError: false
+    });
+    prose.querySelectorAll('.katex-display').forEach(function (display) {
+      display.parentElement.classList.add('math-block');
+    });
+  });
 }());

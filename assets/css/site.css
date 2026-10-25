@@ -120,7 +120,7 @@ body.lightbox-open { overflow: hidden; }
 .reading-shell { max-width: 860px; }
 .post-article .page-heading .post-tags { margin-top: 14px; }
 .post-origin { margin-top: 32px; color: var(--site-muted); font-size: 15px; }
-.math-block { max-width: 100%; overflow-x: auto; overflow-y: hidden; margin: 1.2em 0; padding: 8px 0; }
+.math-block { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; margin: 1.2em 0; padding: 8px 0; }
 .math-block .katex-display { min-width: min-content; margin: 0; padding: 0 2.5em; }
 .prose .katex { font-size: 1.05em; }
 .prose .katex-html { overflow-wrap: normal; }
