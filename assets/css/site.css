@@ -30,6 +30,7 @@ main:focus { outline: none; }
 .site-nav-link.is-active { font-weight: 700; }
 .site-nav-link.is-active::after { position: absolute; bottom: 0; right: 0; left: 0; height: 2px; background: currentColor; content: ""; }
 .home-page .profile-header { top: var(--nav-height); }
+.home-page .profile-name-zh { font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", "SimSun", serif; font-style: normal; }
 .home-page .wrapper::after { display: table; clear: both; content: ""; }
 
 .page-shell { max-width: 1440px; margin: 0 auto; padding: 32px 40px 72px; }
