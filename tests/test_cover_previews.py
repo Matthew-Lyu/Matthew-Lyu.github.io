@@ -55,7 +55,7 @@ class CoverPreviews(unittest.TestCase):
         original_url = self.write_index()
         digest = hashlib.sha256(self.original.read_bytes()).hexdigest()
         result = covers.optimize_site(self.source, self.destination)
-        self.assertEqual(result, {'covers': 1, 'created': 2})
+        self.assertEqual(result, {'covers': 1, 'photos': 0, 'created': 2})
         images = Images(self.index.read_text()).images
         cover = images[0]
         self.assertEqual(cover['style'], 'object-position: 50% 30%')
@@ -71,7 +71,7 @@ class CoverPreviews(unittest.TestCase):
             path = self.destination / url.lstrip('/')
             with Image.open(path) as image:
                 self.assertEqual(image.width, int(descriptor[:-1]))
-                self.assertEqual(image.width / image.height, 1.5)
+                self.assertAlmostEqual(image.width / image.height, 1.5, delta=0.001)
         self.assertEqual(hashlib.sha256(self.original.read_bytes()).hexdigest(), digest)
 
     def test_cache_reused_after_output_cleaned_and_html_processing_is_idempotent(self):
@@ -107,6 +107,52 @@ class CoverPreviews(unittest.TestCase):
         path = self.destination / unquote(urlsplit(cover['src']).path).removeprefix('/project/')
         with Image.open(path) as result:
             self.assertEqual(result.size, (180, 90))
+
+    def write_album(self):
+        album = self.destination / 'photography/example/index.html'
+        album.parent.mkdir(parents=True)
+        original = '/assets/photos/%E4%B8%AD%E6%96%87%20album/01.jpg?v=original'
+        album.write_text(f'''<h1>作品</h1>
+<figure><a class="photo-link" href="{original}" data-photo data-exif='{{"camera":"Test camera"}}'>
+<img src="{original}" alt="拍摄作品" loading="lazy"></a></figure>
+<dialog><img class="lightbox-image" alt=""></dialog>''')
+        return album, original
+
+    def test_album_previews_leave_lightbox_link_and_exif_untouched(self):
+        album, original = self.write_album()
+        before = hashlib.sha256(self.original.read_bytes()).hexdigest()
+        result = covers.optimize_site(self.source, self.destination)
+        self.assertEqual(result, {'covers': 0, 'photos': 1, 'created': 4})
+        html = album.read_text()
+        preview, lightbox = Images(html).images
+        self.assertIn('/assets/generated/photos/', preview['src'])
+        self.assertIn('1600w', preview['srcset'])
+        self.assertIn('1800w', preview['srcset'])  # Never enlarge the 1800px original.
+        self.assertNotIn('2400w', preview['srcset'])
+        self.assertEqual(preview['data-photo-width'], '1800')
+        self.assertEqual(preview['data-photo-height'], '1200')
+        self.assertEqual(preview['data-photo-source'], original)
+        self.assertIn(f'href="{original}"', html)
+        self.assertIn('data-exif=\'{"camera":"Test camera"}\'', html)
+        self.assertNotIn('src', lightbox)
+        self.assertEqual(hashlib.sha256(self.original.read_bytes()).hexdigest(), before)
+        for candidate in preview['srcset'].split(', '):
+            url, descriptor = candidate.split()
+            with Image.open(self.destination / url.lstrip('/')) as image:
+                self.assertEqual(image.width, int(descriptor[:-1]))
+                self.assertAlmostEqual(image.width / image.height, 1.5, delta=0.001)
+
+    def test_album_cache_survives_rebuild_and_source_replacement(self):
+        album, _ = self.write_album()
+        covers.optimize_site(self.source, self.destination)
+        initial = album.read_text()
+        self.assertEqual(covers.optimize_site(self.source, self.destination)['created'], 0)
+        self.assertEqual(album.read_text(), initial)
+        shutil.rmtree(self.destination / 'assets/generated')
+        self.assertEqual(covers.optimize_site(self.source, self.destination)['created'], 0)
+        Image.new('RGB', (1800, 1200), '#abcdef').save(self.original)
+        self.assertEqual(covers.optimize_site(self.source, self.destination)['created'], 4)
+        self.assertNotEqual(Images(album.read_text()).images[0]['src'], Images(initial).images[0]['src'])
 
     def test_jekyll_hook_generates_previews_during_normal_build(self):
         for name in ('_includes', '_layouts', '_plugins'):
@@ -145,6 +191,8 @@ defaults:
         self.assertTrue((self.destination / cover['src'].lstrip('/')).is_file())
         album = (self.destination / 'photography/example/index.html').read_text()
         self.assertNotIn('/assets/generated/covers/', album)
+        self.assertIn('/assets/generated/photos/', album)
+        self.assertEqual(Images(album).images[0]['data-photo-width'], '1800')
         self.assertFalse((self.destination / '.cover-cache').exists())
         # The Pages workflow uses its official Jekyll build, then the same Python
         # step separately, including when Jekyll runs with custom hooks disabled.

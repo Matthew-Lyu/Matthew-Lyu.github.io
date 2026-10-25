@@ -15,8 +15,8 @@
 
     const ratioOf = image => {
       if (!image) return 1.5;
-      const width = image.naturalWidth || Number(image.getAttribute('width'));
-      const height = image.naturalHeight || Number(image.getAttribute('height'));
+      const width = Number(image.dataset.photoWidth) || image.naturalWidth || Number(image.getAttribute('width'));
+      const height = Number(image.dataset.photoHeight) || image.naturalHeight || Number(image.getAttribute('height'));
       return width > 0 && height > 0 ? width / height : 1.5;
     };
 
@@ -56,6 +56,7 @@
             item.style.width = `${itemWidth}px`;
             item.style.transform = `translate(${box ? box.x : left}px, ${top + offsetY}px)`;
             if (image) {
+              if (image.dataset.photoSource) image.sizes = `${Math.ceil(itemWidth)}px`;
               image.style.aspectRatio = String(ratio);
             }
             rowItems.push({ item, offsetY });
@@ -72,7 +73,10 @@
         const image = item.querySelector('img');
         // Imported images have dimensions, so their space is known before loading.
         // For other images, reserve a temporary ratio until their dimensions arrive.
-        if (image) image.style.aspectRatio = String(ratioOf(image));
+        if (image) {
+          if (image.dataset.photoSource) image.sizes = `${Math.ceil(columnWidth)}px`;
+          image.style.aspectRatio = String(ratioOf(image));
+        }
       });
 
       const itemHeights = items.map(item => item.getBoundingClientRect().height);

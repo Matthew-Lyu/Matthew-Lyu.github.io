@@ -28,6 +28,13 @@ jobs:
           python-version: '3.11'
       - name: Install image tools
         run: python -m pip install -r scripts/requirements-images.txt
+      - name: Cache image previews
+        uses: actions/cache@v6
+        with:
+          path: .cover-cache
+          key: ${{ runner.os }}-image-previews-v1-${{ hashFiles('scripts/optimize-covers.py', 'scripts/requirements-images.txt', '_albums/**', 'assets/photos/**') }}
+          restore-keys: |
+            ${{ runner.os }}-image-previews-v1-
       - name: Build website
         uses: actions/jekyll-build-pages@v1
         env:
@@ -35,7 +42,7 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Generate cover previews
+      - name: Generate image previews
         env:
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |

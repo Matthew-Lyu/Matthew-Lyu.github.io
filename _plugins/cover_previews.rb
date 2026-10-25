@@ -8,6 +8,6 @@ Jekyll::Hooks.register :site, :post_write do |site|
                    '--destination', site.dest, '--baseurl', site.config['baseurl'].to_s)
   unless success
     raise Jekyll::Errors::FatalException,
-          'Cover preview generation failed. Run ./preview.command to prepare the image dependencies.'
+          'Image preview generation failed. Run ./preview.command to prepare the image dependencies.'
   end
 end

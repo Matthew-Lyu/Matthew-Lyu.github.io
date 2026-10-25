@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Optimize rendered album covers; originals and album pages are never modified."""
+"""Generate responsive album/cover previews in the build output; keep originals intact."""
 
 import argparse
 import hashlib
@@ -16,6 +16,11 @@ from PIL import Image, ImageOps, __version__ as pillow_version
 
 WIDTHS = (480, 960)
 QUALITY = 82
+PHOTO_WIDTHS = (480, 960, 1600, 2400)
+PHOTO_QUALITY = 85
+PHOTO_SIZES = ('(max-width: 480px) calc(100vw - 40px), '
+               '(max-width: 850px) calc((100vw - 58px) / 2), '
+               '(max-width: 1344px) calc((100vw - 164px) / 3), 394px')
 SIZES = ('(max-width: 480px) calc(100vw - 40px), '
          '(max-width: 600px) calc(100vw - 48px), '
          '(max-width: 850px) calc((100vw - 66px) / 2), '
@@ -23,10 +28,10 @@ SIZES = ('(max-width: 480px) calc(100vw - 40px), '
          '(max-width: 1400px) 386px, 284px')
 
 
-def save_preview(image, target, width, profile):
+def save_preview(image, target, width, profile, quality):
     height = max(1, round(image.height * width / image.width))
     resized = image.resize((width, height), Image.Resampling.LANCZOS)
-    options = {'quality': QUALITY, 'method': 4}
+    options = {'quality': quality, 'method': 4}
     if profile:
         options['icc_profile'] = profile
     with tempfile.NamedTemporaryFile(dir=target.parent, suffix='.webp', delete=False) as handle:
@@ -38,17 +43,21 @@ def save_preview(image, target, width, profile):
         temporary.unlink(missing_ok=True)
 
 
-class Covers(HTMLParser):
-    def __init__(self, html, source, destination, baseurl):
+class Previews(HTMLParser):
+    def __init__(self, html, source, destination, baseurl, kind='cover', shared=None):
         super().__init__(convert_charrefs=False)
         self.html = html
         self.source = source
         self.destination = destination
         self.baseurl = baseurl.rstrip('/')
+        self.kind = kind
+        self.widths = PHOTO_WIDTHS if kind == 'photo' else WIDTHS
+        self.quality = PHOTO_QUALITY if kind == 'photo' else QUALITY
+        self.photo_url = None
         self.cache = source / '.cover-cache'
-        self.output = destination / 'assets/generated/covers'
+        self.output = destination / 'assets/generated' / ('photos' if kind == 'photo' else 'covers')
         self.replacements = []
-        self.previews = {}
+        self.previews = {} if shared is None else shared
         self.count = self.created = 0
         self.line_offsets = [0]
         for line in html.splitlines(keepends=True):
@@ -68,12 +77,13 @@ class Covers(HTMLParser):
             return None
         original = (self.source / relative).resolve()
         original.relative_to(self.source)  # Reject paths outside this checkout.
-        if original in self.previews:
-            return self.previews[original]
+        cache_key = (original, self.kind)
+        if cache_key in self.previews:
+            return self.previews[cache_key]
         if not original.is_file():
-            raise FileNotFoundError(f'Album cover does not exist: {relative}')
+            raise FileNotFoundError(f'Album image does not exist: {relative}')
         digest = hashlib.sha256()
-        digest.update(f'cover-v1-webp-{WIDTHS}-{QUALITY}-{pillow_version}'.encode())
+        digest.update(f'cover-v1-webp-{self.widths}-{self.quality}-{pillow_version}'.encode())
         with original.open('rb') as handle:
             for chunk in iter(lambda: handle.read(1024 * 1024), b''):
                 digest.update(chunk)
@@ -84,7 +94,7 @@ class Covers(HTMLParser):
             source_width, source_height = image.size
             if image.getexif().get(274, 1) in (5, 6, 7, 8):
                 source_width, source_height = source_height, source_width
-            widths = sorted({min(width, source_width) for width in WIDTHS})
+            widths = sorted({min(width, source_width) for width in self.widths})
             self.cache.mkdir(parents=True, exist_ok=True)
             self.output.mkdir(parents=True, exist_ok=True)
             files = [(width, self.cache / f'{key}-{width}.webp') for width in widths]
@@ -96,7 +106,7 @@ class Covers(HTMLParser):
                     oriented = oriented.convert('RGBA' if 'transparency' in image.info else 'RGB')
                     profile = None
                 for width, target in missing:
-                    save_preview(oriented, target, width, profile)
+                    save_preview(oriented, target, width, profile, self.quality)
                     self.created += 1
         result = []
         for width, cached in files:
@@ -109,28 +119,43 @@ class Covers(HTMLParser):
                     os.replace(temporary, target)
                 finally:
                     temporary.unlink(missing_ok=True)
-            url = f'{self.baseurl}/assets/generated/covers/{cached.name}'
+            url = f'{self.baseurl}/assets/generated/{self.output.name}/{cached.name}'
             result.append((url, width, max(1, round(source_height * width / source_width))))
-        self.previews[original] = result
-        return result
+        data = {'variants': result, 'width': source_width, 'height': source_height}
+        self.previews[cache_key] = data
+        return data
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
-        if tag != 'img' or 'album-cover' not in attrs.get('class', '').split():
+        if self.kind == 'photo' and tag == 'a':
+            self.photo_url = attrs.get('href') if 'data-photo' in attrs else None
+        if tag != 'img':
             return
-        original = attrs.get('data-cover-source', attrs.get('src', ''))
-        previews = self.variants(original)
-        if not previews:
+        if self.kind == 'cover':
+            if 'album-cover' not in attrs.get('class', '').split():
+                return
+            original = attrs.get('data-cover-source', attrs.get('src', ''))
+        else:
+            if not self.photo_url:
+                return
+            original = self.photo_url
+        data = self.variants(original)
+        if not data:
             return
+        previews = data['variants']
         attrs.update({
             'src': previews[0][0],
             'srcset': ', '.join(f'{url} {width}w' for url, width, _ in previews),
-            'sizes': SIZES,
-            'width': str(previews[0][1]),
-            'height': str(previews[0][2]),
-            'data-cover-source': original,
-            'loading': 'eager' if self.count < 3 else 'lazy',
+            'sizes': PHOTO_SIZES if self.kind == 'photo' else SIZES,
+            'width': str(data['width'] if self.kind == 'photo' else previews[0][1]),
+            'height': str(data['height'] if self.kind == 'photo' else previews[0][2]),
+            f'data-{self.kind}-source': original,
+            'loading': 'eager' if self.count < (1 if self.kind == 'photo' else 3) else 'lazy',
         })
+        if self.kind == 'photo':
+            # Stable source proportions prevent row reshuffling as srcset loads.
+            attrs['data-photo-width'] = str(data['width'])
+            attrs['data-photo-height'] = str(data['height'])
         if self.count == 0:
             attrs['fetchpriority'] = 'high'
         new_tag = '<img ' + ' '.join(
@@ -144,14 +169,14 @@ class Covers(HTMLParser):
 
     handle_startendtag = handle_starttag
 
+    def handle_endtag(self, tag):
+        if tag == 'a':
+            self.photo_url = None
 
-def optimize_site(source, destination, baseurl=''):
-    source, destination = Path(source).resolve(), Path(destination).resolve()
-    index = destination / 'photography/index.html'
-    if not index.is_file():
-        return {'covers': 0, 'created': 0}
+
+def optimize_page(index, source, destination, baseurl, kind, shared):
     html = index.read_text(encoding='utf-8')
-    parser = Covers(html, source, destination, baseurl)
+    parser = Previews(html, source, destination, baseurl, kind, shared)
     parser.feed(html)
     parser.close()
     for start, end, replacement in reversed(parser.replacements):
@@ -163,7 +188,20 @@ def optimize_site(source, destination, baseurl=''):
         os.replace(temporary, index)
     finally:
         temporary.unlink(missing_ok=True)
-    return {'covers': parser.count, 'created': parser.created}
+    return parser.count, parser.created
+
+
+def optimize_site(source, destination, baseurl=''):
+    source, destination = Path(source).resolve(), Path(destination).resolve()
+    root = destination / 'photography'
+    result = {'covers': 0, 'photos': 0, 'created': 0}
+    shared = {}
+    for index in sorted(root.rglob('index.html')):
+        kind = 'cover' if index == root / 'index.html' else 'photo'
+        count, created = optimize_page(index, source, destination, baseurl, kind, shared)
+        result['covers' if kind == 'cover' else 'photos'] += count
+        result['created'] += created
+    return result
 
 
 def main():
@@ -173,7 +211,8 @@ def main():
     parser.add_argument('--baseurl', default='')
     args = parser.parse_args()
     result = optimize_site(args.source, args.destination, args.baseurl)
-    print(f'Cover previews: {result["covers"]} covers; {result["created"]} new variants (others cached).')
+    print(f'Image previews: {result["covers"]} covers, {result["photos"]} album photos; '
+          f'{result["created"]} new variants (others cached).')
 
 
 if __name__ == '__main__':
