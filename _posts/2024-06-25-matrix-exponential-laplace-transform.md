@@ -1,10 +1,10 @@
 ---
-title: 如何证明矩阵指数e^At的Laplace变换是(sI-A)的逆？
+title: '如何证明矩阵指数 \(e^{At}\) 的 Laplace 变换是 \((sI-A)\) 的逆？'
 math_title: '如何证明矩阵指数 \(e^{At}\) 的 Laplace 变换是 \((sI-A)\) 的逆？'
 date: 2024-06-25 12:00:00 +0800
 lang: zh-CN
 math: true
-description: 在现代控制领域，矩阵指数是一个非常重要的概念，它在描述线性系统的动态行为时起着关键作用。那么，如何证明矩阵指数的 Laplace 变换是 (sI-A) 的逆？
+description: 在现代控制领域，矩阵指数是一个非常重要的概念，它在描述线性系统的动态行为时起着关键作用。那么，如何证明矩阵指数的 Laplace 变换是 \((sI-A)\) 的逆？
 cover: /assets/blog/matrix-exponential-laplace/cover.svg
 cover_alt: 矩阵指数等于 (sI-A) 的逆的 Laplace 逆变换
 source_url: https://zhuanlan.zhihu.com/p/705003080
