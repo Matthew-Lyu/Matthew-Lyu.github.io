@@ -80,6 +80,19 @@ python3 scripts/extract-photo-exif.py /path/to/originals --prefix /assets/photos
 
 精选集通过 `pinned: true` 置顶，显示 `last_modified_at` 作为最后更新时间。更新照片时同步修改这个日期；普通相册的 `date` 保留创建时间。
 
+### 摄影水印与版权
+
+发布照片后，在项目目录运行以下命令，将浅灰色 `@mattlyu` 小水印写入照片左下角，再重新生成缩略图：
+
+```sh
+python3 scripts/watermark-photos.py
+python3 scripts/make-thumbnails.py assets/photos/selected --overwrite
+```
+
+第二条命令中的 `selected` 替换为需要更新的相册目录。水印脚本处理全部相册的大图，保留分辨率、EXIF、XMP 和颜色配置，不创建原图副本。`_data/photo_watermarks.json` 记录已处理文件的校验值，重复运行会跳过未变化的照片，避免水印叠加。支持用 `--font /path/to/font.ttf` 指定字体。请保留自己的原图备份；如果要改变已写入的水印样式，应重新导入无水印原片。
+
+摄影首页及各相册底部显示摄影作品版权声明。`assets/photos/` 中的照片、封面和缩略图不适用模板代码的 CC0 许可，其使用说明见 [摄影作品版权声明](assets/photos/LICENSE.txt)。第三方程序库保留各自的许可。
+
 ### 可选：手动指定顺序或说明
 
 旧的照片列表格式仍然可用。只有需要自定义顺序、为某张照片设置说明或手填 EXIF 时，才需使用：

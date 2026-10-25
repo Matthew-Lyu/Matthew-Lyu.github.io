@@ -24,7 +24,13 @@
   const read = url => {
     if (!window.exifr) return Promise.resolve({});
     if (!cache.has(url)) {
-      cache.set(url, window.exifr.parse(url, tags).then(raw => format(raw || {})).catch(() => ({})));
+      // Reuse the complete image response instead of issuing partial requests
+      // to the same URL while it is also used by an <img> element.
+      cache.set(url, fetch(url, { cache: 'force-cache' }).then(response => {
+        if (!response.ok) throw new Error('Photo could not be loaded');
+        return response.arrayBuffer();
+      }).then(bytes => window.exifr.parse(bytes, tags))
+        .then(raw => format(raw || {})).catch(() => ({})));
     }
     return cache.get(url);
   };

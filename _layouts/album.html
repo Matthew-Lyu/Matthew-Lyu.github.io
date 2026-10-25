@@ -22,10 +22,18 @@ layout: base
       {% if thumbnail %}{% assign photo_thumb = thumbnail.path | uri_escape %}{% endif %}
     {% endunless %}
     {% assign photo_exif = photo.exif | default: site.data.photo_exif[photo_src] %}
+    {% assign photo_asset_key = photo_src | url_decode | remove_first: '/' %}
+    {% assign photo_version = site.data.photo_watermarks.images[photo_asset_key].sha256 | slice: 0, 12 %}
+    {% assign photo_url = photo_src | relative_url %}
+    {% assign thumb_url = photo_thumb | default: photo_src | relative_url %}
+    {% if photo_version and photo_version != '' %}
+      {% assign photo_url = photo_url | append: '?v=wm1-' | append: photo_version %}
+      {% assign thumb_url = thumb_url | append: '?v=wm1-' | append: photo_version %}
+    {% endif %}
     {% capture default_alt %}{{ page.title }} · {{ forloop.index }}{% endcapture %}
     <figure class="photo-item">
-      <a class="photo-link" href="{{ photo_src | relative_url }}" data-photo data-exif="{{ photo_exif | jsonify | escape }}" data-exif-manual="{% if photo.exif %}true{% else %}false{% endif %}" aria-label="View photo {{ forloop.index }}{% if photo.alt %}: {{ photo.alt | escape }}{% endif %}">
-        <img src="{{ photo_thumb | default: photo_src | relative_url }}" alt="{{ photo.alt | default: photo.caption | default: default_alt | escape }}" loading="lazy" decoding="async"{% if photo.width and photo.height %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %}>
+      <a class="photo-link" href="{{ photo_url }}" data-photo data-exif="{{ photo_exif | jsonify | escape }}" data-exif-manual="{% if photo.exif %}true{% else %}false{% endif %}" aria-label="View photo {{ forloop.index }}{% if photo.alt %}: {{ photo.alt | escape }}{% endif %}">
+        <img src="{{ thumb_url }}" alt="{{ photo.alt | default: photo.caption | default: default_alt | escape }}" loading="lazy" decoding="async"{% if photo.width and photo.height %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %}>
       </a>
       {% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}
     </figure>
@@ -61,4 +69,5 @@ layout: base
   {% else %}
   <p class="empty-state">Photographs coming soon.</p>
   {% endif %}
+  {% include photo-copyright.html %}
 </main>

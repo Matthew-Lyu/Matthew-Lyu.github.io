@@ -2,10 +2,14 @@
 {% include album-photos.html album=album %}
 {% assign first_photo = album_photos | first %}
 {% assign cover = album.cover | default: first_photo.thumb | default: first_photo.src | default: first_photo.path %}
+{% assign cover_asset_key = cover | url_decode | replace: '/thumbs/', '/' | remove_first: '/' %}
+{% assign cover_version = site.data.photo_watermarks.images[cover_asset_key].sha256 | slice: 0, 12 %}
+{% assign cover_url = cover | relative_url %}
+{% if cover_version and cover_version != '' %}{% assign cover_url = cover_url | append: '?v=wm1-' | append: cover_version %}{% endif %}
 <a class="album-card{% if album.pinned %} album-card-pinned{% endif %}{% unless cover %} album-card-empty{% endunless %}"
    href="{{ album.url | relative_url }}">
   {% if cover %}
-    <img class="album-cover" src="{{ cover | relative_url }}" alt="{{ album.cover_alt | default: album.title | escape }}" loading="lazy" decoding="async"
+    <img class="album-cover" src="{{ cover_url }}" alt="{{ album.cover_alt | default: album.title | escape }}" loading="lazy" decoding="async"
          {% if album.cover_position %}style="object-position: {{ album.cover_position | escape }}"{% endif %}>
   {% else %}
     <span class="album-cover-placeholder" aria-hidden="true">

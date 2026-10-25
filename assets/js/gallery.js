@@ -32,7 +32,6 @@
     const currentRequest = ++requestId;
     index = (requested + links.length) % links.length;
     const link = links[index];
-    image.src = link.href;
     image.alt = link.querySelector('img').alt;
     let metadata;
     try {
@@ -41,12 +40,16 @@
       metadata = null;
     }
     renderExif(metadata);
-    if (link.dataset.exifManual !== 'true' && window.PhotoExif) {
+    // EXIF parsers make partial HTTP requests. Wait for the full image first so
+    // those requests cannot interfere with the image response in browser caches.
+    image.onload = () => {
+      if (currentRequest !== requestId || !dialog.open || link.dataset.exifManual === 'true' || !window.PhotoExif) return;
       window.PhotoExif.read(link.href).then(result => {
         // Ignore a late response after changing photos or closing the viewer.
         if (currentRequest === requestId && dialog.open && Object.keys(result).length) renderExif(result);
       });
-    }
+    };
+    image.src = link.href;
     counter.textContent = `${index + 1} / ${links.length}`;
     previous.hidden = next.hidden = links.length < 2;
   };
@@ -72,6 +75,7 @@
   });
   dialog.addEventListener('close', () => {
     requestId += 1;
+    image.onload = null;
     document.body.classList.remove('lightbox-open');
     image.removeAttribute('src');
     if (opener) opener.focus({ preventScroll: true });

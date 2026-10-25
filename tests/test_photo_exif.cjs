@@ -5,13 +5,21 @@ const path = require('node:path');
 
 const source = fs.readFileSync(path.join(__dirname, '../assets/js/photo-exif.js'), 'utf8');
 let calls = 0;
-const window = { exifr: { parse: async url => {
+let fetches = 0;
+const window = { exifr: { parse: async bytes => {
   calls += 1;
-  if (url === 'broken.jpg') throw new Error('unreadable image');
+  assert.ok(bytes instanceof ArrayBuffer, 'Parse bytes without making partial image requests');
+  if (new Uint8Array(bytes)[0] === 0) throw new Error('unreadable image');
   return { Model: 'NIKON Z6_3', LensModel: 'NIKKOR Z 24-120mm f/4 S',
     FocalLength: 54, FNumber: 22, ExposureTime: 25, ISO: 50 };
 } } };
-vm.runInNewContext(source, { window });
+const fetch = async (url, options) => {
+  fetches += 1;
+  assert.equal(options.cache, 'force-cache');
+  return { ok: url !== 'missing.jpg', arrayBuffer: async () =>
+    new Uint8Array([url === 'broken.jpg' ? 0 : 1]).buffer };
+};
+vm.runInNewContext(source, { window, fetch });
 const plain = object => JSON.parse(JSON.stringify(object));
 
 (async () => {
@@ -25,7 +33,10 @@ const plain = object => JSON.parse(JSON.stringify(object));
   assert.deepEqual(plain(await first), { camera: 'NIKON Z6_3', lens: 'NIKKOR Z 24-120mm f/4 S',
     focal_length: '54 mm', aperture: 'f/22', shutter: '25 s', iso: 'ISO 50' });
   assert.equal(calls, 1);
+  assert.equal(fetches, 1);
   assert.deepEqual(plain(await window.PhotoExif.read('broken.jpg')), {});
+  assert.deepEqual(plain(await window.PhotoExif.read('missing.jpg')), {});
+  assert.equal(calls, 2, 'HTTP errors must not reach the EXIF parser');
   delete window.exifr;
   assert.deepEqual(plain(await window.PhotoExif.read('offline.jpg')), {});
   console.log('EXIF formatting, request caching and missing-metadata/error handling passed.');

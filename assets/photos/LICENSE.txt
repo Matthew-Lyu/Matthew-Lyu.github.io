@@ -1,0 +1,14 @@
+PHOTOGRAPHY COPYRIGHT NOTICE
+
+Copyright (c) 2026 Weichen Lyu (@mattlyu). All rights reserved.
+
+The photographs in assets/photos/, including album covers and thumbnails,
+are original photographic works by Weichen Lyu. They are not included in
+the repository's CC0 license for the website template/source code.
+
+No permission is granted to reproduce, redistribute, publish, modify, or
+use these photographs commercially, except as permitted by applicable law
+or with the photographer's prior permission. Public display on this website
+does not grant a license to reuse the photographs.
+
+For permission, contact Weichen Lyu using the email on the website homepage.
