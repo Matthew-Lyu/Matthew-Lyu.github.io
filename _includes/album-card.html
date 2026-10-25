@@ -1,8 +1,8 @@
 {% assign album = include.album %}
 {% include album-photos.html album=album %}
 {% assign first_photo = album_photos | first %}
-{% assign cover = album.cover | default: first_photo.thumb | default: first_photo.src | default: first_photo.path %}
-{% assign cover_asset_key = cover | url_decode | replace: '/thumbs/', '/' | remove_first: '/' %}
+{% assign cover = album.cover | default: first_photo.src | default: first_photo.path %}
+{% assign cover_asset_key = cover | url_decode | remove_first: '/' %}
 {% assign cover_version = site.data.photo_watermarks.images[cover_asset_key].sha256 | slice: 0, 12 %}
 {% assign cover_url = cover | relative_url %}
 {% if cover_version and cover_version != '' %}{% assign cover_url = cover_url | append: '?v=wm1-' | append: cover_version %}{% endif %}

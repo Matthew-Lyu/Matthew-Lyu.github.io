@@ -249,7 +249,7 @@ def main():
         save_manifest(args.manifest, data)
         made += 1
         print(f'Watermarked: {key}', flush=True)
-    print(f'Watermarked {made}; already marked {skipped}. Regenerate thumbs afterwards.')
+    print(f'Watermarked {made}; already marked {skipped}. Album pages use these images directly.')
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 (() => {
-  const links = Array.from(document.querySelectorAll('[data-photo]'));
+  let links = Array.from(document.querySelectorAll('[data-photo]'));
   const dialog = document.querySelector('.lightbox');
   if (!links.length || !dialog || typeof dialog.showModal !== 'function') return;
   const image = dialog.querySelector('.lightbox-image');
@@ -53,11 +53,13 @@
     counter.textContent = `${index + 1} / ${links.length}`;
     previous.hidden = next.hidden = links.length < 2;
   };
-  links.forEach((link, position) => link.addEventListener('click', event => {
+  links.forEach(link => link.addEventListener('click', event => {
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     opener = link;
-    show(position);
+    // Follow the displayed order, including photos borrowed to fill earlier rows.
+    links = Array.from(document.querySelectorAll('[data-photo]'));
+    show(links.indexOf(link));
     dialog.showModal();
     document.body.classList.add('lightbox-open');
   }));

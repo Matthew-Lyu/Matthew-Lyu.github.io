@@ -19,7 +19,6 @@ cover: /assets/photos/beijing-autumn/cover.jpg
 # Adjust where the square cover crops the image, e.g. "50% 30%".
 cover_position: "50% 50%"
 # Read images directly in this folder, in filename order. No per-photo list needed.
-# Optional thumbnails: put same-name files in this folder's thumbs/ subfolder.
 photos: /assets/photos/beijing-autumn/
 ---
 

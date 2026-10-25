@@ -70,6 +70,7 @@ defaults:
                 'folder': 'photos: /assets/photos/test album/',
                 'no-slashes': 'photos: assets/photos/test album',
                 'empty': 'photos: /assets/photos/missing/',
+                'explicit-cover': 'cover: /assets/photos/test%20album/02.PNG',
                 'separate-descriptions': '''cover_description: Short cover sentence.
 description: |
   Detailed album introduction.
@@ -80,6 +81,7 @@ description: |
                 'legacy': '''photos:
   - src: /assets/photos/test%20album/02.PNG
   - src: /assets/photos/test%20album/01.jpg
+    thumb: /assets/photos/test%20album/thumbs/01.jpg
     alt: Custom description
     exif:
       camera: Override camera''',
@@ -119,7 +121,7 @@ description: |
             self.assertTrue(ordered[1].endswith('/02.PNG'))
             self.assertTrue(ordered[-1].endswith('/%E4%B8%AD%E6%96%87%20%E7%85%A7%E7%89%87.jpg'))
             self.assertEqual(ordered, [item['href'] for item in pages['no-slashes'].photos])
-            self.assertEqual(pages['folder'].images[0]['src'], '/assets/photos/test%20album/thumbs/01.jpg')
+            self.assertEqual([image['src'] for image in pages['folder'].images if 'src' in image], ordered)
             self.assertEqual(json.loads(pages['folder'].photos[0]['data-exif'])['camera'], 'Test camera')
             self.assertEqual(pages['folder'].images[0]['alt'], 'folder · 1')
             self.assertIn('7 photos', ' '.join(pages['folder'].text))
@@ -127,6 +129,7 @@ description: |
             self.assertIn('Photographs coming soon.', ' '.join(pages['empty'].text))
             self.assertTrue(pages['legacy'].photos[0]['href'].endswith('/02.PNG'))
             self.assertEqual(pages['legacy'].images[1]['alt'], 'Custom description')
+            self.assertEqual(pages['legacy'].images[1]['src'], '/assets/photos/test%20album/01.jpg')
             self.assertEqual(json.loads(pages['legacy'].photos[1]['data-exif'])['camera'], 'Override camera')
             index = Page(source / '_site/photography/index.html')
             index_text = ' '.join(index.text)
@@ -142,6 +145,8 @@ description: |
             detail_only = Page(source / '_site/photography/detail-only/index.html')
             self.assertIn('Detailed introduction without cover text.', ' '.join(detail_only.text))
             covers = [image['src'] for image in index.images]
+            self.assertFalse(any('/thumbs/' in cover for cover in covers))
+            self.assertEqual(covers.count('/assets/photos/test%20album/02.PNG'), 2, covers)
             self.assertEqual(covers.count('/assets/photos/test%20album/01.jpg'), 2, covers)
             card_urls = [card['href'] for card in index.cards]
             self.assertEqual(card_urls[0], '/photography/pinned-month/')

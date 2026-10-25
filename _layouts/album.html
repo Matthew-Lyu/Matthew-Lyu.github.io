@@ -3,37 +3,40 @@ layout: base
 ---
 <main class="page-shell album-page" id="main-content" tabindex="-1">
   {% include back-link.html url='/photography/' label='Back to Photography Portfolio' %}
+  {% include album-photos.html album=page %}
   <div class="page-heading album-heading">
     <h1>{{ page.title | escape }}</h1>
     {% include album-meta.html album=page class="page-meta" %}
     {% if page.description %}<p class="album-description">{{ page.description | escape }}</p>{% endif %}
+    {% if album_photos.size > 0 %}
+    <div class="photo-layout-switch" role="group" aria-label="照片展示方式" hidden>
+      <button type="button" data-photo-layout="justified" aria-controls="album-photos" aria-label="宽幅大图与等高分行" title="宽幅大图 + 等高分行" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></button>
+      <button type="button" data-photo-layout="masonry" aria-controls="album-photos" aria-label="三列瀑布流" title="三列瀑布流" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h5v7H3zM3 12h5v9H3zM10 3h4v11h-4zM10 16h4v5h-4zM16 3h5v5h-5zM16 10h5v11h-5z"/></svg></button>
+    </div>
+    {% endif %}
   </div>
   {% assign body = content | strip %}{% if body != '' %}<div class="album-story prose">{{ content }}</div>{% endif %}
-  {% include album-photos.html album=page %}
   {% if album_photos.size > 0 %}
-  <div class="photo-grid">
+  <div class="photo-grid" id="album-photos">
     {% for photo in album_photos %}
     {% assign photo_src = photo.src %}
-    {% assign photo_thumb = photo.thumb %}
     {% unless photo_src %}
       {% assign photo_src = photo.path | uri_escape %}
-      {% assign thumb_path = photo.path | split: '/' | pop | join: '/' | append: '/thumbs/' | append: photo.name %}
-      {% assign thumbnail = site.static_files | where: 'path', thumb_path | first %}
-      {% if thumbnail %}{% assign photo_thumb = thumbnail.path | uri_escape %}{% endif %}
     {% endunless %}
     {% assign photo_exif = photo.exif | default: site.data.photo_exif[photo_src] %}
     {% assign photo_asset_key = photo_src | url_decode | remove_first: '/' %}
     {% assign photo_version = site.data.photo_watermarks.images[photo_asset_key].sha256 | slice: 0, 12 %}
+    {% assign photo_dimensions = site.data.photo_watermarks.images[photo_asset_key].dimensions %}
+    {% assign photo_width = photo.width | default: photo_dimensions[0] %}
+    {% assign photo_height = photo.height | default: photo_dimensions[1] %}
     {% assign photo_url = photo_src | relative_url %}
-    {% assign thumb_url = photo_thumb | default: photo_src | relative_url %}
     {% if photo_version and photo_version != '' %}
       {% assign photo_url = photo_url | append: '?v=wm1-' | append: photo_version %}
-      {% assign thumb_url = thumb_url | append: '?v=wm1-' | append: photo_version %}
     {% endif %}
     {% capture default_alt %}{{ page.title }} · {{ forloop.index }}{% endcapture %}
     <figure class="photo-item">
       <a class="photo-link" href="{{ photo_url }}" data-photo data-exif="{{ photo_exif | jsonify | escape }}" data-exif-manual="{% if photo.exif %}true{% else %}false{% endif %}" aria-label="View photo {{ forloop.index }}{% if photo.alt %}: {{ photo.alt | escape }}{% endif %}">
-        <img src="{{ thumb_url }}" alt="{{ photo.alt | default: photo.caption | default: default_alt | escape }}" loading="lazy" decoding="async"{% if photo.width and photo.height %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %}>
+        <img src="{{ photo_url }}" alt="{{ photo.alt | default: photo.caption | default: default_alt | escape }}" loading="lazy" decoding="async"{% if photo_width and photo_height %} width="{{ photo_width }}" height="{{ photo_height }}"{% endif %}>
       </a>
       {% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}
     </figure>

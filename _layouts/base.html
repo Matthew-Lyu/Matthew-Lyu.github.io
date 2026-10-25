@@ -43,6 +43,7 @@
     {% if page.layout == 'album' %}
       <script src="{{ '/assets/vendor/exifr/exifr.umd.js' | relative_url }}" defer></script>
       <script src="{{ '/assets/js/photo-exif.js' | relative_url }}?v={{ asset_version }}" defer></script>
+      <script src="{{ '/assets/js/photo-layout.js' | relative_url }}?v={{ asset_version }}" defer></script>
       <script src="{{ '/assets/js/masonry.js' | relative_url }}?v={{ asset_version }}" defer></script>
       <script src="{{ '/assets/js/gallery.js' | relative_url }}?v={{ asset_version }}" defer></script>
     {% endif %}
