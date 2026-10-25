@@ -6,6 +6,9 @@ description: Notes and writing by Weichen Lyu.
 math: true
 ---
 <main class="page-shell blog-page" id="main-content" tabindex="-1" aria-label="Blog">
+  <header class="page-heading">
+    <h1>{{ page.title | escape }}</h1>
+  </header>
   {% assign posts = site.posts | sort: 'date' | reverse %}
   {% for post in posts %}
   {% assign post_url = post.url | relative_url %}

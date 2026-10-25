@@ -5,6 +5,8 @@
   --site-accent: #6d2077;
   --site-paper: #fff;
   --site-line: #e6e6e6;
+  --page-top-space: 24px;
+  --section-heading-size: 28px;
 }
 
 html { scroll-padding-top: calc(var(--nav-height) + 24px); }
@@ -29,13 +31,25 @@ main:focus { outline: none; }
 .site-nav-link:hover { color: #6d2077 !important; }
 .site-nav-link.is-active { font-weight: 700; }
 .site-nav-link.is-active::after { position: absolute; bottom: 0; right: 0; left: 0; height: 2px; background: currentColor; content: ""; }
-.home-page .profile-header { top: var(--nav-height); }
+.home-page .wrapper { padding-top: var(--page-top-space); }
+.home-page .home-content { padding-top: 0; }
+/* Align the image with the visible top of the section title's letterforms. */
+.home-page .profile-header { top: calc(var(--nav-height) + 1px + var(--page-top-space)); padding-top: 6px; }
 .home-page .profile-name-zh { font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", "SimSun", serif; font-style: normal; }
 .home-page .wrapper::after { display: table; clear: both; content: ""; }
 
-.page-shell { max-width: 1440px; margin: 0 auto; padding: 32px 40px 72px; }
+.page-shell { max-width: 1440px; margin: 0 auto; padding: var(--page-top-space) 40px 72px; }
+.photography-page, .blog-page { width: calc(100% - 64px); }
+.photography-page { max-width: 1280px; }
 .page-heading { margin: 0 0 24px; padding-bottom: 13px; border-bottom: 1px solid var(--site-line); }
 .page-heading h1 { margin: 0; color: var(--site-ink); font-size: 28px; line-height: 1.5; font-weight: 700; letter-spacing: 0; overflow-wrap: anywhere; }
+.photography-page > .page-heading h1, .blog-page > .page-heading h1 { color: var(--site-accent); }
+.home-page .home-content > h2,
+.photography-page > .page-heading h1,
+.blog-page > .page-heading h1 { margin: 0; font-size: var(--section-heading-size); font-weight: 500; line-height: 1.1; }
+.home-page .home-content > h2,
+.photography-page > .page-heading,
+.blog-page > .page-heading { margin: 0 0 15px; padding-bottom: 0.35rem; }
 .page-meta { margin: 10px 0 0; color: var(--site-muted); font-size: 15px; }
 .empty-state { margin: 32px 0; padding: 22px 0; color: var(--site-muted); }
 .collection-note { margin: 24px 0 0; color: var(--site-muted); font-size: 16px; }
@@ -118,7 +132,7 @@ body.lightbox-open { overflow: hidden; }
 
 .post-summary { margin: 0; padding: 0 0 28px; border-bottom: 1px solid var(--site-line); }
 .post-summary + .post-summary { padding-top: 28px; }
-.blog-page { max-width: 1120px; }
+.blog-page { max-width: 1040px; }
 .post-summary h2 { margin: 0 0 16px; font-size: 24px; line-height: 1.5; font-weight: 650; overflow-wrap: anywhere; }
 .post-summary h2 a { color: var(--site-ink); text-decoration: none; }
 .post-summary h2 a:hover { color: var(--site-accent); }
@@ -165,8 +179,9 @@ body.lightbox-open { overflow: hidden; }
 .post-newer { margin-left: auto; text-align: right; }
 
 @media (max-width: 1200px) {
-  .home-page .wrapper { padding: 24px 20px 0; }
-  .home-page .profile-header { top: auto; }
+  .home-page .wrapper { padding: var(--page-top-space) 20px 0; }
+  .home-page .profile-header { top: auto; padding-top: 0; }
+  .home-page .home-content { padding-top: 20px; }
   .album-card-caption { padding: 18px; }
   .photo-grid { --photo-columns: 3; }
 }
@@ -175,16 +190,18 @@ body.lightbox-open { overflow: hidden; }
 }
 @media (max-width: 850px) {
   .site-nav-inner { gap: 32px; padding: 0 24px; }
-  .page-shell { padding: 28px 24px 64px; }
+  .site-nav-link { white-space: normal; line-height: 1.2; text-align: center; }
+  .page-shell { padding: var(--page-top-space) 24px 64px; }
+  .photography-page, .blog-page { width: auto; }
   .album-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
   .photo-grid { --photo-columns: 2; }
 }
 @media (max-width: 480px) {
-  :root { --nav-height: 56px; }
+  :root { --nav-height: 56px; --section-heading-size: 24px; }
   .content-page { font-size: 17px; }
   .site-nav-inner { justify-content: space-between; gap: 10px; padding: 0 18px; }
   .site-nav-link { font-size: 18px; }
-  .page-shell { padding: 28px 20px 56px; }
+  .page-shell { padding: var(--page-top-space) 20px 56px; }
   .page-heading h1 { font-size: 24px; }
   .album-page, .reading-shell { padding-top: 22px; }
   .album-heading h1, .post-article .page-heading h1 { font-size: 26px; }
