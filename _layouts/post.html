@@ -2,7 +2,7 @@
 layout: base
 ---
 <main class="page-shell reading-shell" id="main-content" tabindex="-1">
-  <a class="back-link" href="{{ '/blog/' | relative_url }}">← Blog</a>
+  {% include back-link.html url='/blog/' label='Blog' %}
   <article class="post-article">
     <div class="page-heading">
       <h1{% if page.math_title %} data-math-title{% endif %}>{{ page.math_title | default: page.title | escape }}</h1>

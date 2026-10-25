@@ -2,7 +2,7 @@
 layout: base
 ---
 <main class="page-shell album-page" id="main-content" tabindex="-1">
-  <a class="back-link" href="{{ '/photography/' | relative_url }}">← Photography</a>
+  {% include back-link.html url='/photography/' label='Photography' %}
   <div class="page-heading album-heading">
     <h1>{{ page.title | escape }}</h1>
     {% include album-meta.html album=page class="page-meta" %}

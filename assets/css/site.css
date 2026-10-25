@@ -38,8 +38,18 @@ main:focus { outline: none; }
 .page-meta { margin: 10px 0 0; color: var(--site-muted); font-size: 15px; }
 .empty-state { margin: 32px 0; padding: 22px 0; color: var(--site-muted); }
 .collection-note { margin: 24px 0 0; color: var(--site-muted); font-size: 16px; }
-.back-link { display: inline-block; margin-bottom: 20px; color: var(--site-muted) !important; font-size: 16px; text-decoration: none; }
-.back-link:hover { color: var(--site-accent) !important; }
+.back-link { display: inline-flex; align-items: center; gap: 9px; min-height: 36px; margin-bottom: 22px; color: var(--site-muted) !important; font-size: 16px; font-weight: 500; line-height: 1.25; text-decoration: none; border-radius: 18px; transition: color .18s ease; }
+.back-link-icon { display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px; border: 1px solid var(--site-line); border-radius: 50%; background: #fafafa; transition: border-color .18s ease, background .18s ease; }
+.back-link-icon svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .18s ease; }
+.back-link:hover, .back-link:focus-visible { color: var(--site-accent) !important; }
+.back-link:hover .back-link-icon, .back-link:focus-visible .back-link-icon { border-color: #dfcfe2; background: #f8f3f9; }
+.back-link:hover svg { transform: translateX(-2px); }
+
+.album-meta-summary, .album-meta-date { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; font-weight: 400; }
+.album-meta-label { font-size: .86em; font-weight: 400; }
+.album-meta-date time { font-size: 1.05em; font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.album-meta-separator { opacity: .65; }
+.album-meta-location { font-size: .92em; }
 
 .album-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
 .album-card { position: relative; display: block; aspect-ratio: 1; overflow: hidden; border-radius: 10px; background: #d8dfd9; color: #fff !important; text-decoration: none; box-shadow: 0 4px 12px rgb(54 61 51 / 8%); isolation: isolate; transition: transform .22s ease, box-shadow .22s ease; }
@@ -59,6 +69,7 @@ main:focus { outline: none; }
 .album-card-details-inner > p:first-child { margin-top: 6px; }
 .album-card:hover .album-card-details, .album-card:focus-visible .album-card-details { grid-template-rows: 1fr; opacity: 1; }
 .album-card-caption p { margin: 0; color: rgb(255 255 255 / 96%); font-size: 15px; line-height: 1.6; }
+.album-card-caption .album-meta-date { margin-top: 2px; color: rgb(255 255 255 / 86%); }
 .album-card-caption .album-card-description { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 3px; color: rgb(255 255 255 / 90%); font-size: 15px; }
 .album-description { max-width: 800px; margin: 12px 0 0; color: var(--site-muted); }
 .album-story { margin-bottom: 32px; }
@@ -125,7 +136,7 @@ body.lightbox-open { overflow: hidden; }
 .post-origin { margin-top: 32px; color: var(--site-muted); font-size: 15px; }
 .math-block { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; margin: 1.2em 0; padding: 8px 0; }
 .math-block .katex-display { min-width: min-content; margin: 0; padding: 0 2.5em; }
-.prose .katex { font-size: 1.05em; }
+.prose .katex, .post-excerpt .katex { font-size: 1.05em; }
 .page-heading h1 .katex, .post-summary h2 .katex { font-size: 1em; }
 .prose .katex-html { overflow-wrap: normal; }
 .prose { color: var(--site-ink); font-size: 18px; line-height: 1.85; overflow-wrap: anywhere; }
