@@ -2,22 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 @font-face {
-  font-family: "Smiley Sans CJK";
-  src: local("Smiley Sans Oblique"), local("SmileySans-Oblique"), local("得意黑");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  unicode-range: U+2E80-2FFF, U+3000-303F, U+31C0-31EF, U+3400-4DBF,
-                 U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF,
-                 U+20000-2FA1F;
-}
-
-/* Balance Chinese and Latin glyph sizes in both album descriptions. */
-@font-face {
-  font-family: "Album Description CJK";
-  src: local("Smiley Sans Oblique"), local("SmileySans-Oblique"), local("得意黑"),
-       local("Songti SC"), local("Noto Serif CJK SC"), local("Source Han Serif SC"),
-       local("STSong"), local("SimSun");
+  font-family: "Site Chinese";
+  src: local("PingFangSC-Regular"), local("MicrosoftYaHei"), local("NotoSansCJKsc-Regular"), local("SourceHanSansSC-Regular"), local("HiraginoSansGB-W3");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -27,15 +13,72 @@
                  U+20000-2FA1F;
 }
 
+@font-face {
+  font-family: "Site Chinese";
+  src: local("PingFangSC-Medium"), local("MicrosoftYaHei"), local("NotoSansCJKsc-Medium"), local("SourceHanSansSC-Medium"), local("HiraginoSansGB-W3");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  size-adjust: 82%;
+  unicode-range: U+2E80-2FFF, U+3000-303F, U+31C0-31EF, U+3400-4DBF,
+                 U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF,
+                 U+20000-2FA1F;
+}
+
+@font-face {
+  font-family: "Site Chinese";
+  src: local("PingFangSC-Semibold"), local("MicrosoftYaHei-Bold"), local("NotoSansCJKsc-Bold"), local("SourceHanSansSC-Bold"), local("HiraginoSansGB-W6");
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+  size-adjust: 82%;
+  unicode-range: U+2E80-2FFF, U+3000-303F, U+31C0-31EF, U+3400-4DBF,
+                 U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF,
+                 U+20000-2FA1F;
+}
+
+/* A slightly larger Chinese face for names and long-form reading; Latin is unchanged. */
+@font-face {
+  font-family: "Site Chinese Reading";
+  src: local("PingFangSC-Regular"), local("MicrosoftYaHei"), local("NotoSansCJKsc-Regular"), local("SourceHanSansSC-Regular"), local("HiraginoSansGB-W3");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  size-adjust: 90%;
+  unicode-range: U+2E80-2FFF, U+3000-303F, U+31C0-31EF, U+3400-4DBF,
+                 U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF,
+                 U+20000-2FA1F;
+}
+
+@font-face {
+  font-family: "Site Chinese Reading";
+  src: local("PingFangSC-Medium"), local("MicrosoftYaHei"), local("NotoSansCJKsc-Medium"), local("SourceHanSansSC-Medium"), local("HiraginoSansGB-W3");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  size-adjust: 90%;
+  unicode-range: U+2E80-2FFF, U+3000-303F, U+31C0-31EF, U+3400-4DBF,
+                 U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF,
+                 U+20000-2FA1F;
+}
+
+@font-face {
+  font-family: "Site Chinese Reading";
+  src: local("PingFangSC-Semibold"), local("MicrosoftYaHei-Bold"), local("NotoSansCJKsc-Bold"), local("SourceHanSansSC-Bold"), local("HiraginoSansGB-W6");
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+  size-adjust: 90%;
+  unicode-range: U+2E80-2FFF, U+3000-303F, U+31C0-31EF, U+3400-4DBF,
+                 U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF,
+                 U+20000-2FA1F;
+}
+
 body {
   background-color: #fff;
   padding:0px;
-  font: 18px/1.5 "Crimson Pro", "Smiley Sans CJK", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", "SimSun", serif;
+  font: 18px/1.5 "Crimson Pro", "Site Chinese", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color:#595959;
   font-weight:400;
   margin:0
-}
-
-body.blog-page-font {
-  font-family: "Crimson Pro", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", "SimSun", serif;
 }
