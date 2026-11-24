@@ -18,7 +18,7 @@
     {% endif %}
   </div>
   <div class="col-sm-9 publication-details">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
+      <div class="title">{{ link.title }}</div>
       {% if link.github %}
         <a href="{{ link.github }}/stargazers" target="_blank" rel="noopener">
           <img src="https://img.shields.io/github/stars/{{ link.github | split: 'https://github.com/' | last | split: '/' | first }}/{{ link.github | split: 'https://github.com/' | last | split: '/' | last }}.svg" alt="GitHub stars">
